@@ -63,8 +63,8 @@ get_header(); ?>
                                 <li role="presentation" class="active">
                                     <a href="#lauracorrick" role="tab" data-toggle="tab">
                                         <img src="/wp-content/themes/rnf/images/lauracorrick.jpg" 
-                                        alt="Laura Corrick Profile Picture" width="100px" class="hidden-xs hidden-sm">
-                                        <p class="hidden-md hidden-lg">Laura Corrick</p>
+                                        alt="Laura Lombard Profile Picture" width="100px" class="hidden-xs hidden-sm">
+                                        <p class="hidden-md hidden-lg">Laura Lombard</p>
                                     </a>
                                 </li>
 
@@ -79,8 +79,8 @@ get_header(); ?>
 			                    <li role="presentation">
                                     <a href="#helenturnbull" role="tab" data-toggle="tab">
                                         <img src="/wp-content/themes/rnf/images/helenturnbull.jpg" 
-                                        alt="Helen Turnbull Profile Picture" width="100px" class="hidden-xs hidden-sm">
-                                        <p class="hidden-md hidden-lg">Helen Turnbull</p>
+                                        alt="Helen Wright Profile Picture" width="100px" class="hidden-xs hidden-sm">
+                                        <p class="hidden-md hidden-lg">Helen Wright</p>
                                     </a>
                                 </li>
                     
@@ -181,7 +181,7 @@ get_header(); ?>
 
                         <div role="tabpanel" class="tab-pane about-box" id="helenturnbull">
                             <div class="col-md-9 text-justify">
-                            	<h3>Helen Turnbull</h3>
+                            	<h3>Helen Wright</h3>
                             	<p class="lead">Trustee and Treasurer</p>
                                 <p>Helen was secretly very grateful that the formation of 
                                     <a href="/">Remembering Not to Forget</a> coincided with her year off travelling 
