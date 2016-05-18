@@ -18,23 +18,24 @@ get_header(); ?>
         <?php if (have_posts()) : ?>
     		<?php while (have_posts()) : the_post(); ?>
 
-    			<div class="media">
+    			<div class="row">
 
-    				<div class="media-left">
+    				<div class="col-sm-3">
 	    				<?php if ( has_post_thumbnail() ) : ?>
 		    				<div class="post-thumb">
-		    					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+		    					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('large', array( 'class' => 'img-responsive' )); ?></a>
 		    				</div>
 	    				<?php endif; ?>
     				</div>
 
-    				<div class="media-body">
-    					<h3 class="media-heading"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+    				<div class="col-sm-9">
+    					<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
     					<p class="post-meta"><?php the_time('F jS, Y') ?> by <a href="#"><?php the_author(); ?></a> in <?php the_category(', ') ?> <?php comments_number('No Comments','1 Comment','% Comments'); ?></p>
     					<?php the_excerpt(); ?>
     					<p><a href="<?php echo get_permalink(); ?>"> Read More...</a></p>
     				</div>
 
+                    <hr/>
     			</div>
 
     		<?php endwhile; ?>
