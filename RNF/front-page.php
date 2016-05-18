@@ -63,12 +63,10 @@ get_header(); ?>
 			</div>
 
 			<div class="visible-xs-block">
-				<h4>Welcome to<br />Remembering Not to Forget</h4>
 				<div class="thumbnail">
 			  	  <img src="/wp-content/uploads/2016/03/10400956_34759191521_1009_n.jpg" 
 			  	  	alt="Bernard Simons" class="img-responsive">
 			      <div class="caption text-center">
-			      	<h3>Bernard Simons</h3>
 			        <a class="ui-btn ui-btn-big" href="/bernardsimons/">Bernard Simons</a>
 			      </div>
 			    </div>

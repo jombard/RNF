@@ -94,7 +94,7 @@
   	                <a href="/"><img src="/wp-content/themes/rnf/images/logo.png" alt="Logo"></a>
                 </div>
             </div>
-            <div class="col-md-7 col-xs-12">   
+            <div class="col-md-7 col-xs-12 hidden-xs">   
                 
 	            <h1><a href="/"><?php bloginfo('name'); ?></a></h1>
 
@@ -110,7 +110,9 @@
 
             <div class="col-md-3 col-xs-12">
                 <div class="donateheader">
-  		            <a class="btn btn-success" href="https://mydonate.bt.com/donation/start.html?charity=143287">Donate to<br>Remembering Not To Forget</a>	
+  		            <a class="btn btn-success btn-block m-b" href="https://mydonate.bt.com/donation/start.html?charity=143287">
+                        Donate to<br>Remembering Not To Forget
+                    </a>	
   	                <img src="/wp-content/themes/rnf/images/uk-payment-logos.png" alt="Uk -payment -logos -small" width="164" height="15" />
                 </div>
             </div>
@@ -126,7 +128,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/"><span class="visible-xs-inline-block visible-sm-inline-block">RNF</span><span class="hidden-xs hidden-sm">Remembering Not To Forget</span></a>
+                    <a class="navbar-brand" href="/"><span class="hidden-xs hidden-sm">Remembering Not To Forget</span></a>
                 </div>
 
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
