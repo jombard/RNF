@@ -1,2 +1,0 @@
-# RNF
-Charity Wordpress Website
