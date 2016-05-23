@@ -10,23 +10,13 @@ get_header(); ?>
 			  
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">
-			  	<div class="item active">
-			  	  <img src="/wp-content/uploads/2016/03/10400956_34759191521_1009_n.jpg" 
-			  	  	alt="Bernard Simons">
-			      <div class="caption">
-			        <h2 class="hidden-xs">Bernard Simons</h2>
-			        <a class="ui-btn ui-btn-big" href="/bernardsimons">Bernard Simons</a>
-			        <p class="hidden-xs hidden-sm">A tribute to a husband, father and grand-father.</p>
-			      </div>
-			    </div>
 
-			    <div class="item">
+			    <div class="item active">
 			  	  <img src="/wp-content/uploads/2015/12/img309-e1450881598215.jpg" 
 			  	  	alt="The Turnbull girls at Christmas">
 			      <div class="caption">
-			        <h2 class="hidden-xs">Christmas Traditions</h2>
-			        <a class="ui-btn ui-btn-big" href="/christmas-traditions/">Blog</a>
-			        <p class="hidden-xs hidden-sm">Read our latest blog post from RNF co-founder Ali Turnbull.</p>
+			        <a class="ui-btn ui-btn-big" href="/blog/">Blog</a>
+			        <p class="hidden-xs hidden-sm">Read our latest blog posts</p>
 			      </div>
 			    </div>
 
@@ -48,7 +38,6 @@ get_header(); ?>
 			  <ol class="carousel-indicators">
 			    <li data-target="#carousel-rnf" data-slide-to="0" class="active"></li>
 			    <li data-target="#carousel-rnf" data-slide-to="1"></li>
-			    <li data-target="#carousel-rnf" data-slide-to="2"></li>
 			  </ol>
 
 			  <!-- Controls -->
@@ -64,10 +53,10 @@ get_header(); ?>
 
 			<div class="visible-xs-block">
 				<div class="thumbnail">
-			  	  <img src="/wp-content/uploads/2016/03/10400956_34759191521_1009_n.jpg" 
-			  	  	alt="Bernard Simons" class="img-responsive">
+			  	  <img src="/wp-content/uploads/2015/12/img309-e1450881598215.jpg" 
+			  	  	alt="The Turnbull girls at Christmas" class="img-responsive">
 			      <div class="caption text-center">
-			        <a class="ui-btn ui-btn-big" href="/bernardsimons/">Bernard Simons</a>
+			        <a class="ui-btn ui-btn-big" href="/blog/">Blog</a>
 			      </div>
 			    </div>
 			</div>
