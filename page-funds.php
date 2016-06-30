@@ -211,64 +211,6 @@ get_header(); ?>
         </div><!-- .col-md-4 -->
     </div><!-- .row -->
 
-<script type="text/javascript">
-	    
-    var pieData = [
-	    {
-		    value: 30,
-		    color:"#00A4E4",
-            highlight: "#45C6F9",
-            label: "Alzheimer's Society"
-	    },
-	    {
-		    value : 30,
-		    color : "#ED1651",
-            highlight: "#ED4371",
-            label: "Brace"
-	    },
-	    {
-		    value : 10,
-		    color : "#926A81",
-            highlight: "#927D89",
-            label: "Reminiscence Learning"
-	    },
-	    {
-		    value : 5,
-		    color : "#0E538E",
-            highlight: "#3895E6",
-            label: "Dementia UK"
-	    },
-	    {
-		    value : 5,
-		    color : "#A7A8AB",
-            highlight: "#D4D5D6",
-            label: "Alzheimer's Research UK"
-	    },
-	    {
-		    value : 5,
-		    color : "#8CC63F",
-            highlight: "#BCDE90",
-            label: "Playlist For Life"
-	    },
-	    {
-		    value : 15,
-		    color : "#7F3F98",
-            highlight: "#9F6CB3",
-            label: "Other"
-	    }
-    ];
-
-    var pieOptions = {
-	    segmentShowStroke : true,
-	    animateScale : true,
-        responsive : true
-    }
-
-    var charities = document.getElementById("charities").getContext("2d");
-    new Chart(charities).Pie(pieData, pieOptions);
-
-    
-</script>
 
 	<!-- PAGE END -->
 <?php get_footer(); ?>
