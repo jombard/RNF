@@ -39,16 +39,6 @@
 
 	    <?php wp_footer(); ?>
         
-        <script type="text/javascript">
-          $(document).ready(function(){
-          	$(".gallery a").attr({
-          		"rel": "prettyPhoto[gal]",
-          		"class": "thumbnail",
-          		"title": function(){return $(this).parent().parent().find("figcaption").text();}
-          	});
-            $("a[rel^='prettyPhoto']").prettyPhoto();
-          });
-        </script>
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -61,6 +51,13 @@
             ga('send', 'pageview');
             
         </script>
+
+        <script src="/wp-content/themes/rnf/scripts/jquery-1.10.2.min.js"></script>
+		<script src="/wp-content/themes/rnf/scripts/bootstrap.min.js"></script>
+	    <script src="/wp-content/themes/rnf/scripts/jquery.prettyPhoto.js"></script>
+	    <script src="/wp-content/themes/rnf/scripts/isotope.pkgd.min.js"></script>
+	    <script src="/wp-content/themes/rnf/scripts/chart.min.js"></script>
+	    <script src="/wp-content/themes/rnf/scripts/script.js"></script>
         <!-- <?php echo get_num_queries(); ?> queries. <? timer_stop(1); ?> -->
     </body>
 </html>
