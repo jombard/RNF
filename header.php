@@ -8,11 +8,11 @@
     <meta name="keywords" content="dementia, charity, fundraising, sponsorship, challenge">
     <meta name="description" content="Remembering Not to Forget is a small charity established at the end of 2013 to fundraise to support people impacted by dementia." />
 	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-	<link type="text/plain" rel="author" href="/wp-content/themes/rnf/humans.txt" />
-	<link href="/wp-content/themes/rnf/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link rel="author" type="text/plain" href="/wp-content/themes/rnf/humans.txt" />
+	<link rel="shortcut icon" href="/wp-content/themes/rnf/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/wp-content/themes/rnf/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/wp-content/themes/rnf/css/prettyPhoto.css" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-	<link rel="stylesheet" href="/wp-content/themes/rnf/css/bootstrap.min.css">
-	<link href="/wp-content/themes/rnf/css/prettyPhoto.css" rel="stylesheet" />
 	
 	<?php wp_head(); ?>
 </head>
