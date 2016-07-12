@@ -5,7 +5,7 @@ get_header(); ?>
 	<!-- <?php the_ID(); ?> -->
 
 	<div class="row">
-    	<div class="col-md-8">
+    	<div class="col-md-12">
 
     		<?php if ( function_exists('yoast_breadcrumb') ) {
 				yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumb">','</p>');
@@ -17,8 +17,8 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 						<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
-						<div class="entry-thumbnail">
-							<?php the_post_thumbnail(); ?>
+						<div class="row entry-thumbnail">
+							<?php the_post_thumbnail('post-thumbnail', array( 'class' => "img-responsive")); ?>
 						</div>
 						<?php endif; ?>
 
@@ -38,11 +38,8 @@ get_header(); ?>
 				<?php comments_template(); ?>
 			<?php endwhile; ?>
 
-    	</div><!-- .col-md-8 -->
+    	</div><!-- .col-md-12 -->
 	
-		<div class="col-md-4">
-			<?php get_sidebar(); ?>
-		</div><!-- .col-md-4 -->
 	</div><!-- .row -->
 	
 

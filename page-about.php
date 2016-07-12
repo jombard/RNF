@@ -480,22 +480,6 @@ get_header(); ?>
 		</div><!-- .col-md-4 -->
 	</div><!-- .row -->
 
-<script>
-    $(document).ready(function () {
-        $(function () {
-            var hash = window.location.hash;
-            var mbm = "#btnmember";
-            if (hash === "#lauracorrick" 
-                || hash === "#aliturnbull" 
-                || hash === "#helenturnbull" 
-                || hash === "#mattcorrick" 
-                || hash === "#katesimpson") {
-                mbm && $('ul.nav a[href="' + mbm + '"]').tab('show');
-            }
-            hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-        });
-    });
-</script>
 
 	<!-- PAGE END -->
 <?php get_footer(); ?>
