@@ -5,7 +5,7 @@ get_header(); ?>
 	<!-- <?php the_ID(); ?> -->
 
 	<div class="row">
-    	<div class="col-md-8">
+    	<div class="col-md-12">
 
     		<?php if ( function_exists('yoast_breadcrumb') ) {
 				yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumb">','</p>');
@@ -38,6 +38,9 @@ get_header(); ?>
 								This entry was posted in <?php the_category(', ') ?>
 							</div>
 						</div>
+
+						<?php the_tags( '<div class="post-labels"><div class="label label-default">', '</div><div class="label label-default">', '</div></div>' ); ?>
+
 					</div><!-- .entry-content -->
 
 				</article><!-- #post -->
@@ -51,11 +54,8 @@ get_header(); ?>
 				<?php comments_template(); ?>
 			<?php endwhile; ?>
 
-		</div><!-- .col-md-8 -->
+		</div><!-- .col-md-12 -->
 	
-		<div class="col-md-4">
-			<?php get_sidebar(); ?>
-		</div><!-- .col-md-4 -->
 	</div><!-- .row -->
 
 	<!-- SINGLE END -->
