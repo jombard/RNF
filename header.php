@@ -46,7 +46,7 @@
 	                <?php bloginfo('description'); ?>
 	            </div>
 
-                <div class="sociallinks">
+                <div>
                     <div class="fb-like" data-href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679" data-width="400px" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
                 </div>
                 

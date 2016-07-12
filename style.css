@@ -9,6 +9,7 @@ body {
   font-family: Arial, Helvetica, 'Helvetica Neue', Verdana, sans-serif;
   padding: 0px;
   margin: 0px;
+  font-size: 18px;
 }
 
 h1,
@@ -25,7 +26,7 @@ h2 {
 }
 
 h3 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 hr {
@@ -51,6 +52,14 @@ a:hover {
 
 .eventdate {
 	font-weight: bold;
+}
+
+#sitedescription {
+  color: #333;
+}
+
+.btn {
+  font-size: 18px;
 }
 
 ul.rnfflower {
@@ -563,6 +572,21 @@ nav.primary ul li a.selected {
 
 .fundraiser-display:hover .fundraiser-advert {
   display: block;
+}
+
+.post-labels {
+  margin-bottom: 20px;
+}
+.post-labels .label {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 1em;
+}
+.post-labels .label a {
+  color: #fff;
+}
+.post-labels>.label+.label {
+  margin-left: 5px;
 }
 
 /*****************/

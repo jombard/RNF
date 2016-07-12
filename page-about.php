@@ -21,7 +21,7 @@ get_header(); ?>
                 <a href="#btnmember" role="tab" data-toggle="pill">Who we are</a>
             </li>
             <li role="presentation">
-                <a href="#btndementia" role="tab" data-toggle="pill">More about dementia</a>
+                <a href="#btndementia" role="tab" data-toggle="pill">About dementia</a>
             </li>
             <li role="presentation">
                 <a href="#btnconstitution" role="tab" data-toggle="pill">Our constitution</a>
