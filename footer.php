@@ -11,26 +11,26 @@
 	    <footer class="footer">
 		    <div class="container">
 			    <div class="row">
-				    <div class="col-md-7 col-md-offset-1">
-					    <a href="/">
-						    <img src="/wp-content/themes/rnf/images/logo_tiny.png" alt="Flower">
-						    <span class="lead">Remembering Not To Forget</span>
-					    </a>
-					    <p>Fundraising to support people impacted by dementia</p>
+				    <div class="col-md-6">
+					    <a href="/" class="lead">Remembering Not To Forget</a><br />
+					    Fundraising to support people impacted by dementia<br/>
+				    	Copyright &copy; 2016 Remembering Not to Forget
 				    </div>
-				    <div class="col-md-3 text-right">
-					    <a href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679">
-						    <span class="iconfbook"></span>
-					    </a>
-					    <a href="https://twitter.com/rnf_uk">
-						    <span class="icontwitter"></span>
-					    </a>
-					    <a href="https://plus.google.com/103483767799511460203/videos?pageId=108152448772708944610">
-						    <span class="icongooglep"></span>
-					    </a>
-                        <a href="https://www.youtube.com/channel/UCsNKdIv9jMVGGJ8RLT2GDeQ">
-						    <span class="iconyoutube"></span>
-					    </a>
+				    <div class="col-md-6">
+					    <div class="pull-right">
+						    <a href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679">
+							    <span class="iconfbook"></span>
+						    </a>
+						    <a href="https://twitter.com/rnf_uk">
+							    <span class="icontwitter"></span>
+						    </a>
+						    <a href="https://plus.google.com/103483767799511460203/videos?pageId=108152448772708944610">
+							    <span class="icongooglep"></span>
+						    </a>
+	                        <a href="https://www.youtube.com/channel/UCsNKdIv9jMVGGJ8RLT2GDeQ">
+							    <span class="iconyoutube"></span>
+						    </a>
+					    </div>
 				    </div>
 			    </div>
 			
