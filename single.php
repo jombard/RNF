@@ -24,7 +24,7 @@ get_header(); ?>
 					</header><!-- .entry-header -->
 
 					<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
-						<div class="entry-thumbnail">
+						<div class="row entry-thumbnail">
 							<?php the_post_thumbnail('post-thumbnail', array( 'class' => "img-responsive")); ?>
 
 						</div>
