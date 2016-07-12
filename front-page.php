@@ -12,8 +12,8 @@ get_header(); ?>
 			  <div class="carousel-inner" role="listbox">
 
 			    <div class="item active">
-			  	  <img src="/wp-content/uploads/2015/12/img309-e1450881598215.jpg" 
-			  	  	alt="The Turnbull girls at Christmas">
+			  	  <img src="/wp-content/uploads/2016/07/image1-e1468353895349.jpg" 
+			  	  	alt="Bridget and Hels">
 			      <div class="caption">
 			        <a class="ui-btn ui-btn-big" href="/blog/">Blog</a>
 			        <p class="hidden-xs hidden-sm">Read our latest blog posts</p>
@@ -53,8 +53,8 @@ get_header(); ?>
 
 			<div class="visible-xs-block">
 				<div class="thumbnail">
-			  	  <img src="/wp-content/uploads/2015/12/img309-e1450881598215.jpg" 
-			  	  	alt="The Turnbull girls at Christmas" class="img-responsive">
+			  	  <img src="/wp-content/uploads/2016/07/image1-e1468353895349.jpg" 
+			  	  	alt="Bridget and Hels" class="img-responsive">
 			      <div class="caption text-center">
 			        <a class="ui-btn ui-btn-big" href="/blog/">Blog</a>
 			      </div>
