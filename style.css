@@ -188,11 +188,11 @@ a {
 } 
 
 .carousel-indicators {
-  bottom:-10px !important;
+  bottom:-9px !important;
   left:0 !important;
   width:100% !important;
   background: rgba(0,0,0,0.4);
-  padding: 6px 0px;
+  padding: 3px 0px;
   margin-left:0 !important;
 }
 

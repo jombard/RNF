@@ -23,15 +23,16 @@ get_header(); ?>
 						<?php endif; ?>
 
 						<h1 class="entry-title"><?php the_title(); ?></h1>
+						<p class="post-meta"><?php the_time('F jS, Y') ?> by <a href="#"><?php the_author(); ?></a> in <?php the_category(', ') ?> <?php comments_number('No Comments','1 Comment','% Comments'); ?></p>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<?php the_content(); ?>
-						
+						<?php the_excerpt(); ?>
+    					<p><a href="<?php echo get_permalink(); ?>">Read More...</a></p>
 					</div><!-- .entry-content -->
 
 					<footer class="entry-meta">
-						
+						<?php the_tags( '<div class="post-labels"><div class="label label-default">', '</div><div class="label label-default">', '</div></div>' ); ?>
 					</footer><!-- .entry-meta -->
 				</article><!-- #post -->
 

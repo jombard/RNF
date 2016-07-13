@@ -32,7 +32,7 @@ get_header(); ?>
     					<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
     					<p class="post-meta"><?php the_time('F jS, Y') ?> by <a href="#"><?php the_author(); ?></a> in <?php the_category(', ') ?> <?php comments_number('No Comments','1 Comment','% Comments'); ?></p>
     					<?php the_excerpt(); ?>
-    					<p><a href="<?php echo get_permalink(); ?>"> Read More...</a></p>
+    					<p><a href="<?php echo get_permalink(); ?>">Read More...</a></p>
     				</div>
 
                     <hr/>
