@@ -33,9 +33,11 @@
 	<div class="container page">
             
         <div class="row">
-            <div class="col-lg-1 col-sm-2 col-xs-12 text-center">
+            <div class="col-lg-1 col-sm-2 col-xs-4 text-center">
                 <div id="logo">
-  	                <a href="/"><img src="/wp-content/themes/rnf/images/logo.png" alt="Logo"></a>
+  	                <a href="/">
+                        <img src="/wp-content/themes/rnf/images/logo.png" alt="Logo" class="img-responsive">
+                    </a>
                 </div>
             </div>
             <div class="col-lg-8 col-md-7 col-sm-10 col-xs-12 hidden-xs">   
@@ -52,10 +54,10 @@
                 
             </div>
 
-            <div class="col-md-3 col-xs-12">
+            <div class="col-md-3 col-xs-8">
                 <div class="donateheader">
   		            <a class="btn btn-success btn-block m-b" href="https://mydonate.bt.com/donation/start.html?charity=143287">
-                        Donate to<br>Remembering Not To Forget
+                        Donate <span class="hidden-xs">to<br>Remembering Not To Forget</span>
                     </a>	
   	                <img src="/wp-content/themes/rnf/images/uk-payment-logos.png" alt="Uk -payment -logos -small" width="164" height="15" />
                 </div>

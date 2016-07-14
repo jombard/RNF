@@ -114,7 +114,9 @@ var RnfApp = {
         hash && $('ul.nav a[href="' + hash + '"]').tab('show');
 	},
 	init: function(){
-		this.initChart();
+		if ( $( "#charities" ).length ) {
+			this.initChart();
+		}
 		this.initIsotopeFilter();
 		this.initPrettyPhoto();
 		this.setPhotoTitle();
