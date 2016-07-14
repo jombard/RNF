@@ -48,16 +48,16 @@
 
 <h3>Join us on social media</h3>
 <a href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679">
-	<span class="iconfbook"></span>
+	<span class="social-icon iconfbook"></span>
 </a>
 <a href="https://twitter.com/rnf_uk">
-	<span class="icontwitter"></span>
+	<span class="social-icon icontwitter"></span>
 </a>
 <a href="https://plus.google.com/103483767799511460203/videos?pageId=108152448772708944610">
-	<span class="icongooglep"></span>
+	<span class="social-icon icongooglep"></span>
 </a>
 <a href="https://www.youtube.com/channel/UCsNKdIv9jMVGGJ8RLT2GDeQ">
-    <span class="iconyoutube"></span>
+    <span class="social-icon iconyoutube"></span>
 </a>
 
 <a href="http://www.dementiafriends.org.uk/" target="_blank">

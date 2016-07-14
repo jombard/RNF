@@ -34,7 +34,7 @@
             
         <div class="row">
             <div class="col-lg-1 col-sm-2 col-xs-4 text-center">
-                <div id="logo">
+                <div class="m-t">
   	                <a href="/">
                         <img src="/wp-content/themes/rnf/images/logo.png" alt="Logo" class="img-responsive">
                     </a>
@@ -44,7 +44,7 @@
                 
 	            <h1><a href="/"><?php bloginfo('name'); ?></a></h1>
 
-	            <div id="sitedescription">
+	            <div id="sitedescription" class="text-dark">
 	                <?php bloginfo('description'); ?>
 	            </div>
 

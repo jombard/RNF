@@ -45,6 +45,7 @@ strong {
 a {
 	text-decoration: none;
   font-weight: bold;	
+  outline: none;
 }
 
 a:hover {
@@ -52,14 +53,14 @@ a:hover {
 }
 
 .m-b {    
-  margin-bottom: 10px !important;    
+  margin-bottom: 10px;    
 }
 
-.eventdate {
-	font-weight: bold;
+.m-t {
+  margin-top:  10px;
 }
 
-#sitedescription {
+.text-dark {
   color: #333;
 }
 
@@ -79,20 +80,8 @@ ul.rnfflower {
   background-position: left center
 }
 
-.primary-bgcolor,
-.ui-btn-big,
-.newsbox .feedList h4 a:hover {
-  background-color: #7F3F98 !important;
-  color: #FFF !important;
-}
-
-.cleardiv {
-	clear: both;
-	padding: 0;
-	margin: 0;
-}
-
 .ui-btn-big {
+  background-color: #7F3F98;
   background-image: url(/wp-content/themes/rnf/images/ui-btn-big-arrow.png);
   background-position: right center;
   background-repeat: no-repeat;
@@ -100,7 +89,7 @@ ul.rnfflower {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border: none;
-  color: white !important;
+  color: white;
   display: inline-block;
   font-size: 18px;
   font-style: normal;
@@ -112,7 +101,7 @@ ul.rnfflower {
   margin-bottom: 10px;
 }
 
-a.ui-btn-big:hover {
+.ui-btn-big:hover {
 	background: #87519C;
 	background-image: url(/wp-content/themes/rnf/images/ui-btn-big-arrow.png);
 	background-position: right center;
@@ -120,20 +109,8 @@ a.ui-btn-big:hover {
 	text-decoration: none;
 }
 
-a {
-  outline: none;
-}
-
 .page {
   background: #FFF;
-}
-
-#btnmember {
-  margin-top: 15px;
-}
-
-#logo {
-  margin-top:  10px;
 }
   
 .navbar-rnf {
@@ -158,8 +135,8 @@ a {
   background-color: #fff;
 }
 
-  .navbar-rnf button {
-      border-color: #fff;
+.navbar-rnf button {
+  border-color: #fff;
 }
 
 .navbar-about .icon-bar {
@@ -251,45 +228,12 @@ a {
   margin: 20px 0 260px 0;
   min-height: 100%;
 }
-   
-.maincontent {
-	float: left;
-	width: 60%;
-	margin-bottom: 20px;
-}
-
-.shadowbox {
-	padding: 20px;
-	margin-bottom: 20px;
-	border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-	background: #ddd;
-}
-
-.sidepanel {
-	float: left;
-	width: 40%;
-}
-
-.profileimage {
-	float: right;
-	margin: 0 0 5px 20px;
-}
-
-#sidebar {
-	float: left;
-}
-
-.sociallinks {
-  padding-top: 5px;
-}
 
 footer.footer {
   background: #2B3336;
   padding: 30px 0;
   font-size: 18px;
-  color: #c3c3c3 !important;
+  color: #c3c3c3;
 	width: 100%;
 	position: absolute;
   bottom: 0;
@@ -328,10 +272,7 @@ audio {
     color:  #fff !important;
 }
 
-.iconfbook, 
-.icontwitter, 
-.icongooglep, 
-.iconyoutube {
+.social-icon {
   width: 48px;
   height: 48px;
   margin: 5px;
@@ -340,10 +281,7 @@ audio {
   background-repeat: no-repeat;
 }
 
-.iconfbook:hover, 
-.icontwitter:hover, 
-.icongooglep:hover, 
-.iconyoutube:hover {
+.social-icon:hover {
 	opacity: 0.6;
 	filter: alpha(opacity=60);
 }
@@ -536,11 +474,6 @@ nav.primary ul li a.selected {
 .sharecontainer {
   margin: 20px auto 0 auto;
   max-width: 100px;
-}
-
-.sharefbook, .sharetwitter, .sharegooglep {
-  margin-bottom: 10px;
-  height: 25px;
 }
 
 #unhidedonations {

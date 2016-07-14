@@ -3,7 +3,7 @@
 ?>
 
 					</section>
-                <div class="cleardiv"></div>
+                <div class="clearfix"></div>
             </div>
         </div>
 
