@@ -62,8 +62,25 @@ a:hover {
   color: #333;
 }
 
+.text-white {
+  color: #fff;
+}
+
 .btn {
   font-size: 18px;
+  padding: 10px 25px;
+}
+
+.btn-rnf {
+  background-color: #7F3F98;
+  border-color: #5b266f;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-rnf:hover {
+  background: #aa65c5;
+  color: #fff;
 }
 
 ul.rnfflower {
@@ -78,35 +95,6 @@ ul.rnfflower {
   background-position: left center
 }
 
-.ui-btn-big {
-  background-color: #7F3F98;
-  background-image: url(/wp-content/themes/rnf/images/ui-btn-big-arrow.png);
-  background-position: right center;
-  background-repeat: no-repeat;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: none;
-  color: white;
-  display: inline-block;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 14px;
-  padding: 12px 50px 12px 19px;
-  text-decoration: none;
-  cursor: pointer;
-  margin-bottom: 10px;
-}
-
-.ui-btn-big:hover {
-	background: #87519C;
-	background-image: url(/wp-content/themes/rnf/images/ui-btn-big-arrow.png);
-	background-position: right center;
-	background-repeat: no-repeat;
-	text-decoration: none;
-}
-
 .page {
   background: #FFF;
 }
@@ -119,6 +107,7 @@ ul.rnfflower {
   border: 0;
   margin-left: -15px;
   margin-right: -15px;
+  margin-bottom: 0;
 }
 
 .navbar-rnf a {
@@ -204,7 +193,7 @@ ul.rnfflower {
   background: #aaa;
   background: rgba(0,0,0,0.4);
   padding: 10px;
-  bottom: 31px;
+  bottom: 0;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -228,7 +217,7 @@ ul.rnfflower {
 
 .main-content-block {
   color: #666;
-  margin: 20px 0 230px 0;
+  margin-bottom: 200px;
   min-height: 100%;
 }
 
@@ -480,16 +469,6 @@ nav.primary ul li .selected {
   text-align: center;
 }
 
-.btn-rnf {
-  color: #fff;
-  background-color: #7F3F98;
-  border-color: #5b266f;
-}
-
-.btn-rnf:hover {
-  background-color: #aa65c5;  
-}
-
 .fundraiser-advert {
   display: none;
   position: absolute;
@@ -562,4 +541,33 @@ nav.primary ul li .selected {
 
 .gallery figcaption {
   height: 50px;
+}
+
+/* Image replace */
+.placeholder {
+  background-color: #f6f6f6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder img {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 1s linear;
+}
+
+.placeholder img.loaded {
+  opacity: 1;
+}
+
+.img-small {
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+  /* this is needed so Safari keeps sharp edges */
+  transform: scale(1);
 }

@@ -1,7 +1,7 @@
 <?php
 //Blog template page
 get_header(); ?>
-	<!-- INDEX START -->
+	<!-- HOME START -->
 	<!-- <?php the_ID(); ?> -->
 
 	<div class="row">
@@ -74,5 +74,5 @@ get_header(); ?>
 	</div><!-- .row -->
 	
 
-	<!-- INDEX END -->
+	<!-- HOME END -->
 <?php get_footer(); ?>
