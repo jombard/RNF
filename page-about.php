@@ -127,7 +127,7 @@ get_header(); ?>
                                 <a href="/wp-content/themes/rnf/images/profile_lauracorrick.jpg" 
                                 rel="prettyPhoto" class="thumbnail">
                                     <img src="/wp-content/themes/rnf/images/profile_lauracorrick.jpg" 
-                                    alt="Laura Corrick" width="150px">
+                                    alt="Laura Lombard" width="150px">
                                 </a>
                             </div>
                             <div class="clearfix"></div>

@@ -114,7 +114,7 @@
 
 		</div>
 
-    	<div id="content">
+    	<div class="main-content-block">
             <section>
             <!-- HEADER END -->
 
