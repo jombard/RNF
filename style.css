@@ -530,6 +530,9 @@ nav.primary ul li .selected {
 .post-labels>.label+.label {
   margin-left: 5px;
 }
+.post-labels .label:hover {
+  background: #aaa;
+}
 
 /*****************/
 /*GALLERY STYLING*/

@@ -18,11 +18,17 @@ get_header(); ?>
 					<header class="entry-header">
 						<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 						<div class="row entry-thumbnail">
-							<?php the_post_thumbnail('post-thumbnail', array( 'class' => "img-responsive")); ?>
+							<a href="<?php echo get_permalink(); ?>">
+								<?php the_post_thumbnail('post-thumbnail', array( 'class' => "img-responsive")); ?>
+							</a>
 						</div>
 						<?php endif; ?>
 
-						<h1 class="entry-title"><?php the_title(); ?></h1>
+						<h1 class="entry-title">
+							<a href="<?php echo get_permalink(); ?>">
+								<?php the_title(); ?>
+							</a>
+						</h1>
 						<p class="post-meta"><?php the_time('F jS, Y') ?> by <a href="#"><?php the_author(); ?></a> in <?php the_category(', ') ?> <?php comments_number('No Comments','1 Comment','% Comments'); ?></p>
 					</header><!-- .entry-header -->
 
