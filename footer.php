@@ -41,7 +41,7 @@
 	    <script src="/wp-content/themes/rnf/scripts/jquery.prettyPhoto.js"></script>
 	    <script src="/wp-content/themes/rnf/scripts/isotope.pkgd.min.js"></script>
 	    <script src="/wp-content/themes/rnf/scripts/chart.min.js"></script>
-	    <script src="/wp-content/themes/rnf/scripts/script.js"></script>
+	    <script src="/wp-content/themes/rnf/script.js"></script>
         <!-- <?php echo get_num_queries(); ?> queries. <? timer_stop(1); ?> -->
     </body>
 </html>

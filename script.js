@@ -113,7 +113,27 @@ var RnfApp = {
         }
         hash && $('ul.nav a[href="' + hash + '"]').tab('show');
 	},
+	replaceLowResImages: function(){
+		var placeholder = $('.placeholder'),
+		small = placeholder.find('.img-small')
+
+		// 1: load small image and show it
+		var img = new Image();
+		img.src = small.attr("src");
+		img.onload = function () {
+			small.addClass('loaded');
+		};
+
+		// 2: load large image
+		var imgLarge = new Image();
+		imgLarge.src = placeholder.data('large'); 
+		imgLarge.onload = function () {
+			imgLarge.classList.add('loaded');
+		};
+		placeholder.append(imgLarge);
+	},
 	init: function(){
+		this.replaceLowResImages();
 		if ( $( "#charities" ).length ) {
 			this.initChart();
 		}
@@ -127,4 +147,5 @@ var RnfApp = {
 (function(){
 	RnfApp.init();
 })();
+
 
