@@ -23,7 +23,10 @@ get_header(); ?>
                         <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
                         <div class="row entry-thumbnail">
                             <a href="<?php echo get_permalink(); ?>">
-                                <?php the_post_thumbnail('post-thumbnail', array( 'class' => "img-responsive")); ?>
+                                <div class="placeholder" data-large="<?php the_post_thumbnail_url('post-thumbnail'); ?>">
+                                    <?php the_post_thumbnail(array(80, 60), array( 'class' => "img-responsive img-small")); ?>
+                                    <div style="padding-bottom: 66.6%;"></div>
+                                </div>
                             </a>
                         </div>
                         <?php endif; ?>
