@@ -1,15 +1,15 @@
 <?php 
 
-//Add menu support
+// Add menu support
 add_theme_support( 'menus' ); 
 
-//Add featured image to posts and pages
+// Add featured image to posts and pages
 add_theme_support( 'post-thumbnails' ); 
 
-//Add HTML5 default gallery styling
+// Add HTML5 default gallery styling
 add_theme_support( 'html5', array( 'gallery', 'caption' ) );
 
-//Add current class to selected menu item
+// Add current class to selected menu item
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 function special_nav_class($classes, $item){
      if( in_array('current-menu-item', $classes) ){
