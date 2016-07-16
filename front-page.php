@@ -1,7 +1,7 @@
 <?php
 
 get_header(); ?>
-	<!-- HOME START -->
+	<!-- FRONT-PAGE START -->
 
 	<div class="row">
 		
@@ -59,5 +59,5 @@ get_header(); ?>
 	    
 	</div>
 
-	<!-- HOME END -->
+	<!-- FRONT-PAGE END -->
 <?php get_footer(); ?>

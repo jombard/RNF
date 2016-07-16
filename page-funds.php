@@ -1,7 +1,7 @@
 <?php
 
 get_header(); ?>
-	<!-- PAGE START -->
+	<!-- PAGE-FUNDS START -->
 	<!-- <?php the_ID(); ?> -->
 
 	<div class="row">
@@ -212,5 +212,5 @@ get_header(); ?>
     </div><!-- .row -->
 
 
-	<!-- PAGE END -->
+	<!-- PAGE-FUNDS END -->
 <?php get_footer(); ?>

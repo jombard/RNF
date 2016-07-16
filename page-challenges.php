@@ -1,7 +1,7 @@
 <?php
 
 get_header(); ?>
-	<!-- PAGE START -->
+	<!-- PAGE-CHALLENGES START -->
 	<!-- <?php the_ID(); ?> -->
 
 	<div class="row">
@@ -255,5 +255,5 @@ get_header(); ?>
 		</div><!-- .col-md-4 -->
 	</div><!-- .row -->
 
-	<!-- PAGE END -->
+	<!-- PAGE-CHALLENGES END -->
 <?php get_footer(); ?>
