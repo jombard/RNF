@@ -18,7 +18,10 @@ get_header(); ?>
 					<header class="entry-header">
 						<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 						<div class="entry-thumbnail">
-							<?php the_post_thumbnail(); ?>
+							<div class="placeholder" data-large="<?php the_post_thumbnail_url('post-thumbnail'); ?>">
+                                <?php the_post_thumbnail(array(80, 60), array( 'class' => "img-responsive img-small")); ?>
+                                <div style="padding-bottom: 66.6%;"></div>
+                            </div>
 						</div>
 						<?php endif; ?>
 

@@ -87,6 +87,17 @@ a:hover {
   margin-top: 20px;
 }
 
+a.list-group-item {
+  color: #00A4E4;
+}
+
+.list-group-item.active, 
+.list-group-item.active:hover, 
+.list-group-item.active:focus {
+  background-color: #31b0d5;
+  border-color: #31b0d5;
+}
+
 ul.rnfflower {
   list-style-type:none;
   padding-left: 10px;
@@ -95,8 +106,8 @@ ul.rnfflower {
 .rnfflower li {
 	background-image:url('/wp-content/themes/rnf/images/listitem.png'); 
 	background-repeat:no-repeat;
-	padding: 7px 0 7px 30px;
-  background-position: left center
+	padding-left: 30px;
+  background-position: 0 5px;
 }
 
 .page {
