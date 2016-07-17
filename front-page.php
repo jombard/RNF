@@ -50,6 +50,9 @@ get_header(); ?>
 	            <a class="btn btn-success" href="https://mydonate.bt.com/donation/start.html?charity=143287">Donate to<br>
 	            	Remembering Not To Forget</a>
 	        </div>
+
+        	<hr />
+
 		</div>
 
 		<div class="col-md-5 hidden-xs">
