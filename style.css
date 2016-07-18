@@ -12,8 +12,12 @@ body {
   font-size: 18px;
 }
 
+h1 {
+  color: #7F3F98;
+}
+
 h2 {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
   color: #7F3F98;
 }
 
@@ -207,11 +211,18 @@ ul.rnfflower {
 .carousel-inner .caption {
   background: #aaa;
   background: rgba(0,0,0,0.4);
-  padding: 10px;
   bottom: 0;
   position: absolute;
   width: 100%;
   text-align: center;
+  height: 100%;
+}
+
+@media (min-width: 768px ) {
+  .carousel-inner .caption {
+    height: inherit;
+    padding: 10px;
+ }
 }
 
 .entry-thumbnail {

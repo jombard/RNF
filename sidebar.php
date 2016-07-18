@@ -1,6 +1,5 @@
 <!-- SIDEBAR START -->
 <?php $isNotAboutUsPageOrChild = !is_page(9) && !is_page(671) && !is_page(673) && !is_page(675) ?>
-
 <div class="<?php if($isNotAboutUsPageOrChild){echo ' hidden';} ?>">
     <h3>About Us</h3>
     <div class="list-group">
@@ -11,6 +10,17 @@
     </div>
 </div>
 
+<?php $isNotChallengePageOrChild = !is_page(12) && !is_tree(600) && !is_tree(534) && !is_tree(307) && !is_tree(321) ?>
+<div class="<?php if($isNotChallengePageOrChild){echo ' hidden';} ?>">
+    <h3>Previous Challenges</h3>
+    <div class="list-group">
+        <a href="/challenges/" class="list-group-item <?php if(is_page(12)){echo ' active';} ?>">Challenges</a>
+        <a href="/challenges/2016-challenges/" class="list-group-item <?php if(is_page(600)){echo ' active';} ?>">2016 Challenges</a>
+        <a href="/challenges/2015-challenges/" class="list-group-item <?php if(is_page(534)){echo ' active';} ?>">2015 Challenges</a>
+        <a href="/challenges/2014-challenges/" class="list-group-item <?php if(is_page(307)){echo ' active';} ?>">2014 Challenges</a>
+        <a href="/challenges/2013-challenges/" class="list-group-item <?php if(is_page(321)){echo ' active';} ?>">2013 Challenges</a>
+    </div>
+</div>
 
 <h3>Directory of Resources</h3>
 <p>Looking for more information about dementia? Check our handy list of resources:</p>

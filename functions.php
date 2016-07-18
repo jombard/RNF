@@ -18,7 +18,13 @@ function special_nav_class($classes, $item){
      return $classes;
 }
 
-//Comment template
+// Check page or sub page location
+function is_tree($pid) {	// $pid = The ID of the page we're looking for pages underneath
+	global $post;			// load details about this page
+	return (is_page()&&($post->post_parent==$pid||is_page($pid)));
+};
+
+// Comment template
 function rnftheme_comment($comment, $args, $depth) {
 	$GLOBALS['comment'] = $comment;
 	extract($args, EXTR_SKIP);
