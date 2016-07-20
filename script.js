@@ -1,4 +1,27 @@
 var RnfApp = {
+	replaceLowResImages: function(){
+		var placeholders = $('.placeholder');
+
+		$.each(placeholders, function(i, val){
+			var placeholder = $(val);
+			var small = placeholder.find('.img-small')
+
+			// 1: load small image and show it
+			var img = new Image();
+			img.src = small.attr("src");
+			img.onload = function () {
+				small.addClass('loaded');
+			};
+
+			// 2: load large image
+			var imgLarge = new Image();
+			imgLarge.src = placeholder.data('large'); 
+			imgLarge.onload = function () {
+				imgLarge.classList.add('loaded');
+			};
+			placeholder.append(imgLarge);
+		});
+	},
 	initChart: function(){
 		var pieData = [
 		    {
@@ -55,6 +78,7 @@ var RnfApp = {
 	    new Chart(charities).Pie(pieData, pieOptions);
 	},
 	initIsotopeFilter: function(){
+		// challenge page mosaic
 		var $container = $('.portfolio');
 	    $container.isotope({
 	        filter: '*',
@@ -91,50 +115,22 @@ var RnfApp = {
 	        $this.addClass('selected');
 	    });
 	},
-	initPrettyPhoto: function(){
-		$("a[rel^='prettyPhoto']").prettyPhoto();
-	},
-	setPhotoTitle: function(){
-		$(".gallery a").attr({
-			"rel": "prettyPhoto[gal]",
-			"class": "thumbnail",
-			"title": function(){return $(this).parent().parent().find("figcaption").text();}
-		});
-	},
-	aboutUsScripts: function(){
-        var hash = window.location.hash;
-        var mbm = "#btnmember";
-        if (hash === "#lauracorrick" 
-            || hash === "#aliturnbull" 
-            || hash === "#helenturnbull" 
-            || hash === "#mattcorrick" 
-            || hash === "#katesimpson") {
-            mbm && $('ul.nav a[href="' + mbm + '"]').tab('show');
-        }
-        hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-	},
-	replaceLowResImages: function(){
-		var placeholders = $('.placeholder');
+	initGalleryCarousel: function(){
+		var gallery = $(".gallery");
+		var carousel = $("<div />").attr({"id": "gallery-carousel", "data-ride": "carousel"}).addClass("carousel");
+		gallery.after(carousel);
+		carousel.append(gallery);
 
-		$.each(placeholders, function(i, val){
-			var placeholder = $(val);
-			var small = placeholder.find('.img-small')
+		carousel.find(".gallery").addClass("carousel-inner").find(".gallery-item").addClass("item");
 
-			// 1: load small image and show it
-			var img = new Image();
-			img.src = small.attr("src");
-			img.onload = function () {
-				small.addClass('loaded');
-			};
+		var items = carousel.find(".item");
+		items.eq(0).addClass("active");
 
-			// 2: load large image
-			var imgLarge = new Image();
-			imgLarge.src = placeholder.data('large'); 
-			imgLarge.onload = function () {
-				imgLarge.classList.add('loaded');
-			};
-			placeholder.append(imgLarge);
-		});
+		var indicators = $("<ol />").addClass("carousel-indicators");
+		for (var i = 0; i < items.length; i++) {
+			indicators.append($("<li />").attr({"data-target": "#gallery-carousel", "data-slide-to": i}).addClass(i === 0 ? "active" : ""));
+		}
+		carousel.prepend(indicators);
 	},
 	init: function(){
 		this.replaceLowResImages();
@@ -142,9 +138,7 @@ var RnfApp = {
 			this.initChart();
 		}
 		this.initIsotopeFilter();
-		this.initPrettyPhoto();
-		this.setPhotoTitle();
-		this.aboutUsScripts();
+		this.initGalleryCarousel();
 	}
 };
 
