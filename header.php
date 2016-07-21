@@ -11,7 +11,6 @@
 	<link rel="author" type="text/plain" href="/wp-content/themes/rnf/humans.txt" />
 	<link rel="shortcut icon" href="/wp-content/themes/rnf/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/wp-content/themes/rnf/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/wp-content/themes/rnf/css/prettyPhoto.css" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	
 	<?php wp_head(); ?>

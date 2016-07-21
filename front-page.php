@@ -57,7 +57,7 @@ get_header(); ?>
 
 		<div class="col-md-5 hidden-xs">
 			<a class="twitter-timeline" data-width="520" data-height="800" href="https://twitter.com/RNF_UK">Tweets by RNF_UK</a>
-			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	    </div>
 	    
 	</div>
