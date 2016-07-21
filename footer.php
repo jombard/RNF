@@ -12,8 +12,8 @@
 		    <div class="container">
 			    <div class="row">
 				    <div class="col-md-12 text-center">
-				    	<p>Copyright &copy; 2016 <a href="/">Remembering Not to Forget</a> All Rights Reserved</p>
-					    <p>Fundraising to support people impacted by dementia</p>
+				    	<p>Copyright &copy; <?php echo date("Y") ?> <a href="/"><?php bloginfo('name'); ?></a> All Rights Reserved</p>
+					    <p><?php bloginfo('description'); ?></p>
 					    <p>Registered Charity No. 1166415</p>
 				    </div>
 			    </div>
@@ -36,6 +36,7 @@
             
         </script>
 
+        <script src="/wp-content/themes/rnf/scripts/jquery-1.10.2.min.js"></script>
 		<script src="/wp-content/themes/rnf/scripts/bootstrap.min.js"></script>
 	    <script src="/wp-content/themes/rnf/scripts/isotope.pkgd.min.js"></script>
 	    <script src="/wp-content/themes/rnf/scripts/chart.min.js"></script>
