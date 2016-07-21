@@ -36,7 +36,6 @@
             
         </script>
 
-        <script src="/wp-content/themes/rnf/scripts/jquery-1.10.2.min.js"></script>
 		<script src="/wp-content/themes/rnf/scripts/bootstrap.min.js"></script>
 	    <script src="/wp-content/themes/rnf/scripts/isotope.pkgd.min.js"></script>
 	    <script src="/wp-content/themes/rnf/scripts/chart.min.js"></script>
