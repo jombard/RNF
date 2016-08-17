@@ -88,6 +88,6 @@
 <div class="col-sm-12">
 <p>Dementia Friends is a nationwide initiative run by the Alzheimer's Society and funded by the government. It aims to improve people's understanding of dementia and its effects.</p>
 <p>Find out how you, your business or organisation can get involved in Dementia Friends and help change the way people think, talk and act about dementia. Visit the <a href="http://www.dementiafriends.org.uk/" target="_blank">Dementia Friends website</a>.</p>
-<p><a href="/">Remembering Not to Forget</a> will be running <a href="http://www.dementiafriends.org.uk/" target="_blank">Dementia Friends</a> sessions - more details to follow!</p>
+<p><a href="/">Remembering Not to Forget</a> runs <a href="http://www.dementiafriends.org.uk/" target="_blank">Dementia Friends</a> sessions - if you would like us to run one near you please <a href="/contact-us/">let us know</a>.</p>
 </div>
 <!-- SIDEBAR END -->

@@ -26,16 +26,17 @@ get_header(); ?>
 	        <p>Co-founders Laura and Ali both have close family members with dementia, and wanted to help
 	        	other families affected by the condition.</p>
 	        <p>In 2014 we undertook 10 challenges in 10 months to kickstart our fundraising, continuing 
-	        	with other challenges in 2015.</p>
-	        <p>We have raised over <strong>£22,000</strong> in our first two years.</p>
+	        	with other challenges and events in 2015 and 2016.</p>
+	        <p>We have raised over <strong>£22,000</strong> so far.</p>
 	        <p><a href="/">Remembering Not to Forget</a> provides funds to organisations which:</p>
 
 	        <ul class="rnfflower">
-	            <li>Help people with dementia to live independently for as long as possible, and as the 
-	            	disease progresses ensure they have a good quality of life and receive high standards 
-	            	of care.</li>
-	            <li>Provide support to families caring for someone with dementia.</li>
-	            <li>Carry out research into treatments or a cure for dementia.</li>
+	            <li>Promote and protect the good health of people living with dementia, e.g. helping people 
+	            with dementia to live independently for as long as possible, and as the disease progresses 
+	            ensuring they have a good quality of life and receive high standards of care</li>
+	            <li>Provide support to families and carers of people living with dementia.</li>
+	            <li>Carry out research into the nature, causes, diagnosis, prevention, treatments and care 
+	            of all forms of dementia.</li>
 	            <li>Campaign on dementia issues.</li>
 	        </ul>
 
