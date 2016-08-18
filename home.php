@@ -13,7 +13,7 @@ get_header(); ?>
 
     		<h2>A blog about dementia</h2>
 			<p>Alongside fundraising to support people impacted by dementia, one of the aims of <a href="/">Remembering Not to Forget</a> is to get people talking about dementia more openly, and for people to be aware that it’s possible to live well with dementia for a long time.</p>
-			<p>This blog will try to capture some thoughts on our family’s journey with dementia, we’ll also use this space to share other relevant <a href="/">Remembering Not to Forget</a> stories or updates.</p>
+			<p>This blog will try to capture some thoughts on the Turnbull family’s journey with dementia, we’ll also use this space to share other relevant <a href="/">Remembering Not to Forget</a> stories or updates.</p>
 
         <?php if (have_posts()) : ?>
     		<?php while (have_posts()) : the_post(); ?>
