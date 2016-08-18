@@ -11,32 +11,16 @@ get_header(); ?>
 				yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumb">','</p>');
 			} ?>
 			
-	        <h2>Where is your money going?</h2>
+            <h2>Distribution of funds raised in 2014</h2>
 
-            <div class="alert alert-info">
-                <p>Would your organisation like to benefit from the funds that <a href="/">Remembering Not to Forget</a> 
-                    raises?</p>
-                <p>Contact us with your details <a href="/contact-us/">here</a>.</p>
-            </div>
+            <p>Our fundraising income (before Gift Aid) for our 10 challenges in 10 months in 2014 was a fantastic £12,502.31!</p>
 
-            <p>Our fundraising income (before Gift Aid) for 2014 was a fantastic £12,502.31! All donations from 
-                individuals raised during 2014 have been/ are in the process of being donated directly to organisations 
-                supporting people impacted by dementia. We have shared these donations between our chosen organisations 
-                in the proportions set out below.</p>
+            <p>We have shared these donations between our chosen organisations in the proportions set out below.</p>
             
-            <p>For 2014 there are then some specific costs associated with the Kilimanjaro trek which have been covered 
-                from gift aid claims and specific fundraising undertaken by Laura and Jon.</p>
+            <p>For 2014 there were also some specific costs associated with the Kilimanjaro trek which were covered 
+                from gift aid claims and specific fundraisings undertaken by Laura and Jon.</p>
     
-            <p>Any surplus from the gift aid / specific fundraising will be shared between our nominated charities in 
-                the same proportions.</p>
-
-            <p>If you have any questions about how funds are being distributed please <a href="/contact-us/">contact us</a>.</p>
-
-            <p><a href="http://rememberingnottoforget.org.uk/wp-content/uploads/2015/11/RNF_accounts-2014-combined-signed.pdf" 
-                target="_blank">Our accounts to 31 December 2014</a></p>
-
-            <p>The recipient organisations for funds raised in 2015 will be agreed by trustees early in 2016, and 
-                details shared here.</p>      
+            <p>If you have any questions about how funds are being distributed, please <a href="/contact-us/">contact us</a>.</p>
 
 	        <h3 class="text-center">Share of funds raised in 2014</h3>
             
@@ -49,7 +33,7 @@ get_header(); ?>
                 <div class="col-sm-4 text-center">
                 	<h3 class="media-heading">Alzheimers Society</h3>
                     <a href="http://www.alzheimers.org.uk/" target="_blank" title="Alzheimers Society">
-                        <img width="160" height="68" src="/wp-content/themes/rnf/images/In_aid_of_Alzheimers_logo.jpg" 
+                        <img width="160" height="68" src="/wp-content/uploads/2016/08/In_aid_of_Alzheimers_logo.jpg" 
                         class="charitylogospacer" alt="Charity Alzheimers">
                     </a>
                     <br /><small>Charity Reg: 296645</small>
@@ -57,7 +41,7 @@ get_header(); ?>
                 </div>
                 <div class="col-sm-8">
                     <p>National organisation providing information and local support services, research, training, 
-                        campaigning and awareness raising. Our donation will be going to support campaigning and
+                        campaigning and awareness raising. Our donation was used to support campaigning and
                         research work as well as providing direct services in Somerset &amp; Dorset such as vital social 
                         support networks like Memory cafes, Singing for the Brain groups and groups for younger people 
                         living with dementia. 14% of all donations goes into general funds to support the vital 
@@ -72,7 +56,7 @@ get_header(); ?>
                 <div class="col-sm-4 text-center">
                 	<h3 class="media-heading">Brace</h3>
                     <a href="http://www.alzheimers-brace.org/" target="_blank" title="Brace">
-                        <img width="122" height="58" src="/wp-content/themes/rnf/images/brace_logo_112x48.jpg" 
+                        <img width="122" height="58" src="/wp-content/uploads/2016/08/brace_logo_112x48.png" 
                         alt="Brace Logo" class="charitylogospacer">
                     </a>
                     <br /><small>Charity Reg: 297965</small>
@@ -82,7 +66,7 @@ get_header(); ?>
                     <p>Supports dementia research at universities in the West of England and Cardiff, aiming to 
                         help medical science understand the causes of dementia, find ways of diagnosing it earlier 
                         and more accurately, and develop more effective treatments. Ultimately, they want to help 
-                        science beat dementia. Our donation will be supporting this work. 
+                        science beat dementia. Our donation was used to support this work. 
                         <a href="http://www.alzheimers-brace.org/" target="_blank">Read more about the research 
                             they support</a>.</p>
                 </div>
@@ -95,7 +79,7 @@ get_header(); ?>
                 <div class="col-sm-4 text-center">
                 	<h3 class="media-heading">Reminiscence Learning</h3>
                     <a href="http://reminiscencelearning.co.uk/" target="_blank" title="Reminiscence Learning">
-                        <img width="200" src="/wp-content/themes/rnf/images/REm001small.jpg" 
+                        <img width="200" src="/wp-content/uploads/2016/08/REm001Small.jpg" 
                         alt="Reminiscence Learning Logo" class="charitylogospacer">
                     </a>
                     <br /><small>Charity Reg: 1105488</small>
@@ -105,8 +89,15 @@ get_header(); ?>
                     <p>Somerset based charity providing training for dementia care to individuals and professionals 
                         and leading the <a href="http://www.reminiscencelearning.co.uk/archie" 
                         target="_blank">Archie Project</a> - an innovative, award winning intergenerational dementia 
-                        awareness community project. The majority of the funds raised will support the launch of the 
-                        Archie project in Wiveliscombe (Ali and Helen’s home town).</p>
+                        awareness community project, based around the character of Archie the Scarecrow who is living with dementia. The funds were spent in the following way:</p>
+                    
+                    <ul class="rnfflower">
+                        <li>£500 Archie project, Wiveliscombe (Helen & Ali’s home town)</li>
+                        <li>£500 community projects delivered at the Counting House, Tonedale</li>
+                        <li>£250 Archie project, Wellesley Park School, Wellington.</li>
+                    </ul>
+
+                    <p>The Archie Project in Wiveliscombe has been a fantastic success; it has been launched for a second year with the introduction of a new character, Jack, who has Vascular Dementia. The project also incorporates a healthy living/ stroke prevention message.</p>
                 </div>
             </div>
 
@@ -117,16 +108,17 @@ get_header(); ?>
                 <div class="col-sm-4 text-center">
                 	<h3 class="media-heading">Dementia UK</h3>
                     <a href="https://www.dementiauk.org/" target="_blank" title="Dementia UK">
-                        <img width="160" height="58" src="/wp-content/themes/rnf/images/charity_dementiauk_150x48.jpg" 
+                        <img width="160" height="58" src="/wp-content/uploads/2016/08/Dementia-UK.jpg" 
                         alt="Charity Dementiauk" class="charitylogospacer">
                     </a>
                     <br /><small>Charity Reg: 1039404</small>
                 	<p class="lead">£625.11 (5%)</p>
                 </div>
                 <div class="col-sm-8">
-                    <p>Provides dementia care nurses who support the person with dementia and family carers. 
-                        Our donation will provide a specialist nurse to offer practical and emotional support to 
-                        thirty one families affected by dementia.</p>
+
+                    <p>Offers specialist one-to-one support and expert advice for people living with dementia through world-class Admiral Nurses. They work hand in hand with families, helping them cope with the fear, uncertainty and difficult everyday reality of dementia. In providing the compassionate, expert support families need every step of the way, Admiral Nurses help them to live more positively with dementia in the present; and to face the challenges of tomorrow with more confidence, and less fear.</p>
+
+                    <p>Our donation will provided Admiral Nurses to offer practical and emotional support to thirty one families affected by dementia.</p>
                 </div>
             </div>
 
@@ -137,7 +129,7 @@ get_header(); ?>
                 <div class="col-sm-4 text-center">
                 	<h3 class="media-heading">Alzheimer's Research</h3>
                     <a href="http://www.alzheimersresearchuk.org/" target="_blank" title="Alzheimer's Research">
-                        <img width="142" height="60" src="/wp-content/themes/rnf/images/aruk_logo.png" 
+                        <img width="142" height="60" src="/wp-content/uploads/2016/08/aruk_logo.png" 
                         alt="Alzheimer's Research UK Logo" class="charitylogospacer">
                     </a>
                     <br /><small>Charity Reg: 1077089</small>
@@ -145,9 +137,9 @@ get_header(); ?>
                 </div>
                 <div class="col-sm-8">
                     <p>Working to find preventions, causes, treatments and cures for dementia. They aim to energise 
-                        a movement across society to support, fund and take part in dementia research. They aim to 
+                        a movement across society to support, fund and take part in dementia research, and aim to 
                         empower people across all generations through a greater understanding of dementia. 
-                        Our donation will support this work.</p>
+                        Our donation was used to support this work.</p>
                 </div>
             </div>
 
@@ -158,7 +150,7 @@ get_header(); ?>
                 <div class="col-sm-4 text-center">
                 	<h3 class="media-heading">Playlist for Life</h3>
                     <a href="http://www.playlistforlife.org.uk/" target="_blank" title="Playlist for Life">
-                        <img width="211" height="55" src="/wp-content/themes/rnf/images/playlistforlife_logo2.png" 
+                        <img width="211" height="55" src="/wp-content/uploads/2016/08/playlistforlife_logo2.png" 
                             alt="Playlist for Life Logo" class="charitylogospacer">
                     </a>
                     <br /><small>Charity Reg: SC044072</small>
@@ -171,7 +163,7 @@ get_header(); ?>
                         target="_blank">Where Memories Go</a>, a moving and honest account of caring for someone 
                         living with dementia (recommended reading!). They encourage and support the use of music 
                         in the care and treatment of people with dementia, helping families to create a playlist 
-                        of personally meaningful music to help unlock memories. Our donation will be used to develop 
+                        of personally meaningful music to help unlock memories. Our donation was used to develop 
                         and train volunteers to support this work.</p>
                 </div>
             </div>
@@ -180,7 +172,7 @@ get_header(); ?>
 
             <div class="row"><!--Charity 7-->
                 <div class="col-sm-4 text-center">
-                	<h3 class="media-heading">Local Services in Chard and Wiveliscombe</h3>
+                	<h3 class="media-heading">Local Services in Chard and Taunton</h3>
                 	<p class="lead">£1875.33 15%</p>
                 </div>
                 <div class="col-sm-8">

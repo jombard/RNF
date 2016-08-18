@@ -165,16 +165,15 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="panel panel-default">
-					<div class="panel-heading" role="tab" id="headingEleven">
+					<div class="panel-heading" role="tab" id="headingDementiaHelpline">
       					<h4 class="panel-title">
-        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">Language guidance for talking about dementia</a>
+        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseDementiaHelpline" aria-expanded="false" aria-controls="collapseDementiaHelpline">Dementia UK helpline</a>
         				</h4>
         			</div>
-        			<div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+        			<div id="collapseDementiaHelpline" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDementiaHelpline">
       					<div class="panel-body">
-							<p>The Dementia Engagement and Empowerment Project (DEEP) brings together groups of people with dementia from across the UK, and supports these groups to try to change services and policies that affect the lives of people with dementia.</p>
-							<p>They put together guidance to ensure that dementia is described in an accurate, balanced and respectful manner.</p>
-							<a href="http://dementiavoices.org.uk/wp-content/uploads/2015/03/DEEP-Guide-Language.pdf" target="_blank">DEEP Guide</a>
+							<p>Run by Admiral Nurses, the helpline can give you specialist practical and emotional support, over the phone or by email.</p>
+							<a href="https://www.dementiauk.org/how-we-help/admiral-nursing-direct/" target="_blank">Dementia UK helpline</a>
 						</div>
 					</div>
 				</div>
@@ -263,6 +262,22 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingEleven">
+      					<h4 class="panel-title">
+        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">Dementia Empowerment and Engagement project (DEEP)</a>
+        				</h4>
+        			</div>
+        			<div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+      					<div class="panel-body">
+							<p>The Dementia Engagement and Empowerment Project (DEEP) brings together groups of people with dementia from across the UK, and supports these groups to try to change services and policies that affect the lives of people with dementia.</p>
+							<p>They put together guidance to ensure that dementia is described in an accurate, balanced and respectful manner.</p>
+							<a href="http://dementiavoices.org.uk/wp-content/uploads/2015/03/DEEP-Guide-Language.pdf" target="_blank">DEEP Guide</a>
+							<a href="http://dementiavoices.org.uk/about-deep-groups/" target="_blank">See if there is a group running in your area.</a>
+							<p>Funding from Remembering Not to Forget will be used to help set up a DEEP group in Exeter.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="alert">
@@ -346,6 +361,19 @@ get_header(); ?>
       					<div class="panel-body">
       						<p>Provide expert advice, information and support (including a telephone helpline), connect carers and campaign on issues affecting carers.</p>
 							<a href="http://www.carersuk.org/" target="_blank">Carers UK</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingCarersTrust">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapseCarersTrust" aria-expanded="false" aria-controls="collapseCarersTrust">Carers trust research into dementia carers</a>
+						</h4>
+					</div>
+					<div id="collapseCarersTrust" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingCarersTrust">
+      					<div class="panel-body">
+      						<p>The Carers Trust work to improve support, services and recognition for carers. They carried out research into the challenges faced by people caring for someone living with dementia, which you can access <a href="https://carers.org/article/road-less-rocky-supporting-carers-people-dementia" target="_blank">here</a>.</p>
+      						<p>Read about how Remembering Not to Forget funds are supporting the Carers Trust in using this research to campaign for better services for carers of people living with dementia.</p>
 						</div>
 					</div>
 				</div>

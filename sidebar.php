@@ -22,6 +22,16 @@
     </div>
 </div>
 
+<?php $isNotFundsPageOrChild = !is_page(727) && !is_tree(730) && !is_tree(740) ?>
+<div class="<?php if($isNotFundsPageOrChild){echo ' hidden';} ?>">
+    <h3>Funds Raised</h3>
+    <div class="list-group">
+        <a href="/where-are-your-donations-going/" class="list-group-item <?php if(is_page(727)){echo ' active';} ?>">Where are your donations going</a>
+        <a href="/where-are-your-donations-going/funds-raised-2015/" class="list-group-item <?php if(is_page(740)){echo ' active';} ?>">2015 Funds</a>
+        <a href="/where-are-your-donations-going/funds-raised-2014/" class="list-group-item <?php if(is_page(730)){echo ' active';} ?>">2014 Funds</a>
+    </div>
+</div>
+
 <h3>Directory of Resources</h3>
 <p>Looking for more information about dementia? Check our handy list of resources:</p>
 <a href="/resources" class="btn btn-info">Resources</a>
