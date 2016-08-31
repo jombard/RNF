@@ -54,7 +54,7 @@ get_header(); ?>
             <div class="row"><!--Charity 2-->
                 
                 <div class="col-sm-4 text-center">
-                	<h3 class="media-heading">Brace</h3>
+                	<h3 class="media-heading">BRACE</h3>
                     <a href="http://www.alzheimers-brace.org/" target="_blank" title="Brace">
                         <img width="122" height="58" src="/wp-content/uploads/2016/08/brace_logo_112x48.png" 
                         alt="Brace Logo" class="charitylogospacer">
@@ -63,7 +63,7 @@ get_header(); ?>
                 	<p class="lead">£3,750.69 (30%)</p>
                 </div>
                 <div class="col-sm-8">
-                    <p>Supports dementia research at universities in the West of England and Cardiff, aiming to 
+                    <p>Supports dementia research at universities in South West England and South Wales, aiming to 
                         help medical science understand the causes of dementia, find ways of diagnosing it earlier 
                         and more accurately, and develop more effective treatments. Ultimately, they want to help 
                         science beat dementia. Our donation was used to support this work. 
