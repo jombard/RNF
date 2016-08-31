@@ -29,6 +29,12 @@ get_header(); ?>
 	        	<a href="/fundraising">Read about some of the amazing fundraisers</a> who have helped 
 	        	us so far (raising over £7,000!) and the support that we can offer to you.</p>
 
+	        <h3>Upcoming Events</h3>
+
+        	<ul class="rnfflower">
+	        	<li><a href="http://rememberingnottoforget.org.uk/wp-content/uploads/2016/08/FS-poster-9.pdf">Fashion Show</a></li>
+	        </ul>
+
 	        <h3>Upcoming Challenges</h3>
 
 	        <ul class="rnfflower">
