@@ -42,7 +42,7 @@ get_header(); ?>
 
 	        <p>We support organisations working both nationally and those with a focus on Somerset and the 
 	        	South West, as both Laura and Ali are originally from Somerset. Read more about the 
-	        	<a href="/funds">organisations we are supporting</a>.</p>
+	        	<a href="/where-are-your-donations-going/">organisations we are supporting</a>.</p>
 
 	        <p class="lead">Making a donation is quick and easy, please support our cause by donating 
 	        	whatever you can.</p>
