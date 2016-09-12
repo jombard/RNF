@@ -13,7 +13,7 @@ get_header(); ?>
 			
             <h2>Distribution of funds raised in 2015</h2>
 
-            <p>In 2015, we raised over £10,000* (before Gift Aid). This was largely thanks to our amazing <a href="/fundraising/">fundraisers</a> who took on challenges for us.</p>
+            <p>In 2015, we raised over £8,000* (before Gift Aid). This was largely thanks to our amazing <a href="/fundraising/">fundraisers</a> who took on challenges for us.</p>
 
             <p>If you’re interested in doing some fundraising for us, <a href="/contact-us">get in touch</a>. 
 
@@ -23,7 +23,7 @@ get_header(); ?>
 
             <p>Please get in touch if you have a suggestion of an organisation we could support.</p>
 
-            <p>*Please note, for this round of funding we distributed a total of £10,000. We raised over this amount in 2015 and the surplus, together with the gift aid income, will be included in the next round of funding.</p>
+            <p>* Added to the remaining balance of 2014 fundraising (money raised after our 10 challenges in 10 months had been completed), this meant we have been able to distribute £10,000 in this round of funding.</p>
 
             <p>If you have any questions about how funds are being distributed please <a href="/contact-us">contact us</a>.</p>
 
