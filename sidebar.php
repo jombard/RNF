@@ -26,7 +26,7 @@
 <div class="<?php if($isNotFundsPageOrChild){echo ' hidden';} ?>">
     <h3>Funds Raised</h3>
     <div class="list-group">
-        <a href="/where-are-your-donations-going/" class="list-group-item <?php if(is_page(727)){echo ' active';} ?>">Where are your donations going</a>
+        <a href="/where-are-your-donations-going/" class="list-group-item <?php if(is_page(727)){echo ' active';} ?>">Where your donations are going</a>
         <a href="/where-are-your-donations-going/funds-raised-2015/" class="list-group-item <?php if(is_page(740)){echo ' active';} ?>">2015 Funds</a>
         <a href="/where-are-your-donations-going/funds-raised-2014/" class="list-group-item <?php if(is_page(730)){echo ' active';} ?>">2014 Funds</a>
     </div>
