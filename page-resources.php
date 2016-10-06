@@ -136,9 +136,56 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingDementiaHelpline">
+      					<h4 class="panel-title">
+        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseDementiaHelpline" aria-expanded="false" aria-controls="collapseDementiaHelpline">Dementia UK helpline</a>
+        				</h4>
+        			</div>
+        			<div id="collapseDementiaHelpline" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDementiaHelpline">
+      					<div class="panel-body">
+							<p>Run by Admiral Nurses, the helpline can give you specialist practical and emotional support, over the phone or by email.</p>
+							<a href="https://www.dementiauk.org/how-we-help/admiral-nursing-direct/" target="_blank">Dementia UK helpline</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+    				<div class="panel-heading" role="tab" id="headingTwentyone">
+      					<h4 class="panel-title">
+        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyone" aria-expanded="false" aria-controls="collapseTwentyone">Dementia Adventure</a>
+        				</h4>
+        			</div>
+        			<div id="collapseTwentyone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentyone">
+      					<div class="panel-body">
+							<p>A Community Interest Company which aims to enable people living with dementia, and their families, to enjoy nature.</p>
+							<p>They run holidays and trips as well as offering training, consultancy and research.</p>
+							<a href="http://www.dementiaadventure.co.uk/" target="_blank">Dementia adventure</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+    				<div class="panel-heading" role="tab" id="headingTwentytwo">
+      					<h4 class="panel-title">
+        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentytwo" aria-expanded="false" aria-controls="collapseTwentytwo">Dementia dogs</a>
+        				</h4>
+        			</div>
+        			<div id="collapseTwentytwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentytwo">
+      					<div class="panel-body">
+							<p>A project building services for people living with dementia, aiming to prove that dogs can help to maintain eating, sleeping and waking routines, keep people with dementia active and engaged with their local community, as well as providing a companion who will reassure when facing new and unfamiliar situations.</p>
+							<a href="http://www.dementiadog.org/" target="_blank">Dementia dogs</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="alert">
+				<h3>Useful books</h3>
+			</div>
+
+			<div class="panel-group" id="accordion7" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="headingNine">
       					<h4 class="panel-title">
-        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Reading Well books on prescription</a>
+        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion7" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Reading Well books on prescription</a>
         				</h4>
         			</div>
         			<div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
@@ -152,7 +199,7 @@ get_header(); ?>
 				<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="headingTen">
       					<h4 class="panel-title">
-        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">Where Memories Go by Sally Magnusson</a>
+        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion7" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">Where Memories Go by Sally Magnusson</a>
         				</h4>
         			</div>
         			<div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
@@ -165,15 +212,15 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="panel panel-default">
-					<div class="panel-heading" role="tab" id="headingDementiaHelpline">
+					<div class="panel-heading" role="tab" id="headingLifeStoryWork">
       					<h4 class="panel-title">
-        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseDementiaHelpline" aria-expanded="false" aria-controls="collapseDementiaHelpline">Dementia UK helpline</a>
+        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion7" href="#collapseLifeStoryWork" aria-expanded="false" aria-controls="collapseLifeStoryWork">Life Story Work with People with Dementia by Polly Kaiser and Ruth Eley</a>
         				</h4>
         			</div>
-        			<div id="collapseDementiaHelpline" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDementiaHelpline">
+        			<div id="collapseLifeStoryWork" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLifeStoryWork">
       					<div class="panel-body">
-							<p>Run by Admiral Nurses, the helpline can give you specialist practical and emotional support, over the phone or by email.</p>
-							<a href="https://www.dementiauk.org/how-we-help/admiral-nursing-direct/" target="_blank">Dementia UK helpline</a>
+							<p>Supporting the current focus on living well with dementia, this book shows how to carry out Life Story Work with people with dementia in a variety of settings. Focusing on the practicalities of carrying out life story work and highlighting its benefits, this book also includes case studies which will inspire the provision of individualised care.</p>
+							<a href="http://www.jkp.com/uk/life-story-work-with-people-with-dementia-34285.html" target="_blank">Jessica Kingsley Publishers</a>
 						</div>
 					</div>
 				</div>
@@ -313,33 +360,6 @@ get_header(); ?>
 							<p>A charity encouraging the use of personally meaningful music in the care and treatment of people with dementia, helping families to create a playlist of personally meaningful music to help unlock memories.</p>
 							<p>A recipient of funds raised in 2014.</p>
 							<a href="http://www.playlistforlife.org.uk/" target="_blank">Playlist for life</a>
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-default">
-    				<div class="panel-heading" role="tab" id="headingTwentyone">
-      					<h4 class="panel-title">
-        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapseTwentyone" aria-expanded="false" aria-controls="collapseTwentyone">Dementia Adventure</a>
-        				</h4>
-        			</div>
-        			<div id="collapseTwentyone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentyone">
-      					<div class="panel-body">
-							<p>A Community Interest Company which aims to enable people living with dementia, and their families, to enjoy nature.</p>
-							<p>They run holidays and trips as well as offering training, consultancy and research.</p>
-							<a href="http://www.dementiaadventure.co.uk/" target="_blank">Dementia adventure</a>
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-default">
-    				<div class="panel-heading" role="tab" id="headingTwentytwo">
-      					<h4 class="panel-title">
-        					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapseTwentytwo" aria-expanded="false" aria-controls="collapseTwentytwo">Dementia dogs</a>
-        				</h4>
-        			</div>
-        			<div id="collapseTwentytwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentytwo">
-      					<div class="panel-body">
-							<p>A project building services for people living with dementia, aiming to prove that dogs can help to maintain eating, sleeping and waking routines, keep people with dementia active and engaged with their local community, as well as providing a companion who will reassure when facing new and unfamiliar situations.</p>
-							<a href="http://www.dementiadog.org/" target="_blank">Dementia dogs</a>
 						</div>
 					</div>
 				</div>
