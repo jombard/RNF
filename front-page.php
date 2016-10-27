@@ -28,14 +28,14 @@ get_header(); ?>
 	        <p>In 2014 we undertook 10 challenges in 10 months to kickstart our fundraising, continuing 
 	        	with other challenges and events in 2015 and 2016.</p>
 	        <p>We have raised over <strong>£22,000</strong> so far.</p>
-	        <p><a href="/">Remembering Not to Forget</a> provides funds to organisations which:</p>
+	        <p><a href="/">Remembering Not to Forget</a> supports people impacted by dementia, funding organisations which:</p>
 
 	        <ul class="rnfflower">
 	            <li>Promote and protect the good health of people living with dementia, e.g. helping people 
 	            with dementia to live independently for as long as possible, and as the disease progresses 
-	            ensuring they have a good quality of life and receive high standards of care</li>
+	            ensuring they have a good quality of life and receive high standards of care.</li>
 	            <li>Provide support to families and carers of people living with dementia.</li>
-	            <li>Carry out research into the nature, causes, diagnosis, prevention, treatments and care 
+	            <li>Carry out research into the nature, causes, diagnosis, prevention, treatment and care 
 	            of all forms of dementia.</li>
 	            <li>Campaign on dementia issues.</li>
 	        </ul>
