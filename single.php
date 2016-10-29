@@ -16,7 +16,7 @@ get_header(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
-						<h1 class="entry-title"><?php the_title(); ?></h1>
+						<h1><?php the_title(); ?></h1>
 						<p class="post-meta"><?php the_time('F jS, Y') ?> by <a href="#"><?php the_author(); ?></a> in <?php the_category(', ') ?> <?php comments_number('No Comments','1 Comment','% Comments'); ?></p>
 						<div class="social-options">
 							<?php echo do_shortcode ('[shareaholic app="share_buttons" id="15240249"]'); ?>

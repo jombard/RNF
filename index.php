@@ -24,7 +24,7 @@ get_header(); ?>
 						</div>
 						<?php endif; ?>
 
-						<h1 class="entry-title">
+						<h1>
 							<a href="<?php echo get_permalink(); ?>">
 								<?php the_title(); ?>
 							</a>

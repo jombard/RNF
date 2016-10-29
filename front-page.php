@@ -13,7 +13,7 @@ get_header(); ?>
 				</div>
 				<div class="caption">
 					<h2 class="text-white">Read our latest blog posts</h2>
-					<a class="btn btn-rnf" href="#">Blog</a>
+					<span class="btn btn-rnf">Blog</span>
 				</div>
 			</a>
 		</div>
