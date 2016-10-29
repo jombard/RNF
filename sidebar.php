@@ -56,14 +56,46 @@
                     Previous Newsletters <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=6ab8a8dee4" target="_blank">February 2014</a></li>
-                    <li><a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=61594c5764" target="_blank">April 2014</a></li>
-                    <li><a href="http://us3.campaign-archive1.com/?u=4bbf97a920c7865dcf7b097ba&id=a0f96e92a3" target="_blank">May 2014</a></li>
-                    <li><a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=906ffa93b6" target="_blank">July 2014</a></li>
-                    <li><a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=6195685a5e" target="_blank">September 2014</a></li>
-                    <li><a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=c3eae2f63f" target="_blank">February 2015</a></li>
-                    <li><a href="http://us3.campaign-archive1.com/?u=4bbf97a920c7865dcf7b097ba&id=ddcb098582" target="_blank">July 2015</a></li>
-                    <li><a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=cd1f8a001b" target="_blank">January 2016</li>
+                    <li>
+                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=6ab8a8dee4" target="_blank">
+                            February 2014
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=61594c5764" target="_blank">
+                            April 2014
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://us3.campaign-archive1.com/?u=4bbf97a920c7865dcf7b097ba&id=a0f96e92a3" target="_blank">
+                            May 2014
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=906ffa93b6" target="_blank">
+                            July 2014
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=6195685a5e" target="_blank">
+                            September 2014
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=c3eae2f63f" target="_blank">
+                            February 2015
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://us3.campaign-archive1.com/?u=4bbf97a920c7865dcf7b097ba&id=ddcb098582" target="_blank">
+                            July 2015
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=cd1f8a001b" target="_blank">
+                            January 2016
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -81,15 +113,19 @@
 <h3>Join us on social media</h3>
 <a href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679">
 	<span class="social-icon iconfbook"></span>
+    <span class="sr-only">Facebook</span>
 </a>
 <a href="https://twitter.com/rnf_uk">
 	<span class="social-icon icontwitter"></span>
+    <span class="sr-only">Twitter</span>
 </a>
 <a href="https://plus.google.com/103483767799511460203/videos?pageId=108152448772708944610">
 	<span class="social-icon icongooglep"></span>
+    <span class="sr-only">Google Plus</span>
 </a>
 <a href="https://www.youtube.com/channel/UCsNKdIv9jMVGGJ8RLT2GDeQ">
     <span class="social-icon iconyoutube"></span>
+    <span class="sr-only">Youtube</span>
 </a>
 
 <a href="http://www.dementiafriends.org.uk/" target="_blank">
