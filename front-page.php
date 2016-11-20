@@ -22,12 +22,12 @@ get_header(); ?>
 
 			<h3><strong>What is Remembering Not to Forget?</strong></h3>
 	        <p><a href="/">Remembering Not to Forget</a> is a small charity established at the end of 2013 
-	        	to fundraise to support people impacted by dementia.</p>
+	        	to support people impacted by dementia.</p>
 	        <p>Co-founders Laura and Ali both have close family members with dementia, and wanted to help
 	        	other families affected by the condition.</p>
 	        <p>In 2014 we undertook 10 challenges in 10 months to kickstart our fundraising, continuing 
 	        	with other challenges and events in 2015 and 2016.</p>
-	        <p>We have raised over <strong>£22,000</strong> so far.</p>
+	        <p>We have raised over <strong>£25,000</strong> so far.</p>
 	        <p><a href="/">Remembering Not to Forget</a> supports people impacted by dementia, funding organisations which:</p>
 
 	        <ul class="rnfflower">

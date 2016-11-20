@@ -32,11 +32,6 @@
     </div>
 </div>
 
-<h3>Directory of Resources</h3>
-<p>Looking for more information about dementia? Check our handy list of resources:</p>
-<a href="/resources" class="btn btn-info">Resources</a>
-
-
 <h3>Sign up to our newsletter</h3>
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup" class="panel">
