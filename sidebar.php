@@ -1,5 +1,5 @@
 <!-- SIDEBAR START -->
-<?php $isNotAboutUsPageOrChild = !is_page(9) && !is_page(671) && !is_page(673) && !is_page(675) ?>
+<?php $isNotAboutUsPageOrChild = !is_page(9) && !is_page(671) && !is_page(673) && !is_page(675) && !is_page(2) ?>
 <div class="<?php if($isNotAboutUsPageOrChild){echo ' hidden';} ?>">
     <h3>About Us</h3>
     <div class="list-group">
@@ -7,6 +7,7 @@
         <a class="list-group-item <?php if(is_page(671)){echo ' active';} ?>" href="/about/who-we-are/">Who we are</a>
         <a class="list-group-item <?php if(is_page(673)){echo ' active';} ?>" href="/about/about-dementia/">About dementia</a>
         <a class="list-group-item <?php if(is_page(675)){echo ' active';} ?>" href="/about/our-constitution/">Our constitution</a>
+        <a class="list-group-item <?php if(is_page(2)){echo ' active';} ?>" href="/media/">In the media</a>
     </div>
 </div>
 
