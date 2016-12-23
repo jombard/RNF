@@ -11,11 +11,12 @@
     </div>
 </div>
 
-<?php $isNotChallengePageOrChild = !is_page(12) && !is_tree(600) && !is_tree(534) && !is_tree(307) && !is_tree(321) ?>
+<?php $isNotChallengePageOrChild = !is_page(12) && !is_tree(600) && !is_tree(534) && !is_tree(307) && !is_tree(321) && !is_tree(809) ?>
 <div class="<?php if($isNotChallengePageOrChild){echo ' hidden';} ?>">
     <h3>Previous Challenges</h3>
     <div class="list-group">
         <a href="/challenges/" class="list-group-item <?php if(is_page(12)){echo ' active';} ?>">Challenges</a>
+        <a href="/challenges/2017-challenges/" class="list-group-item <?php if(is_page(809)){echo ' active';} ?>">2017 Challenges</a>
         <a href="/challenges/2016-challenges/" class="list-group-item <?php if(is_page(600)){echo ' active';} ?>">2016 Challenges</a>
         <a href="/challenges/2015-challenges/" class="list-group-item <?php if(is_page(534)){echo ' active';} ?>">2015 Challenges</a>
         <a href="/challenges/2014-challenges/" class="list-group-item <?php if(is_page(307)){echo ' active';} ?>">2014 Challenges</a>
