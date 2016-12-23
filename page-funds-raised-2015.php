@@ -113,7 +113,7 @@ get_header(); ?>
                 </div>
                 <div class="col-sm-8">
                     <p>Provides direct support to people with young onset dementia (35-65 years old) and their family members.</p>
-                    <p>They also campaign on many aspects of young onset dementia. Our funding has gone towards the costs of making a video called With support I can...</p>
+                    <p>They also campaign on many aspects of young onset dementia. Our funding has gone towards the costs of making a video about <a href="https://www.youtube.com/watch?v=KXSrfKe-c1s&feature=youtu.be" target="_blank">young onset dementiavoices support</a>.</p>
                     <p>This video will be made with contributions from people with young onset dementia, who will describe the positive things that they can do and the fulfilled lives that they can lead if they are properly supported.</p>
                     <p>This video is a follow-on from one that was made last year, <a href="https://www.youtube.com/watch?v=rrYohqK1maQ&feature=youtu.be" target="_blank">Make a point about young onset dementia</a>.</p>
                     <p>They will be collaborating with the <a href="http://dementiavoices.org.uk/" target="_blank">Dementia Engagement and Empowerment Project</a> on this video.</p>
