@@ -92,6 +92,11 @@
                             January 2016
                         </a>
                     </li>
+                    <li>
+                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=cd2a8bd43e" target="_blank">
+                            September 2016
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
