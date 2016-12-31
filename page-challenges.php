@@ -14,13 +14,6 @@ get_header(); ?>
 			
 	        <h2>Challenges</h2>
 
-	        <div class="alert alert-info">
-		        <p>For regular updates on other challenges and events <a href="/support-us">sign up to our mailing list</a>, 
-		        	<a href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679" 
-		        	target="_blank">like us on Facebook</a> or
-		        	<a href="https://twitter.com/RNF_UK" target="_blank">follow us on Twitter</a>.</p>
-	        </div>
-
 	        <p>In planning our challenges we try to include a mixture of physical challenges and events for 
 	        	people to come along to. If you have suggestions of any challenges for us to attempt 
 	        	<a href="/contact-us">please let us know</a>!</p>
@@ -32,9 +25,7 @@ get_header(); ?>
 	        <h3>Upcoming Challenges</h3>
 
 	        <ul class="rnfflower">
-	        	<li><a href="/challenges/2016-challenges/">The London Triathlon</a></li>
-	        	<li><a href="/challenges/2016-challenges/">The UnderroundTM</a></li>
-	        	<li><a href="/challenges/2016-challenges/">Another pub quiz or two!</a></li>
+	        	<li><a href="/challenges/2017-challenges/">The Round the World Challenge</a></li>
 	        </ul>
 
 	        <h3>Completed Challenges</h3>
@@ -56,6 +47,39 @@ get_header(); ?>
 	     
 	            <div class="portfolio">
 	         
+	                <article class="entry rnftrek">
+	                    <a href="/challenges/2016-challenges/the-underround/">
+	                    <img src="/wp-content/uploads/2016/10/41a-150x150.jpg" alt="RNF completing the UnderroundTM">
+	                    <div class="challengewrapper">
+	                        <h2 class="fromtop animate">The UnderroundTM</h2>
+	                        <p class="frombottom animate">October 2016</p>
+	                    </div>
+	                    <div class="top-line"></div>
+	                    </a>
+	                </article>
+
+	                <article class="entry rnfswim rnfbike rnfrun">
+	                    <a href="/challenges/2016-challenges/">
+	                    <img src="/wp-content/uploads/2015/06/blenheim-150x150.jpg" alt="RNF at London Triathlon">
+	                    <div class="challengewrapper">
+	                        <h2 class="fromtop animate">London Triathlon</h2>
+	                        <p class="frombottom animate">July 2016</p>
+	                    </div>
+	                    <div class="top-line"></div>
+	                    </a>
+	                </article>
+
+	                <article class="entry rnfquiz">
+	                    <a href="/challenges/2016-challenges/">
+	                    <img src="/wp-content/uploads/2016/01/ChardQuiz1-150x150.jpg" alt="RNF at Chard Quiz">
+	                    <div class="challengewrapper">
+	                        <h2 class="fromtop animate">Pub Quiz</h2>
+	                        <p class="frombottom animate">Febraury 2016</p>
+	                    </div>
+	                    <div class="top-line"></div>
+	                    </a>
+	                </article>
+
 	                <article class="entry rnfswim rnfbike rnfrun">
 	                    <a href="/challenges/2015-challenges/blenheim-triathlon-2015">
 	                    <img src="/wp-content/uploads/2015/06/blenheim-150x150.jpg" alt="RNF at Blenheim Triathlon">
@@ -247,6 +271,10 @@ get_header(); ?>
 	            </div>
 	 
 	        </section>
+
+	        <div class="alert alert-info">
+		        <p>For regular updates on other challenges and events <a href="/support-us">sign up to our mailing list</a>, <a href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679" target="_blank">like us on Facebook</a> or <a href="https://twitter.com/RNF_UK" target="_blank">follow us on Twitter</a>.</p>
+	        </div>
 
 		</div><!-- .col-md-8 -->
 	
