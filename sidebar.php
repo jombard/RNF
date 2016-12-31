@@ -106,13 +106,13 @@
 </div>
 <!--End mc_embed_signup-->
 
-<a href="/fundraising/" class="fundraiser-display">
+<!-- <a href="/fundraising/" class="fundraiser-display">
     <div class="fundraiser-advert">
         Are you looking for a challenge?
     </div>
     <img src="http://rememberingnottoforget.org.uk/wp-content/uploads/2015/01/IMG1024.jpg" alt="challenge" class="img-responsive" />
 </a>
-
+ -->
 <h3>Join us on social media</h3>
 <a href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679">
 	<span class="social-icon iconfbook"></span>
