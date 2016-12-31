@@ -54,6 +54,12 @@ a:hover {
 	text-decoration: underline;	
 }
 
+p, 
+ul, 
+ol {
+  margin-bottom: 30px;
+}
+
 .m-b {    
   margin-bottom: 10px;    
 }
