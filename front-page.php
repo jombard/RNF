@@ -5,20 +5,20 @@ get_header(); ?>
 
 	<div class="row">
 		
-		<div class="carousel-inner">
-			<a href="/blog/">
-				<div class="placeholder" data-large="/wp-content/uploads/2016/07/image1-e1468353895349.jpg">
-					<img src="/wp-content/uploads/2016/07/image2.jpg" alt="Bridget and Hels" class="img-small">
-					<div style="padding-bottom: 66.6%;"></div>
-				</div>
-				<div class="caption">
-					<h2 class="text-white">Read our latest blog posts</h2>
-					<span class="btn btn-rnf">Blog</span>
-				</div>
-			</a>
-		</div>
-
 		<div class="col-md-7">
+		
+			<div class="carousel-inner">
+				<a href="/challenges/2017-challenges/round-world-challenge/">
+					<div class="placeholder" data-large="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg">
+						<img src="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg" alt="Round the World Challenge" class="img-small">
+						<div style="padding-bottom: 66.6%;"></div>
+					</div>
+					<div class="caption">
+						<h2 class="text-white">Our latest challenge</h2>
+						<span class="btn btn-rnf">Round the World</span>
+					</div>
+				</a>
+			</div>
 
 			<h3><strong>What is Remembering Not to Forget?</strong></h3>
 	        <p><a href="/">Remembering Not to Forget</a> is a small charity established at the end of 2013 
