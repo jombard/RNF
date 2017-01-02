@@ -56,7 +56,7 @@
             <div class="col-md-3 col-xs-8">
                 <div class="donateheader">
   		            <a class="btn btn-success btn-block m-b" href="https://mydonate.bt.com/donation/start.html?charity=143287">
-                        Donate <span class="hidden-xs">to<br>Remembering Not To Forget</span>
+                        Donate <span class="hidden-xs hidden-md">to<br>Remembering Not To Forget</span>
                     </a>	
   	                <img src="/wp-content/themes/rnf/images/uk-payment-logos.png" alt="Uk -payment -logos -small" width="164" height="15" />
                 </div>
