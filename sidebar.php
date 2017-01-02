@@ -55,48 +55,53 @@
                 </button>
                 <ul class="dropdown-menu" role="menu">
                     <li>
-                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=6ab8a8dee4" target="_blank">
+                        <a href="http://eepurl.com/O1zzX" target="_blank">
                             February 2014
                         </a>
                     </li>
                     <li>
-                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=61594c5764" target="_blank">
+                        <a href="http://eepurl.com/Siyxr" target="_blank">
                             April 2014
                         </a>
                     </li>
                     <li>
-                        <a href="http://us3.campaign-archive1.com/?u=4bbf97a920c7865dcf7b097ba&id=a0f96e92a3" target="_blank">
+                        <a href="http://eepurl.com/U_nC9" target="_blank">
                             May 2014
                         </a>
                     </li>
                     <li>
-                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=906ffa93b6" target="_blank">
+                        <a href="http://eepurl.com/Yrcof" target="_blank">
                             July 2014
                         </a>
                     </li>
                     <li>
-                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=6195685a5e" target="_blank">
+                        <a href="http://eepurl.com/4xJ7P" target="_blank">
                             September 2014
                         </a>
                     </li>
                     <li>
-                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=c3eae2f63f" target="_blank">
+                        <a href="http://eepurl.com/bcBPJL" target="_blank">
                             February 2015
                         </a>
                     </li>
                     <li>
-                        <a href="http://us3.campaign-archive1.com/?u=4bbf97a920c7865dcf7b097ba&id=ddcb098582" target="_blank">
+                        <a href="http://eepurl.com/bqKocH" target="_blank">
                             July 2015
                         </a>
                     </li>
                     <li>
-                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=cd1f8a001b" target="_blank">
+                        <a href="http://eepurl.com/bL2tlL" target="_blank">
                             January 2016
                         </a>
                     </li>
                     <li>
-                        <a href="http://us3.campaign-archive2.com/?u=4bbf97a920c7865dcf7b097ba&id=cd2a8bd43e" target="_blank">
+                        <a href="http://eepurl.com/cd_isD" target="_blank">
                             September 2016
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://eepurl.com/cu1JfP" target="_blank">
+                            December 2016
                         </a>
                     </li>
                 </ul>
@@ -106,13 +111,6 @@
 </div>
 <!--End mc_embed_signup-->
 
-<!-- <a href="/fundraising/" class="fundraiser-display">
-    <div class="fundraiser-advert">
-        Are you looking for a challenge?
-    </div>
-    <img src="http://rememberingnottoforget.org.uk/wp-content/uploads/2015/01/IMG1024.jpg" alt="challenge" class="img-responsive" />
-</a>
- -->
 <h3>Join us on social media</h3>
 <a href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679">
 	<span class="social-icon iconfbook"></span>
