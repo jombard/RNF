@@ -14,8 +14,8 @@ get_header(); ?>
 						<div style="padding-bottom: 66.6%;"></div>
 					</div>
 					<div class="caption">
-						<h2 class="text-white">Our latest challenge</h2>
-						<span class="btn btn-rnf">View details for Round the World challenge</span>
+						<h2 class="text-white">The Round the World Challenge</h2>
+						<span class="btn btn-rnf">View more details</span>
 					</div>
 				</a>
 			</div>
