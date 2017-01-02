@@ -15,7 +15,7 @@ get_header(); ?>
 					</div>
 					<div class="caption">
 						<h2 class="text-white">Our latest challenge</h2>
-						<span class="btn btn-rnf">Round the World</span>
+						<span class="btn btn-rnf">View details for Round the World challenge</span>
 					</div>
 				</a>
 			</div>
