@@ -38,7 +38,7 @@
 <h3>Sign up to our newsletter</h3>
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup" class="panel">
-    <form action="http://rememberingnottoforget.us3.list-manage2.com/subscribe/post?u=4bbf97a920c7865dcf7b097ba&amp;id=f077e514d1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <form action="https://rememberingnottoforget.us3.list-manage2.com/subscribe/post?u=4bbf97a920c7865dcf7b097ba&amp;id=f077e514d1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <p>We promise to look after your email address and you can unsubscribe very easily at any time.</p>
         <div class="form-group">
             <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
