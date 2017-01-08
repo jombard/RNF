@@ -22,6 +22,35 @@ var RnfApp = {
 			placeholder.append(imgLarge);
 		});
 	},
+	initTotalDistanceChart: function(){
+		var distanceCovered = 445;
+		var totalDistance = 40076;
+		var distanceRemaining = totalDistance - distanceCovered;
+
+		var distanceData = [
+			{
+				value: distanceCovered,
+				color: "#7F3F98",
+				highlight: "#9E5FB7",
+				label: "Total distance covered in kilometers"
+			},
+			{
+				value: distanceRemaining,
+				color: "#00A4E4",
+				highlight: "#59C2EB",
+				label: "Total distance remaining in kilometers"
+			}
+		];
+
+		var chartOptions = {
+		    segmentShowStroke : true,
+		    animateScale : true,
+	        responsive : true
+	    }
+
+		var distance = document.getElementById("divTotalDistance").getContext("2d");
+	    new Chart(distance).Pie(distanceData, chartOptions);
+	},
 	initChart: function(){
 		var pieData = [
 		    {
@@ -139,6 +168,9 @@ var RnfApp = {
 		}
 		this.initIsotopeFilter();
 		this.initGalleryCarousel();
+		if ( $( '#divTotalDistance').length) {
+			this.initTotalDistanceChart();
+		}
 	}
 };
 
