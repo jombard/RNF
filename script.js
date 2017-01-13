@@ -26,6 +26,7 @@ var RnfApp = {
 		var distanceCovered = 445;
 		var totalDistance = 40076;
 		var distanceRemaining = totalDistance - distanceCovered;
+		var convertMiles = 1.609344;
 
 		var distanceData = [
 			{
@@ -50,6 +51,10 @@ var RnfApp = {
 
 		var distance = document.getElementById("divTotalDistance").getContext("2d");
 	    new Chart(distance).Pie(distanceData, chartOptions);
+
+	    $("#distanceTotal").html(totalDistance + " km<br>" + Math.round(totalDistance/convertMiles) + " mi");
+	    $("#distanceCovered").html(distanceCovered + " km<br>" + Math.round(distanceCovered/convertMiles) + " mi");
+	    $("#distanceRemaining").html(distanceRemaining + "km<br>" + Math.round(distanceRemaining/convertMiles) + " mi");
 	},
 	initChart: function(){
 		var pieData = [
