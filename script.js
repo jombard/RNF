@@ -23,10 +23,13 @@ var RnfApp = {
 		});
 	},
 	initTotalDistanceChart: function(){
-		var distanceCovered = 445;
+		var spreadsheetDistances = 20; // update with kilometer total from spreadsheet
+		var stravaDistances = 920; // add total in kilometers
+		var lastUpdateTime = "14/01/2017";
+
+		var distanceCovered = stravaDistances + spreadsheetDistances;
 		var totalDistance = 40076;
 		var distanceRemaining = totalDistance - distanceCovered;
-		var convertMiles = 1.609344;
 
 		var distanceData = [
 			{
@@ -52,9 +55,19 @@ var RnfApp = {
 		var distance = document.getElementById("divTotalDistance").getContext("2d");
 	    new Chart(distance).Pie(distanceData, chartOptions);
 
-	    $("#distanceTotal").html(totalDistance + " km<br>" + Math.round(totalDistance/convertMiles) + " mi");
-	    $("#distanceCovered").html(distanceCovered + " km<br>" + Math.round(distanceCovered/convertMiles) + " mi");
-	    $("#distanceRemaining").html(distanceRemaining + "km<br>" + Math.round(distanceRemaining/convertMiles) + " mi");
+    	var addKilometers = function(distance) {
+    		return distance.toLocaleString() + ' km';
+    	}
+
+    	var addMiles = function(distance) {
+			var convertToMiles = 1.609344;
+    		return Math.round(distance/convertToMiles).toLocaleString() + ' mi';
+    	}
+
+	    $("#distanceTotal").html(addKilometers(totalDistance) + "<br>" + addMiles(totalDistance));
+	    $("#distanceCovered").html(addKilometers(distanceCovered) + "<br>" + addMiles(distanceCovered));
+	    $("#distanceRemaining").html(addKilometers(distanceRemaining) + "<br>" + addMiles(distanceRemaining));
+	    $("#lastActivity").html("<small class='text-muted'>Last updated: " + lastUpdateTime + "</small>");
 	},
 	initChart: function(){
 		var pieData = [
