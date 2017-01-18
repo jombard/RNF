@@ -24,8 +24,8 @@ var RnfApp = {
 	},
 	initTotalDistanceChart: function(){
 		var spreadsheetDistances = 20; // update with kilometer total from spreadsheet
-		var stravaDistances = 920; // add total in kilometers
-		var lastUpdateTime = "14/01/2017";
+		var stravaDistances = 1198; // add total in kilometers
+		var lastUpdateTime = "18/01/2017";
 
 		var distanceCovered = stravaDistances + spreadsheetDistances;
 		var totalDistance = 40076;
