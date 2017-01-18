@@ -24,9 +24,31 @@ get_header(); ?>
 
 	        <h3>Upcoming Challenges</h3>
 
-	        <ul class="rnfflower">
-	        	<li><a href="/challenges/2017-challenges/">The Round the World Challenge</a></li>
-	        </ul>
+	        <section class="challengesmain">
+	        	<article class="entry">
+                    <a href="/challenges/2017-challenges/round-world-challenge/">
+                    <img src="/wp-content/uploads/2016/12/roundtheworld-e1482518013750-150x150.jpg" alt="Round the World Challenge">
+                    <div class="challengewrapper">
+                        <h2 class="fromtop animate">Round the World</h2>
+                        <p class="frombottom animate">2017</p>
+                    </div>
+                    <div class="top-line"></div>
+                    </a>
+                </article>
+
+	        	<article class="entry">
+                    <a href="/challenges/2017-challenges/end-end-challenge/">
+                    <img src="/wp-content/uploads/2017/01/Landsendsignpost-e1484777710592-150x150.jpg" alt="End to End Challenge">
+                    <div class="challengewrapper">
+                        <h2 class="fromtop animate">Lands End to John O'Groats</h2>
+                        <p class="frombottom animate">July 2017</p>
+                    </div>
+                    <div class="top-line"></div>
+                    </a>
+                </article>
+	        </section>
+
+	        <div class="clearfix"></div>
 
 	        <h3>Completed Challenges</h3>
 
