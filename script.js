@@ -23,51 +23,67 @@ var RnfApp = {
 		});
 	},
 	initTotalDistanceChart: function(){
-		var spreadsheetDistances = 20; // update with kilometer total from spreadsheet
-		var stravaDistances = 1198; // add total in kilometers
-		var lastUpdateTime = "18/01/2017";
 
-		var distanceCovered = stravaDistances + spreadsheetDistances;
-		var totalDistance = 40076;
-		var distanceRemaining = totalDistance - distanceCovered;
+		var getDistanceCovered = function(){
+			return $.ajax({
+	            type: "GET",
+	            url: "https://rememberingnottoforget.org.uk/wp-content/themes/rnf/RoundTheWorld.json",
+	            contentType: "application/json; charset=utf-8",
+	            dataType: "json"
+	        }).error(function(err, e){
+	        	console.log(err, e);
+	        });
+		};
 
-		var distanceData = [
-			{
-				value: distanceCovered,
-				color: "#7F3F98",
-				highlight: "#9E5FB7",
-				label: "Total distance covered in kilometers"
-			},
-			{
-				value: distanceRemaining,
-				color: "#00A4E4",
-				highlight: "#59C2EB",
-				label: "Total distance remaining in kilometers"
-			}
-		];
+		getDistanceCovered().then(function(result){
+			var spreadsheetDistances = result.spreadsheetDistances;
+			var stravaDistances = result.stravaDistances;
+			var lastUpdateTime = result.lastUpdateTime;
 
-		var chartOptions = {
-		    segmentShowStroke : true,
-		    animateScale : true,
-	        responsive : true
-	    }
+			var distanceCovered = stravaDistances + spreadsheetDistances;
+			var totalDistance = 40076;
+			var distanceRemaining = totalDistance - distanceCovered;
 
-		var distance = document.getElementById("divTotalDistance").getContext("2d");
-	    new Chart(distance).Pie(distanceData, chartOptions);
+			var distanceData = [
+				{
+					value: distanceCovered,
+					color: "#7F3F98",
+					highlight: "#9E5FB7",
+					label: "Total distance covered in kilometers"
+				},
+				{
+					value: distanceRemaining,
+					color: "#00A4E4",
+					highlight: "#59C2EB",
+					label: "Total distance remaining in kilometers"
+				}
+			];
 
-    	var addKilometers = function(distance) {
-    		return distance.toLocaleString() + ' km';
-    	}
+			var chartOptions = {
+			    segmentShowStroke : true,
+			    animateScale : true,
+		        responsive : true
+		    }
 
-    	var addMiles = function(distance) {
-			var convertToMiles = 1.609344;
-    		return Math.round(distance/convertToMiles).toLocaleString() + ' mi';
-    	}
+			var distance = document.getElementById("divTotalDistance").getContext("2d");
+		    new Chart(distance).Pie(distanceData, chartOptions);
 
-	    $("#distanceTotal").html(addKilometers(totalDistance) + "<br>" + addMiles(totalDistance));
-	    $("#distanceCovered").html(addKilometers(distanceCovered) + "<br>" + addMiles(distanceCovered));
-	    $("#distanceRemaining").html(addKilometers(distanceRemaining) + "<br>" + addMiles(distanceRemaining));
-	    $("#lastActivity").html("<small class='text-muted'>Last updated: " + lastUpdateTime + "</small>");
+	    	var addKilometers = function(distance) {
+	    		return distance.toLocaleString() + ' km';
+	    	}
+
+	    	var addMiles = function(distance) {
+				var convertToMiles = 1.609344;
+	    		return Math.round(distance/convertToMiles).toLocaleString() + ' mi';
+	    	}
+
+		    $("#distanceTotal").html(addKilometers(totalDistance) + "<br>" + addMiles(totalDistance));
+		    $("#distanceCovered").html(addKilometers(distanceCovered) + "<br>" + addMiles(distanceCovered));
+		    $("#distanceRemaining").html(addKilometers(distanceRemaining) + "<br>" + addMiles(distanceRemaining));
+		    $("#lastActivity").html("<small class='text-muted'>Last updated: " + lastUpdateTime + "</small>");
+
+		});
+
 	},
 	initChart: function(){
 		var pieData = [
