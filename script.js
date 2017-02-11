@@ -38,7 +38,7 @@ var RnfApp = {
 		getDistanceCovered().then(function(result){
 			var spreadsheetDistances = result.spreadsheetDistances;
 			var stravaDistances = result.stravaDistances;
-			var lastUpdateTime = result.lastUpdateTime;
+			var lastUpdateTime = new Date(result.lastUpdateTime);
 
 			var distanceCovered = stravaDistances + spreadsheetDistances;
 			var totalDistance = 40076;
@@ -80,7 +80,7 @@ var RnfApp = {
 		    $("#distanceTotal").html(addKilometers(totalDistance) + "<br>" + addMiles(totalDistance));
 		    $("#distanceCovered").html(addKilometers(distanceCovered) + "<br>" + addMiles(distanceCovered));
 		    $("#distanceRemaining").html(addKilometers(distanceRemaining) + "<br>" + addMiles(distanceRemaining));
-		    $("#lastActivity").html("<small class='text-muted'>Last updated: " + lastUpdateTime + "</small>");
+		    $("#lastActivity").html("<small class='text-muted'>Last updated: " + lastUpdateTime.toLocaleDateString() + "</small>");
 
 		});
 
