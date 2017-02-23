@@ -36,11 +36,9 @@ var RnfApp = {
 		};
 
 		getDistanceCovered().then(function(result){
-			var spreadsheetDistances = result.spreadsheetDistances;
-			var stravaDistances = result.stravaDistances;
 			var lastUpdateTime = new Date(result.lastUpdateTime);
 
-			var distanceCovered = stravaDistances + spreadsheetDistances;
+			var distanceCovered = result.totalDistance;
 			var totalDistance = 40076;
 			var distanceRemaining = totalDistance - distanceCovered;
 

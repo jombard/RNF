@@ -60,6 +60,14 @@ ol {
   margin-bottom: 30px;
 }
 
+.logo {
+  background-image: url('/wp-content/themes/rnf/images/logo.png');
+  height:100px;
+  width: 92px;
+  display: block;
+  text-indent: -9999px;
+}
+
 .m-b {    
   margin-bottom: 10px;    
 }
