@@ -1,41 +1,4 @@
 <!-- SIDEBAR START -->
-<!--
-<?php $isNotAboutUsPageOrChild = !is_page(9) && !is_page(671) && !is_page(673) && !is_page(675) && !is_page(2) ?>
-<div class="<?php if($isNotAboutUsPageOrChild){echo ' hidden';} ?>">
-    <h3>About Us</h3>
-    <div class="list-group">
-        <a class="list-group-item <?php if(is_page(9)){echo ' active';} ?>" href="/about/">About</a>
-        <a class="list-group-item <?php if(is_page(671)){echo ' active';} ?>" href="/about/who-we-are/">Who we are</a>
-        <a class="list-group-item <?php if(is_page(673)){echo ' active';} ?>" href="/about/about-dementia/">About dementia</a>
-        <a class="list-group-item <?php if(is_page(675)){echo ' active';} ?>" href="/about/our-constitution/">Our constitution</a>
-        <a class="list-group-item <?php if(is_page(2)){echo ' active';} ?>" href="/media/">In the media</a>
-    </div>
-</div>
-
-<?php $isNotChallengePageOrChild = !is_page(12) && !is_tree(600) && !is_tree(534) && !is_tree(307) && !is_tree(321) && !is_tree(809) ?>
-<div class="<?php if($isNotChallengePageOrChild){echo ' hidden';} ?>">
-    <h3>Previous Challenges</h3>
-    <div class="list-group">
-        <a href="/challenges/" class="list-group-item <?php if(is_page(12)){echo ' active';} ?>">Challenges</a>
-        <a href="/challenges/2017-challenges/" class="list-group-item <?php if(is_page(809)){echo ' active';} ?>">2017 Challenges</a>
-        <a href="/challenges/2016-challenges/" class="list-group-item <?php if(is_page(600)){echo ' active';} ?>">2016 Challenges</a>
-        <a href="/challenges/2015-challenges/" class="list-group-item <?php if(is_page(534)){echo ' active';} ?>">2015 Challenges</a>
-        <a href="/challenges/2014-challenges/" class="list-group-item <?php if(is_page(307)){echo ' active';} ?>">2014 Challenges</a>
-        <a href="/challenges/2013-challenges/" class="list-group-item <?php if(is_page(321)){echo ' active';} ?>">2013 Challenges</a>
-    </div>
-</div>
-
-<?php $isNotFundsPageOrChild = !is_page(727) && !is_tree(730) && !is_tree(740) && !is_tree(807) ?>
-<div class="<?php if($isNotFundsPageOrChild){echo ' hidden';} ?>">
-    <h3>Funds Raised</h3>
-    <div class="list-group">
-        <a href="/where-are-your-donations-going/" class="list-group-item <?php if(is_page(727)){echo ' active';} ?>">Where your donations are going</a>
-        <a href="/where-are-your-donations-going/funds-raised-2016/" class="list-group-item <?php if(is_page(807)){echo ' active';} ?>">2016 Funds</a>
-        <a href="/where-are-your-donations-going/funds-raised-2015/" class="list-group-item <?php if(is_page(740)){echo ' active';} ?>">2015 Funds</a>
-        <a href="/where-are-your-donations-going/funds-raised-2014/" class="list-group-item <?php if(is_page(730)){echo ' active';} ?>">2014 Funds</a>
-    </div>
-</div>
--->
 
 <h3>Sign up to our newsletter</h3>
 <!-- Begin MailChimp Signup Form -->
@@ -122,9 +85,9 @@
 	<span class="social-icon icontwitter"></span>
     <span class="sr-only">Twitter</span>
 </a>
-<a href="https://plus.google.com/103483767799511460203/videos?pageId=108152448772708944610">
-	<span class="social-icon icongooglep"></span>
-    <span class="sr-only">Google Plus</span>
+<a href="https://www.instagram.com/rememberingnottoforget">
+	<span class="social-icon iconinsta"></span>
+    <span class="sr-only">Instagram</span>
 </a>
 <a href="https://www.youtube.com/channel/UCsNKdIv9jMVGGJ8RLT2GDeQ">
     <span class="social-icon iconyoutube"></span>

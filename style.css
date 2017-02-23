@@ -308,6 +308,10 @@ ul.rnfflower {
 	background-position: -1px -101px;
 }
 
+.iconinsta {
+  background-position: -51px -1px;
+}
+
 .iconyoutube {
     background-position: -101px -101px;
 }
@@ -364,6 +368,11 @@ nav.primary ul li .selected {
     position: absolute;
     display: none;
   }
+
+  .text-md-left { text-align: left; }
+  .text-md-right { text-align: right; }
+  .text-md-center { text-align: center; }
+  .text-md-justify { text-align: justify; }
 }
 
 .dropdown:hover .sub-menu {
