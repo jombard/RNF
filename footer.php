@@ -12,9 +12,10 @@
 		    <div class="container">
 			    <div class="row">
 				    <div class="col-md-12 text-center">
-				    	<p>Copyright &copy; <?php echo date("Y") ?> <a href="/"><?php bloginfo('name'); ?></a> All Rights Reserved</p>
-					    <p><?php bloginfo('description'); ?></p>
-					    <p>Registered Charity No. 1166415</p>
+				    	<p>Copyright &copy; <?php echo date("Y") ?> <a href="/"><?php bloginfo('name'); ?></a> All Rights Reserved<br />
+				    	<a href="/privacy-policy">Privacy Policy</a> <a href="/terms-of-service/">Terms of Service</a></p>
+					    <p><?php bloginfo('description'); ?><br />
+					    Registered Charity No. 1166415</p>
 				    </div>
 			    </div>
 			

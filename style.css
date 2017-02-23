@@ -345,6 +345,31 @@ nav.primary ul li .selected {
     border-bottom: 3px solid #00A4E4;
 }
 
+.sub-menu {
+  background-color: #aa65c5;
+  z-index: 5;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  list-style: none;
+}
+
+.sub-menu>li>a {
+  display: block;
+  padding: 10px 15px;
+}
+
+@media screen and (min-width: 768px ) {
+  .sub-menu {
+    position: absolute;
+    display: none;
+  }
+}
+
+.dropdown:hover .sub-menu {
+  display: block;
+}
+
 .challengesmain {
     display: block;
     margin: 0 auto;
