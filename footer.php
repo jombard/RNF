@@ -11,11 +11,12 @@
 	    <footer class="footer">
 		    <div class="container">
 			    <div class="row">
-				    <div class="col-md-12 text-center">
-				    	<p>Copyright &copy; <?php echo date("Y") ?> <a href="/"><?php bloginfo('name'); ?></a> All Rights Reserved<br />
-				    	<a href="/privacy-policy">Privacy Policy</a> <a href="/terms-of-service/">Terms of Service</a></p>
-					    <p><?php bloginfo('description'); ?><br />
-					    Registered Charity No. 1166415</p>
+				    <div class="col-md-6 text-center text-md-left">
+				    	<p>Copyright &copy; <?php echo date("Y") ?> <a href="/"><?php bloginfo('name'); ?></a><br />
+					    <span class="text-muted">Registered Charity No. 1166415</span></p>
+			    	</div>
+			    	<div class="col-md-6 text-center text-md-right">
+				    	<p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-and-conditions/">Terms and Conditions</a></p>
 				    </div>
 			    </div>
 			
