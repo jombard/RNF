@@ -18,17 +18,6 @@
 
 <body>
 
-	<!--Facebook like button start-->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <!--Facebook like button end-->
-
 	<div class="container page">
             
         <div class="row">
@@ -46,10 +35,6 @@
 	            <div id="sitedescription" class="text-dark">
 	                <?php bloginfo('description'); ?>
 	            </div>
-
-                <div>
-                    <div class="fb-like" data-href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679" data-width="400px" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
-                </div>
                 
             </div>
 
@@ -58,7 +43,6 @@
   		            <a class="btn btn-success btn-block m-b" href="https://mydonate.bt.com/donation/start.html?charity=143287">
                         Donate <span class="hidden-xs hidden-md">to<br>Remembering Not To Forget</span>
                     </a>	
-  	                <img src="/wp-content/themes/rnf/images/uk-payment-logos.png" alt="Uk -payment -logos -small" width="164" height="15" />
                 </div>
             </div>
 
