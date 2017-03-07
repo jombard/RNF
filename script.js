@@ -1,4 +1,5 @@
 var RnfApp = {
+
 	replaceLowResImages: function(){
 		var placeholders = $('.placeholder');
 
@@ -24,6 +25,15 @@ var RnfApp = {
 	},
 	initTotalDistanceChart: function(){
 
+		var addKilometers = function(distance) {
+			return distance.toLocaleString() + ' km';
+		};
+
+		var addMiles = function(distance) {
+			var convertToMiles = 1.609344;
+			return Math.round(distance/convertToMiles).toLocaleString() + ' mi';
+		};
+
 		var getDistanceCovered = function(){
 			return $.ajax({
 	            type: "GET",
@@ -35,13 +45,7 @@ var RnfApp = {
 	        });
 		};
 
-		getDistanceCovered().then(function(result){
-			var lastUpdateTime = new Date(result.lastUpdateTime);
-
-			var distanceCovered = result.totalDistance;
-			var totalDistance = 40076;
-			var distanceRemaining = totalDistance - distanceCovered;
-
+		var buildChart = function(distanceCovered, distanceRemaining){
 			var distanceData = [
 				{
 					value: distanceCovered,
@@ -63,23 +67,57 @@ var RnfApp = {
 		        responsive : true
 		    }
 
-			var distance = document.getElementById("divTotalDistance").getContext("2d");
-		    new Chart(distance).Pie(distanceData, chartOptions);
+			var chartElement = document.getElementById("divTotalDistance").getContext("2d");
+		    new Chart(chartElement).Pie(distanceData, chartOptions);
+		};
 
-	    	var addKilometers = function(distance) {
-	    		return distance.toLocaleString() + ' km';
-	    	}
+		var buildContributorsTable = function(contributors){
+			var div = $("<div />");
+			$("#lastActivity").after(div);
 
-	    	var addMiles = function(distance) {
-				var convertToMiles = 1.609344;
-	    		return Math.round(distance/convertToMiles).toLocaleString() + ' mi';
-	    	}
+			var viewContributorsLink = $("<a />").attr("href", "#").html("View Contributions <i class='glyphicon glyphicon-chevron-down'></i>");
+			// div.append(viewContributorsLink)
 
-		    $("#distanceTotal").html(addKilometers(totalDistance) + "<br>" + addMiles(totalDistance));
+			var orderedAthletes = {};
+			Object.keys(contributors).sort().forEach(function(key){
+				orderedAthletes[key] = contributors[key];
+			});
+
+			var contributorsDiv = $("<div />");
+			div.append(contributorsDiv);
+			contributorsDiv.hide();
+
+			for(var athlete in orderedAthletes) {
+				var divRow = $("<div />").addClass("row");
+				var divAthlete = $("<div />").addClass("col-sm-4").html(athlete);
+				var divKm = $("<div />").addClass("col-sm-4").html(addKilometers(Math.round(contributors[athlete] / 1000)));
+				var divMi = $("<div />").addClass("col-sm-4").html(addMiles(contributors[athlete] / 1000));
+				contributorsDiv.append(divRow.append(divAthlete).append(divKm).append(divMi))
+			}
+
+			viewContributorsLink.on("click", function(e){
+				$(this).find(".glyphicon").toggleClass("glyphicon-chevron-down glyphicon-chevron-up")
+				e.preventDefault();
+				contributorsDiv.slideToggle();
+			});
+		};
+
+		var buildDistanceStatsTable = function(totalDistance, distanceCovered, distanceRemaining, lastUpdateTime){
+			$("#distanceTotal").html(addKilometers(totalDistance) + "<br>" + addMiles(totalDistance));
 		    $("#distanceCovered").html(addKilometers(distanceCovered) + "<br>" + addMiles(distanceCovered));
 		    $("#distanceRemaining").html(addKilometers(distanceRemaining) + "<br>" + addMiles(distanceRemaining));
 		    $("#lastActivity").html("<small class='text-muted'>Last updated: " + lastUpdateTime.toLocaleDateString() + "</small>");
+		};
 
+		getDistanceCovered().then(function(result){
+			var lastUpdateTime = new Date(result.lastUpdateTime);
+			var distanceCovered = result.totalDistance;
+			var totalDistance = 40076;
+			var distanceRemaining = totalDistance - distanceCovered;
+
+			buildChart(distanceCovered, distanceRemaining);
+			buildContributorsTable(result.athletes);
+			buildDistanceStatsTable(totalDistance, distanceCovered, distanceRemaining, lastUpdateTime)
 		});
 
 	},
