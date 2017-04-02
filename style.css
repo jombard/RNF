@@ -191,34 +191,8 @@ ul.rnfflower {
   font-size: 16px;    
 } 
 
-.carousel-indicators li {
-  width:12px;
-  height:12px;  
-  background:#fff;
-  border-color:#fff;
-}
-
-.carousel-indicators .active {
-  width:14px;
-  height:14px;
-  background:#428bca;
-  border-color:#428bca;
-}
-
-.carousel-inner .thumbnail {
-  margin-bottom:0;
-  border-bottom-left-radius:0;
-  border-bottom-right-radius:0;
-}
-
-.carousel-inner .caption {
-  background: #aaa;
-  background: rgba(0,0,0,0.4);
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  height: 100%;
+.carousel-indicators {
+  margin-bottom: 0;
 }
 
 @media (min-width: 768px ) {

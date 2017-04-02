@@ -7,17 +7,39 @@ get_header(); ?>
 		
 		<div class="col-md-7">
 		
-			<div class="carousel-inner">
-				<a href="/challenges/2017-challenges/round-world-challenge/">
-					<div class="placeholder" data-large="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg">
-						<img src="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg" alt="Round the World Challenge" class="img-small">
-						<div style="padding-bottom: 66.6%;"></div>
+			<div id="rnf-homepage-carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#rnf-homepage-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#rnf-homepage-carousel" data-slide-to="1"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<a href="/challenges/2017-challenges/round-world-challenge/">
+							<div class="placeholder" data-large="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg">
+								<img src="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg" alt="Round the World Challenge" class="img-small">
+								<div style="padding-bottom: 66.6%;"></div>
+							</div>
+							<div class="carousel-caption">
+								<h2 class="text-white">The Round the World Challenge</h2>
+								<span class="btn btn-rnf">View our progress</span>
+							</div>
+						</a>
 					</div>
-					<div class="caption">
-						<h2 class="text-white">The Round the World Challenge</h2>
-						<span class="btn btn-rnf">View our progress</span>
+
+					<div class="item">
+						<a href="/fundraising/organisations/sackers-law-firm/">
+							<div class="placeholder" data-large="/wp-content/uploads/2017/04/Sackers.jpg">
+								<img src="/wp-content/uploads/2017/04/Sackers.jpg" alt="Sackers Law Firm" class="img-small">
+								<div style="padding-bottom: 66.6%;"></div>
+							</div>
+							<div class="carousel-caption">
+								<h2 class="text-white">Sackers Law Firm</h2>
+								<span class="btn btn-rnf">Thanks for the support</span>
+							</div>
+						</a>
 					</div>
-				</a>
+				</div>
 			</div>
 
 			<h3><strong>What is Remembering Not to Forget?</strong></h3>
