@@ -11,10 +11,24 @@ get_header(); ?>
 				<ol class="carousel-indicators">
 					<li data-target="#rnf-homepage-carousel" data-slide-to="0" class="active"></li>
 					<li data-target="#rnf-homepage-carousel" data-slide-to="1"></li>
+					<li data-target="#rnf-homepage-carousel" data-slide-to="2"></li>
 				</ol>
 
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
+						<a href="/challenges/2017-challenges/end-end-challenge/">
+							<div class="placeholder" data-large="/wp-content/uploads/2017/01/Landsendsignpost-e1484777710592.jpg">
+								<img src="/wp-content/uploads/2017/01/Landsendsignpost-e1484777710592.jpg" alt="Lands End" class="img-small">
+								<div style="padding-bottom: 66.6%;"></div>
+							</div>
+							<div class="carousel-caption">
+								<h2 class="text-white">Lands End to John O'Groats</h2>
+								<span class="btn btn-rnf">1000 miles cycle challenge</span>
+							</div>
+						</a>
+					</div>
+										
+					<div class="item">
 						<a href="/challenges/2017-challenges/round-world-challenge/">
 							<div class="placeholder" data-large="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg">
 								<img src="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg" alt="Round the World Challenge" class="img-small">
@@ -26,6 +40,7 @@ get_header(); ?>
 							</div>
 						</a>
 					</div>
+
 
 					<div class="item">
 						<a href="/fundraising/organisations/sackers-law-firm/">
