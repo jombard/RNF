@@ -75,26 +75,19 @@ var RnfApp = {
 			var div = $("<div />");
 			$("#lastActivity").after(div);
 
-			var viewContributorsLink = $("<a />").attr("href", "#").html("View Contributions <i class='glyphicon glyphicon-chevron-down'></i>");
-			// div.append(viewContributorsLink)
-
-			var orderedAthletes = {};
-			Object.keys(contributors).sort().forEach(function(key){
-				orderedAthletes[key] = contributors[key];
-			});
-
 			var contributorsDiv = $("<div />");
 			div.append(contributorsDiv);
 			contributorsDiv.hide();
 
-			for(var athlete in orderedAthletes) {
+			for(var athlete in contributors) {
 				var divRow = $("<div />").addClass("row");
 				var divAthlete = $("<div />").addClass("col-sm-4").html(athlete);
-				var divKm = $("<div />").addClass("col-sm-4").html(addKilometers(Math.round(contributors[athlete] / 1000)));
-				var divMi = $("<div />").addClass("col-sm-4").html(addMiles(contributors[athlete] / 1000));
+				var divKm = $("<div />").addClass("col-sm-4").html(addKilometers(Math.round(contributors[athlete].total / 1000)));
+				var divMi = $("<div />").addClass("col-sm-4").html(addMiles(contributors[athlete].total / 1000));
 				contributorsDiv.append(divRow.append(divAthlete).append(divKm).append(divMi))
 			}
 
+			var viewContributorsLink = $("<a />").attr("href", "#").html("View Contributions <i class='glyphicon glyphicon-chevron-down'></i>");
 			viewContributorsLink.on("click", function(e){
 				$(this).find(".glyphicon").toggleClass("glyphicon-chevron-down glyphicon-chevron-up")
 				e.preventDefault();
