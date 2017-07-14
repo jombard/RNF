@@ -4,58 +4,48 @@ get_header(); ?>
 	<!-- FRONT-PAGE START -->
 
 	<div class="row">
-		
-		<div class="col-md-7">
-		
-			<div id="rnf-homepage-carousel" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#rnf-homepage-carousel" data-slide-to="0" class="active"></li>
-					<li data-target="#rnf-homepage-carousel" data-slide-to="1"></li>
-					<li data-target="#rnf-homepage-carousel" data-slide-to="2"></li>
-				</ol>
-
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<a href="/challenges/2017-challenges/end-end-challenge/">
-							<div class="placeholder" data-large="/wp-content/uploads/2017/01/Landsendsignpost-e1484777710592.jpg">
-								<img src="/wp-content/uploads/2017/01/Landsendsignpost-e1484777710592.jpg" alt="Lands End" class="img-small">
-								<div style="padding-bottom: 66.6%;"></div>
-							</div>
-							<div class="carousel-caption">
-								<h2 class="text-white">Lands End to John O'Groats</h2>
-								<span class="btn btn-rnf">1000 miles cycle challenge</span>
-							</div>
-						</a>
-					</div>
-										
-					<div class="item">
-						<a href="/challenges/2017-challenges/round-world-challenge/">
-							<div class="placeholder" data-large="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg">
-								<img src="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg" alt="Round the World Challenge" class="img-small">
-								<div style="padding-bottom: 66.6%;"></div>
-							</div>
-							<div class="carousel-caption">
-								<h2 class="text-white">The Round the World Challenge</h2>
-								<span class="btn btn-rnf">View our progress</span>
-							</div>
-						</a>
-					</div>
-
-
-					<div class="item">
-						<a href="/fundraising/organisations/sackers-law-firm/">
-							<div class="placeholder" data-large="/wp-content/uploads/2017/04/Sackers.jpg">
-								<img src="/wp-content/uploads/2017/04/Sackers.jpg" alt="Sackers Law Firm" class="img-small">
-								<div style="padding-bottom: 66.6%;"></div>
-							</div>
-							<div class="carousel-caption">
-								<h2 class="text-white">Sackers Law Firm</h2>
-								<span class="btn btn-rnf">Thanks for the support</span>
-							</div>
-						</a>
-					</div>
+		<div class="col-md-8" style="padding:0;">
+			<a href="/challenges/2017-challenges/end-end-challenge/">
+				<div class="placeholder" data-large="/wp-content/uploads/2017/01/Landsendsignpost-e1484777710592.jpg">
+					<img src="/wp-content/uploads/2017/01/Landsendsignpost-e1484777710592.jpg" alt="Lands End" class="img-small">
+					<div style="padding-bottom: 66.6%;"></div>
 				</div>
-			</div>
+				<div class="carousel-caption">
+					<h2 class="text-white">Land's End to John O'Groats</h2>
+					<span class="btn btn-rnf">1000 miles cycle challenge</span>
+				</div>
+			</a>
+		</div>
+							
+		<div class="col-md-4 col-sm-6" style="padding:0;">
+			<a href="/challenges/2017-challenges/round-world-challenge/">
+				<div class="placeholder" data-large="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg">
+					<img src="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg" alt="Round the World Challenge" class="img-small">
+					<div style="padding-bottom: 66.6%;"></div>
+				</div>
+				<div class="carousel-caption">
+					<h2 class="text-white">The Round the World Challenge</h2>
+					<span class="btn btn-rnf">View our progress</span>
+				</div>
+			</a>
+		</div>
+
+		<div class="col-md-4 col-sm-6" style="padding:0;">
+			<a href="/fundraising/organisations/sackers-law-firm/">
+				<div class="placeholder" data-large="/wp-content/uploads/2017/04/Sackers.jpg">
+					<img src="/wp-content/uploads/2017/04/Sackers.jpg" alt="Sackers Law Firm" class="img-small">
+					<div style="padding-bottom: 66.6%;"></div>
+				</div>
+				<div class="carousel-caption">
+					<h2 class="text-white">Thanks for the support</h2>
+					<span class="btn btn-rnf">Sackers Law Firm</span>
+				</div>
+			</a>
+		</div>
+	</div>
+		
+	<div class="row">
+		<div class="col-md-7">
 
 			<h3><strong>What is Remembering Not to Forget?</strong></h3>
 	        <p><a href="/">Remembering Not to Forget</a> is a small charity established at the end of 2013 
