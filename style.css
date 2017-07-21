@@ -100,10 +100,6 @@ ol {
   color: #fff;
 }
 
-.breadcrumb {
-  margin-top: 20px;
-}
-
 a.list-group-item {
   color: #00A4E4;
 }
@@ -218,6 +214,7 @@ ul.rnfflower {
 
 .main-content-block {
   color: #666;
+  margin-top: 20px;
   margin-bottom: 250px;
   min-height: 100%;
 }
