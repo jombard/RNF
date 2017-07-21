@@ -9,6 +9,18 @@ add_theme_support( 'post-thumbnails' );
 // Add HTML5 default gallery styling
 add_theme_support( 'html5', array( 'gallery', 'caption' ) );
 
+// Add rnf options to admin menu
+add_action( 'admin_menu', 'rnf_options_menu' );
+function rnf_options_menu() {
+	add_menu_page( 'RNF Options', 'RNF Options', 'edit_pages', 'rnf-options-identifier', 'rnf_options_page' );
+}
+function rnf_options_page() {
+	if ( !current_user_can( 'edit_pages' ) )  {
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	}
+	include __DIR__."/rnfoptionscontent.php";
+}
+
 // Add current class to selected menu item
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 function special_nav_class($classes, $item){
