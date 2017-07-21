@@ -16,7 +16,20 @@ get_header(); ?>
 				</div>
 			</a>
 		</div>
-							
+			
+		<div class="col-md-4 col-sm-6" style="padding:0;">
+			<a href="/speed-of-change/">
+				<div class="placeholder" data-large="/wp-content/uploads/2017/07/carehome.jpg">
+					<img src="/wp-content/uploads/2017/07/carehome.jpg" alt="Care home visit" class="img-small">
+					<div style="padding-bottom: 66.6%;"></div>
+				</div>
+				<div class="carousel-caption">
+					<h2 class="text-white">Speed of change</h2>
+					<span class="btn btn-rnf">View latest blog post</span>
+				</div>
+			</a>
+		</div>
+						
 		<div class="col-md-4 col-sm-6" style="padding:0;">
 			<a href="/challenges/2017-challenges/round-world-challenge/">
 				<div class="placeholder" data-large="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg">
@@ -29,21 +42,8 @@ get_header(); ?>
 				</div>
 			</a>
 		</div>
-
-		<div class="col-md-4 col-sm-6" style="padding:0;">
-			<a href="/fundraising/organisations/sackers-law-firm/">
-				<div class="placeholder" data-large="/wp-content/uploads/2017/04/Sackers.jpg">
-					<img src="/wp-content/uploads/2017/04/Sackers.jpg" alt="Sackers Law Firm" class="img-small">
-					<div style="padding-bottom: 66.6%;"></div>
-				</div>
-				<div class="carousel-caption">
-					<h2 class="text-white">Thanks for the support</h2>
-					<span class="btn btn-rnf">Sackers Law Firm</span>
-				</div>
-			</a>
-		</div>
 	</div>
-		
+
 	<div class="row">
 		<div class="col-md-7">
 
