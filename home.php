@@ -45,7 +45,7 @@ get_header(); ?>
                     </div><!-- .entry-content -->
 
                     <footer class="entry-meta">
-                        <?php the_tags( '<div class="post-labels"><div class="label label-default">', '</div><div class="label label-default">', '</div></div>' ); ?>
+                        <?php the_tags( '<div class="post-labels"><div class="label label-info">', '</div><div class="label label-info">', '</div></div>' ); ?>
                     </footer><!-- .entry-meta -->
                 </article><!-- #post -->
 
@@ -68,9 +68,11 @@ get_header(); ?>
     	</div><!-- .col-md-8 -->
 	
 		<div class="col-md-4">
-            <div>
-                <h3>Tag Cloud</h3>
-                <?php wp_tag_cloud( 'smallest=8&largest=22' ); ?>
+            <div class="panel panel-info">
+                <div class="panel-heading">Tag Cloud</div>
+                <div class="panel-body">
+                    <?php wp_tag_cloud( 'smallest=8&largest=22' ); ?>
+                </div>
             </div>
 			<?php get_sidebar(); ?>
 		</div><!-- .col-md-4 -->

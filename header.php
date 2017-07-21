@@ -51,7 +51,7 @@
 
             <div class="col-md-3 col-xs-8">
                 <div class="donateheader">
-  		            <a class="btn btn-success btn-block m-b" href="https://mydonate.bt.com/donation/start.html?charity=143287">
+  		            <a class="btn btn-lg btn-success btn-block m-b" href="https://mydonate.bt.com/donation/start.html?charity=143287">
                         Donate <span class="hidden-xs hidden-md">to<br>Remembering Not To Forget</span>
                     </a>	
                 </div>
@@ -68,7 +68,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/"><span class="hidden-xs hidden-sm">Remembering Not To Forget</span></a>
+                    <a class="navbar-brand" href="/">Remembering Not To Forget</a>
                 </div>
 
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

@@ -6,9 +6,9 @@
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup" class="panel-body">
         <form action="https://rememberingnottoforget.us3.list-manage2.com/subscribe/post?u=4bbf97a920c7865dcf7b097ba&amp;id=f077e514d1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div class="form-group">Join our newsletter and get occasional updates on our challenges and fundraising distributions.</div>
+            <div class="form-group">Join our newsletter and get occasional updates on our challenges and fundraising progress.</div>
             <div class="form-group">
-                <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
+                <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="Enter your email address" required>
             </div>
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;">
@@ -79,30 +79,14 @@
 <!--End mc_embed_signup-->
 </div>
 
-<h3>Join us on social media</h3>
-<a href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679">
-	<span class="social-icon iconfbook"></span>
-    <span class="sr-only">Facebook</span>
-</a>
-<a href="https://twitter.com/rnf_uk">
-	<span class="social-icon icontwitter"></span>
-    <span class="sr-only">Twitter</span>
-</a>
-<a href="https://www.instagram.com/rememberingnottoforget">
-	<span class="social-icon iconinsta"></span>
-    <span class="sr-only">Instagram</span>
-</a>
-<a href="https://www.youtube.com/channel/UCsNKdIv9jMVGGJ8RLT2GDeQ">
-    <span class="social-icon iconyoutube"></span>
-    <span class="sr-only">Youtube</span>
-</a>
-
-<a href="http://www.dementiafriends.org.uk/" target="_blank">
-    <img src="/wp-content/themes/rnf/images/dementiafriends.png" alt="dementia friends" style="padding:  10px;" />
-</a>
-<div class="col-sm-12">
-<p>Dementia Friends is a nationwide initiative run by the Alzheimer's Society and funded by the government. It aims to improve people's understanding of dementia and its effects.</p>
-<p>Find out how you, your business or organisation can get involved in Dementia Friends and help change the way people think, talk and act about dementia. Visit the <a href="http://www.dementiafriends.org.uk/" target="_blank">Dementia Friends website</a>.</p>
-<p><a href="/">Remembering Not to Forget</a> runs <a href="http://www.dementiafriends.org.uk/" target="_blank">Dementia Friends</a> sessions - if you would like us to run one near you please <a href="/contact-us/">let us know</a>.</p>
+<div class="panel panel-info">
+    <div class="panel-heading">Become a Dementia Friend</div>
+    <div class="panel-body">
+        <a href="http://www.dementiafriends.org.uk/" target="_blank">
+            <img src="/wp-content/themes/rnf/images/dementiafriends.png" alt="dementia friends" />
+        </a>
+        <p>Register to become a Dementia Friend.</p>
+        <a href="/dementia-friends/" class="btn btn-info">Find out more</a>
+    </div>
 </div>
 <!-- SIDEBAR END -->

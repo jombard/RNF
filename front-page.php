@@ -3,7 +3,7 @@
 get_header(); ?>
 	<!-- FRONT-PAGE START -->
 
-	<div class="row">
+	<div class="row" style="margin-top: -20px;">
 		<div class="col-md-8" style="padding:0;">
 			<a href="/challenges/2017-challenges/end-end-challenge/">
 				<div class="placeholder" data-large="/wp-content/uploads/2017/01/Landsendsignpost-e1484777710592.jpg">
@@ -73,7 +73,7 @@ get_header(); ?>
 	        	whatever you can.</p>
 
 	        <div class="text-center">
-	            <a class="btn btn-success" href="https://mydonate.bt.com/donation/start.html?charity=143287">Donate to<br>
+	            <a class="btn btn-success btn-lg" href="https://mydonate.bt.com/donation/start.html?charity=143287">Donate to<br>
 	            	Remembering Not To Forget</a>
 	        </div>
 

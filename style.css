@@ -58,6 +58,7 @@ p,
 ul, 
 ol {
   margin-bottom: 30px;
+  line-height: 1.58;
 }
 
 .logo {
@@ -165,13 +166,6 @@ ul.rnfflower {
   border-color: #666;
 }
 
-.navbar-rnf .navbar-brand {
-  background-image: url(/wp-content/themes/rnf/images/icons/home.png);
-  background-position: 15px 17px;
-  background-repeat: no-repeat;
-  padding-left: 35px;  		
-}
-
 /* CAROUSEL ADDITIONAL STYLES */
 .carousel {
     margin-bottom: 15px;
@@ -202,8 +196,8 @@ ul.rnfflower {
   margin-bottom: 25px;
 }
 
-.entry-content {
-  line-height: 30px;
+.entry-content p {
+  font-size: 21px;
 }
      
 .donateheader {

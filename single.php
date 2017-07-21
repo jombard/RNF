@@ -15,13 +15,6 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<header class="entry-header">
-						<h1><?php the_title(); ?></h1>
-						<p class="post-meta"><?php the_time('F jS, Y') ?> by <a href="#"><?php the_author(); ?></a> in <?php the_category(', ') ?> <?php comments_number('No Comments','1 Comment','% Comments'); ?></p>
-						<div class="social-options">
-							<?php echo do_shortcode ('[shareaholic app="share_buttons" id="15240249"]'); ?>
-						</div>
-					</header><!-- .entry-header -->
 
 					<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 						<div class="row entry-thumbnail">
@@ -33,6 +26,14 @@ get_header(); ?>
 						</div>
 					<?php endif; ?>
 
+					<header class="entry-header">
+						<h1><?php the_title(); ?></h1>
+						<p class="post-meta"><?php the_time('F jS, Y') ?> by <a href="#"><?php the_author(); ?></a> in <?php the_category(', ') ?> <?php comments_number('No Comments','1 Comment','% Comments'); ?></p>
+						<div class="social-options">
+							<?php echo do_shortcode ('[shareaholic app="share_buttons" id="15240249"]'); ?>
+						</div>
+					</header><!-- .entry-header -->
+
 					<div class="entry-content">
 						<?php the_content(); ?>
 
@@ -42,7 +43,7 @@ get_header(); ?>
 							</div>
 						</div>
 
-						<?php the_tags( '<div class="post-labels"><div class="label label-default">', '</div><div class="label label-default">', '</div></div>' ); ?>
+						<?php the_tags( '<div class="post-labels"><div class="label label-info">', '</div><div class="label label-info">', '</div></div>' ); ?>
 
 					</div><!-- .entry-content -->
 

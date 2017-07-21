@@ -12,11 +12,27 @@
 		    <div class="container">
 			    <div class="row">
 				    <div class="col-md-6 text-center text-md-left">
-				    	<p>Copyright &copy; <?php echo date("Y") ?> <a href="/"><?php bloginfo('name'); ?></a><br />
-					    <span class="text-muted">Registered Charity No. 1166415</span></p>
+				    	<div>Copyright &copy; <?php echo date("Y") ?> <a href="/"><?php bloginfo('name'); ?></a></div>
+					    <div class="text-muted">Registered Charity No. 1166415</div>
+					    <small><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-and-conditions/">Terms and Conditions</a></small>
 			    	</div>
 			    	<div class="col-md-6 text-center text-md-right">
-				    	<p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-and-conditions/">Terms and Conditions</a></p>
+				    	<a href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679" class="pull-right">
+							<span class="social-icon iconfbook"></span>
+						    <span class="sr-only">Facebook</span>
+						</a>
+						<a href="https://twitter.com/rnf_uk" class="pull-right">
+							<span class="social-icon icontwitter"></span>
+						    <span class="sr-only">Twitter</span>
+						</a>
+						<a href="https://www.instagram.com/rememberingnottoforget" class="pull-right">
+							<span class="social-icon iconinsta"></span>
+						    <span class="sr-only">Instagram</span>
+						</a>
+						<a href="https://www.youtube.com/channel/UCsNKdIv9jMVGGJ8RLT2GDeQ" class="pull-right">
+						    <span class="social-icon iconyoutube"></span>
+						    <span class="sr-only">Youtube</span>
+						</a>
 				    </div>
 			    </div>
 			
