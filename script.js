@@ -223,6 +223,10 @@ var RnfApp = {
 			indicators.append($("<li />").attr({"data-target": "#gallery-carousel", "data-slide-to": i}).addClass(i === 0 ? "active" : ""));
 		}
 		carousel.prepend(indicators);
+
+		var leftControl = $("<a />").addClass("left carousel-control").attr({"href": "#gallery-carousel", "role": "button", "data-slide": "prev"}).html("<span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>");
+		var rightControl = $("<a />").addClass("right carousel-control").attr({"href": "#gallery-carousel", "role": "button", "data-slide": "next"}).html("<span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>");
+		carousel.append(leftControl).append(rightControl);
 	},
 	init: function(){
 		this.replaceLowResImages();
