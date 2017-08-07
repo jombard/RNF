@@ -105,7 +105,7 @@ var RnfApp = {
 		getDistanceCovered().then(function(result){
 			var lastUpdateTime = new Date(result.lastUpdateTime);
 			var distanceCovered = result.totalDistance;
-			var totalDistance = 40076;
+			var totalDistance = 80152;
 			var distanceRemaining = totalDistance - distanceCovered;
 
 			buildChart(distanceCovered, distanceRemaining);
