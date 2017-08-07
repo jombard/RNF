@@ -55,7 +55,15 @@ get_header(); ?>
 					<?php echo do_shortcode ('[shareaholic app="share_buttons" id="15240249"]'); ?>
 				</div>
 
+				<ul class="pager">
+					<?php 
+						previous_post_link('<li class="previous">%link</li>');
+						next_post_link('<li class="next">%link</li>');
+					?>
+				</ul>
+
 				<?php comments_template(); ?>
+
 			<?php endwhile; ?>
 
 		</div><!-- .col-md-12 -->
