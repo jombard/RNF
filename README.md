@@ -1,2 +1,2 @@
-# RNF
-Charity Wordpress Website
+# RNF Wordpress Template
+Charity Wordpress Website Template
