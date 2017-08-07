@@ -89,4 +89,27 @@
         <a href="/dementia-friends/" class="btn btn-info">Find out more</a>
     </div>
 </div>
+
+<div class="panel panel-info">
+    <div class="panel-heading">Latest Post</div>
+    <?php
+        $args = array('numberposts' => '1', 'post_status' => array('publish'));
+        $recent_posts = wp_get_recent_posts($args);
+        foreach ($recent_posts as $recent) { ?>
+            <div>
+                <a href="<?php echo get_permalink($recent["ID"]) ?>">
+                    <?php if ( has_post_thumbnail($recent["ID"]) ) { 
+                        echo get_the_post_thumbnail($recent["ID"], 'large', array( 'class' => "img-responsive"));
+                    } ?>  
+                    <div class="carousel-caption">
+                        <div><?php echo $recent["post_title"] ?></div>
+                        <div class="btn btn-rnf">View Post</div>
+                    </div>
+                </a>
+            </div>
+        <?php }
+        wp_reset_query();
+    ?>
+</div>
+
 <!-- SIDEBAR END -->
