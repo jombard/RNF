@@ -8,9 +8,9 @@
     <meta name="keywords" content="dementia, charity, fundraising, sponsorship, challenge">
     <meta name="description" content="Remembering Not to Forget is a small charity established at the end of 2013 to fundraise to support people impacted by dementia." />
 	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-	<link rel="author" type="text/plain" href="/wp-content/themes/rnf/humans.txt" />
-	<link rel="shortcut icon" href="/wp-content/themes/rnf/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/wp-content/themes/rnf/css/bootstrap.min.css">
+	<link rel="author" type="text/plain" href="<?php bloginfo('url') ?>/wp-content/themes/rnf/humans.txt" />
+	<link rel="shortcut icon" href="<?php bloginfo('url') ?>/wp-content/themes/rnf/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="<?php bloginfo('url') ?>/wp-content/themes/rnf/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	
 	<?php wp_head(); ?>
@@ -34,14 +34,14 @@
         <div class="row">
             <div class="col-lg-1 col-sm-2 col-xs-4 text-center">
                 <div class="m-t">
-  	                <a href="/" class="logo">
+  	                <a href="<?php bloginfo('url') ?>/" class="logo">
                         Remembering Not to Forget
                     </a>
                 </div>
             </div>
             <div class="col-lg-8 col-md-7 col-sm-10 col-xs-12 hidden-xs">   
                 
-	            <h1><a href="/"><?php bloginfo('name'); ?></a></h1>
+	            <h1><a href="<?php bloginfo('url') ?>/"><?php bloginfo('name'); ?></a></h1>
 
 	            <div id="sitedescription" class="text-dark">
 	                <?php bloginfo('description'); ?>
