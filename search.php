@@ -13,26 +13,27 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php if ( have_posts() ) : ?>
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+					<h1 class="page-title"><?php printf( __( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				<?php else : ?>
-					<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1>
+					<h1 class="page-title"><?php _e( 'Nothing Found' ); ?></h1>
 				<?php endif; ?>
 			</header><!-- .page-header --> 
 
 			<?php if ( have_posts() ) : ?>
 
-				<?php /* The loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'content', get_post_format() ); ?>
-				<?php endwhile; ?>
+					
+					<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?> 
+
+				<?php endwhile; ?> 
 
 			<?php else : ?>
 
-				<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyseventeen' ); ?></p>
+				<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.' ); ?></p>
 			
-			<?php get_search_form(); ?>
-
 			<?php endif; ?>
+
+			<?php get_search_form(); ?>
 
 		</div><!-- .col-md-8 -->
 	
