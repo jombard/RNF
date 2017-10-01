@@ -11,11 +11,15 @@ get_header(); ?>
 				yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumb">','</p>');
 			} ?>
 
-			<?php if ( have_posts() ) : ?>
+			<header class="page-header">
+				<?php if ( have_posts() ) : ?>
+					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<?php else : ?>
+					<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1>
+				<?php endif; ?>
+			</header><!-- .page-header --> 
 
-				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentythirteen' ), get_search_query() ); ?></h1>
-				</header>
+			<?php if ( have_posts() ) : ?>
 
 				<?php /* The loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -23,7 +27,11 @@ get_header(); ?>
 				<?php endwhile; ?>
 
 			<?php else : ?>
-				<?php get_template_part( 'content', 'none' ); ?>
+
+				<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyseventeen' ); ?></p>
+			
+			<?php get_search_form(); ?>
+
 			<?php endif; ?>
 
 		</div><!-- .col-md-8 -->
