@@ -10,8 +10,6 @@
 	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 	<link rel="author" type="text/plain" href="<?php bloginfo('url') ?>/wp-content/themes/rnf/humans.txt" />
 	<link rel="shortcut icon" href="<?php bloginfo('url') ?>/wp-content/themes/rnf/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="<?php bloginfo('url') ?>/wp-content/themes/rnf/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	
 	<?php wp_head(); ?>
 
@@ -68,7 +66,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">Remembering Not To Forget</a>
+                    <a class="navbar-brand" href="<?php bloginfo('url') ?>/">Remembering Not To Forget</a>
                 </div>
 
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

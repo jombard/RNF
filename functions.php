@@ -24,6 +24,40 @@ function is_tree($pid) {	// $pid = The ID of the page we're looking for pages un
 	return (is_page()&&($post->post_parent==$pid||is_page($pid)));
 };
 
+// add primary nav menu
+function register_rnf_nav_menu() {
+	register_nav_menu("rnf-navigation-menu", __("RNF Navigation Menu"));
+}
+add_action("init", "register_rnf_nav_menu");
+
+// function theme_setup() {
+// 	$starter_content = array(
+// 		'nav_menus' => array(
+// 			'rnf-navigation-menu' => array(
+// 				'name' => __( 'RNF Navigation Menu' ),
+// 				'items' => array(
+// 					'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
+// 					'page_about',
+// 					'page_blog',
+// 					'page_contact',
+// 				),
+// 			)
+// 		)
+// 	);
+
+// 	add_theme_support( 'starter-content', $starter_content );
+// }
+// add_action( 'init', 'theme_setup' );
+
+// scripts
+function rnftheme_enqueue_scripts() {
+	wp_enqueue_style( 'bootstrap', get_theme_file_uri( 'css/bootstrap.min.css' ) );
+	wp_enqueue_style( 'style', get_theme_file_uri( '/style.css' ) );
+
+	wp_enqueue_script( 'bootstrap', get_theme_file_uri( 'scripts/bootstrap.min.js' ), array( 'jquery' ), "", true );
+}
+add_action("wp_enqueue_scripts", "rnftheme_enqueue_scripts");
+
 // Comment template
 function rnftheme_comment($comment, $args, $depth) {
 	$GLOBALS['comment'] = $comment;
@@ -71,3 +105,5 @@ function rnftheme_comment($comment, $args, $depth) {
 <?php
 }
 ?>
+
+
