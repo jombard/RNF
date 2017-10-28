@@ -122,6 +122,17 @@ a.list-group-item {
   border-color: #31b0d5;
 }
 
+ul.social-icons {
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: top;
+  margin-bottom: 0;
+}
+
+ul.social-icons li {
+  display: inline-block;
+}
+
 ul.rnfflower {
   list-style-type:none;
   padding-left: 10px;
@@ -258,37 +269,37 @@ ul.rnfflower {
 }
 
 .social-icon {
-  width: 48px;
-  height: 48px;
-  margin: 5px;
+  width: 45px;
+  height: 45px;
   float: left;
   background-image: url(/wp-content/themes/rnf/images/Colour-social-media-icons-small.png);
   background-repeat: no-repeat;
+  border-radius: 6px;
 }
 
 .social-icon:hover {
 	opacity: 0.6;
-	filter: alpha(opacity=60);
+	filter: opacity(60%);
 }
 
 .iconfbook {
-	background-position: -1px -1px;
+	background-position: -2px -2px;
 }
 
 .icontwitter {
-	background-position: -101px -51px;
+	background-position: -102px -52px;
 }
 
 .icongooglep {
-	background-position: -1px -101px;
+	background-position: -2px -102px;
 }
 
 .iconinsta {
-  background-position: -51px -1px;
+  background-position: -52px -2px;
 }
 
 .iconyoutube {
-    background-position: -101px -101px;
+    background-position: -102px -102px;
 }
 
 #charities {

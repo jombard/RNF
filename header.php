@@ -29,15 +29,13 @@
 
 	<div class="container page">
             
-        <div class="row">
+        <div class="row m-t">
             <div class="col-lg-1 col-sm-2 col-xs-4 text-center">
-                <div class="m-t">
-  	                <a href="<?php bloginfo('url') ?>/" class="logo">
-                        Remembering Not to Forget
-                    </a>
-                </div>
+                <a href="<?php bloginfo('url') ?>/" class="logo">
+                    Remembering Not to Forget
+                </a>
             </div>
-            <div class="col-lg-8 col-md-7 col-sm-10 col-xs-12 hidden-xs">   
+            <div class="col-lg-5 col-md-7 col-sm-10 col-xs-12 hidden-xs">   
                 
 	            <h1><a href="<?php bloginfo('url') ?>/"><?php bloginfo('name'); ?></a></h1>
 
@@ -47,12 +45,36 @@
                 
             </div>
 
-            <div class="col-md-3 col-xs-8">
-                <div class="donateheader">
-  		            <a class="btn btn-lg btn-success btn-block m-b" href="https://mydonate.bt.com/donation/start.html?charity=143287">
-                        Donate <span class="hidden-xs hidden-md">to<br>Remembering Not To Forget</span>
-                    </a>	
-                </div>
+            <div class="col-md-6 text-right m-t m-b">
+                <ul class="social-icons">
+                    <li>
+                        <a href="<?php echo get_option('socialfacebook'); ?>">
+                            <span class="social-icon iconfbook"></span>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_option('socialtwitter'); ?>">
+                            <span class="social-icon icontwitter"></span>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_option('socialinstagram'); ?>">
+                            <span class="social-icon iconinsta"></span>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_option('socialyoutube'); ?>">
+                            <span class="social-icon iconyoutube"></span>
+                            <span class="sr-only">Youtube</span>
+                        </a>
+                    </li>
+                </ul>
+	            <a class="btn btn-lg btn-success" href="https://mydonate.bt.com/donation/start.html?charity=143287">
+                    Donate Now
+                </a>	
             </div>
 
         </div>
