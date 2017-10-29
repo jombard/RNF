@@ -57,7 +57,7 @@ get_header(); ?>
 		</div>
 		<div class="col-sm-4">
 			<h3 class="strong text-white">Amount<br />Raised</h3>
-			<p class="h1">£50,000</p>
+			<p class="h1">£35,000</p>
 		</div>
 		<div class="col-sm-4">
 			<h3 class="strong text-white">Organisations<br />Supported</h3>
