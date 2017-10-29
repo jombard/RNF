@@ -26,43 +26,43 @@ get_header(); ?>
 						</div>
 					<?php endif; ?>
 
-					<header class="entry-header">
-						<h1><?php the_title(); ?></h1>
-						<p class="post-meta"><?php the_time('F jS, Y') ?> by <a href="#"><?php the_author(); ?></a> in <?php the_category(', ') ?> <?php comments_number('No Comments','1 Comment','% Comments'); ?></p>
-						<div class="social-options">
+					<div class="entry-article">
+						<header class="entry-header">
+							<h1><?php the_title(); ?></h1>
+							<p class="post-meta"><?php the_time('F jS, Y') ?> by <a href="#"><?php the_author(); ?></a> in <?php the_category(', ') ?> <?php comments_number('No Comments','1 Comment','% Comments'); ?></p>
+						</header><!-- .entry-header -->
+
+						<div class="entry-content">
+							<?php the_content(); ?>
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									This entry was posted in <?php the_category(', ') ?>
+								</div>
+							</div>
+
+							<?php the_tags( '<div class="post-labels"><div class="label label-info">', '</div><div class="label label-info">', '</div></div>' ); ?>
+
+						</div><!-- .entry-content -->
+
+						<div class="alert alert-info">We need your help to raise awareness. Please consider sharing this post.</div>
+
+						<div>
 							<?php echo do_shortcode ('[shareaholic app="share_buttons" id="15240249"]'); ?>
 						</div>
-					</header><!-- .entry-header -->
 
-					<div class="entry-content">
-						<?php the_content(); ?>
 
-						<div class="panel panel-default">
-							<div class="panel-body">
-								This entry was posted in <?php the_category(', ') ?>
-							</div>
-						</div>
+						<ul class="pager">
+							<?php 
+								previous_post_link('<li class="previous">%link</li>');
+								next_post_link('<li class="next">%link</li>');
+							?>
+						</ul>
 
-						<?php the_tags( '<div class="post-labels"><div class="label label-info">', '</div><div class="label label-info">', '</div></div>' ); ?>
-
-					</div><!-- .entry-content -->
+						<?php comments_template(); ?>
+					</div>
 
 				</article><!-- #post -->
-
-				<div class="alert alert-info">We need your help to raise awareness. Please consider sharing this post.</div>
-
-				<div class="social-options">
-					<?php echo do_shortcode ('[shareaholic app="share_buttons" id="15240249"]'); ?>
-				</div>
-
-				<ul class="pager">
-					<?php 
-						previous_post_link('<li class="previous">%link</li>');
-						next_post_link('<li class="next">%link</li>');
-					?>
-				</ul>
-
-				<?php comments_template(); ?>
 
 			<?php endwhile; ?>
 

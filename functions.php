@@ -6,8 +6,20 @@ add_theme_support( 'menus' );
 // Add featured image to posts and pages
 add_theme_support( 'post-thumbnails' ); 
 
+// add 4x3 thumbnail
+add_image_size( 'rnf-featured-thumb', 400, 300, true );
+
 // Add HTML5 default gallery styling
 add_theme_support( 'html5', array( 'gallery', 'caption' ) );
+
+// Add featured content support
+add_theme_support( 'featured-content', array('filter' => 'rnf_get_featured_content', 'max_posts' => 20, 'post_types' => array( 'post', 'page' ), ) );
+
+function rnf_get_featured_content( $num = 3 ) {
+  global $featured;
+  $featured = apply_filters( 'rnf_get_featured_content', array() );
+  return is_array( $featured ) || $num >= count( $featured );
+}
 
 // Add current class to selected menu item
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
@@ -30,31 +42,15 @@ function register_rnf_nav_menu() {
 }
 add_action("init", "register_rnf_nav_menu");
 
-// function theme_setup() {
-// 	$starter_content = array(
-// 		'nav_menus' => array(
-// 			'rnf-navigation-menu' => array(
-// 				'name' => __( 'RNF Navigation Menu' ),
-// 				'items' => array(
-// 					'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
-// 					'page_about',
-// 					'page_blog',
-// 					'page_contact',
-// 				),
-// 			)
-// 		)
-// 	);
-
-// 	add_theme_support( 'starter-content', $starter_content );
-// }
-// add_action( 'init', 'theme_setup' );
-
 // scripts
 function rnftheme_enqueue_scripts() {
 	wp_enqueue_style( 'bootstrap', get_theme_file_uri( 'css/bootstrap.min.css' ) );
 	wp_enqueue_style( 'style', get_theme_file_uri( '/style.css' ) );
 
 	wp_enqueue_script( 'bootstrap', get_theme_file_uri( 'scripts/bootstrap.min.js' ), array( 'jquery' ), "", true );
+	wp_enqueue_script( 'isotope', get_theme_file_uri( 'scripts/isotope.pkgd.min.js' ), array( 'jquery' ), "", true );
+	wp_enqueue_script( 'chart', get_theme_file_uri( 'scripts/chart.min.js' ), array( 'jquery' ), "", true );
+	wp_enqueue_script( 'script', get_theme_file_uri( 'script.js' ), array( 'jquery' ), "", true );
 }
 add_action("wp_enqueue_scripts", "rnftheme_enqueue_scripts");
 
@@ -105,5 +101,3 @@ function rnftheme_comment($comment, $args, $depth) {
 <?php
 }
 ?>
-
-

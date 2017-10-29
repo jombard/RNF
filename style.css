@@ -14,12 +14,12 @@ html {
 }
 
 body {
-  background-color: #00A4E4;
-  color: #FFF;
-  font-family: Arial, Helvetica, 'Helvetica Neue', Verdana, sans-serif;
+  /*background-color: #00A4E4;*/
+  /*color: #FFF;*/
+  font-family: 'Carrois Gothic', Helvetica, 'Helvetica Neue', sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h1 {
@@ -64,7 +64,7 @@ a:hover {
 	text-decoration: underline;	
 }
 
-p, 
+/*p, */
 ul, 
 ol {
   margin-bottom: 30px;
@@ -77,6 +77,10 @@ ol {
   width: 92px;
   display: block;
   text-indent: -9999px;
+}
+
+.p-b {
+  padding-bottom: 15px;
 }
 
 .m-b {    
@@ -103,7 +107,6 @@ ol {
   background-color: #7F3F98;
   border-color: #5b266f;
   color: #fff;
-  font-weight: bold;
 }
 
 .btn-rnf:hover {
@@ -148,6 +151,13 @@ ul.rnfflower {
 .page {
   background: #FFF;
 }
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 11;
+}
   
 .navbar-rnf {
   background-color: #7F3F98;
@@ -155,9 +165,6 @@ ul.rnfflower {
   -moz-border-radius: 0;
   border-radius: 0;
   border: 0;
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-bottom: 0;
 }
 
 .navbar-rnf a {
@@ -188,23 +195,18 @@ ul.rnfflower {
 }
 
 /* CAROUSEL ADDITIONAL STYLES */
-.carousel {
-    margin-bottom: 15px;
+.carousel-caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .carousel h2, 
 .carousel p {
   color:  #fff;
   text-shadow: 1px 1px #333;
+  margin: 0;
 }  
-
-.carousel p {
-  font-size: 16px;    
-} 
-
-.carousel-indicators {
-  margin-bottom: 0;
-}
 
 @media (min-width: 768px ) {
   .carousel-inner .caption {
@@ -214,11 +216,16 @@ ul.rnfflower {
 }
 
 .entry-thumbnail {
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
+}
+
+.entry-article {
+  max-width: 740px;
+  margin: 0 auto;
 }
 
 .entry-content p {
-  font-size: 21px;
+  margin-bottom: 30px;
 }
      
 .donateheader {
@@ -229,7 +236,6 @@ ul.rnfflower {
 
 .main-content-block {
   color: #666;
-  margin-top: 20px;
   margin-bottom: 250px;
   min-height: 100%;
 }
@@ -363,6 +369,10 @@ nav.primary ul li .selected {
 
 .dropdown:hover .sub-menu {
   display: block;
+}
+
+.m-auto {
+  margin: 0 auto;
 }
 
 .challengesmain {
@@ -656,11 +666,4 @@ nav.primary ul li .selected {
   filter: blur(15px);
   /* this is needed so Safari keeps sharp edges */
   transform: scale(1);
-}
-
-.carousel-indicators li,
-.carousel-indicators .active {
-  width: 20px;
-  height: 20px;
-  margin: 5px;
 }

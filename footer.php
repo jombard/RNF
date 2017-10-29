@@ -2,9 +2,7 @@
 
 ?>
 
-					</section>
-                <div class="clearfix"></div>
-            </div>
+                <div class="clearfix" style="margin-bottom: 250px;"></div>
         </div>
 
         <!-- FOOTER -->

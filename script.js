@@ -1,10 +1,10 @@
-var RnfApp = {
+(function(rnfApp, jQuery) {
 
-	replaceLowResImages: function(){
-		var placeholders = $('.placeholder');
+	function replaceLowResImages(){
+		var placeholders = jQuery('.placeholder');
 
-		$.each(placeholders, function(i, val){
-			var placeholder = $(val);
+		jQuery.each(placeholders, function(i, val){
+			var placeholder = jQuery(val);
 			var small = placeholder.find('.img-small')
 
 			// 1: load small image and show it
@@ -22,8 +22,9 @@ var RnfApp = {
 			};
 			placeholder.append(imgLarge);
 		});
-	},
-	initTotalDistanceChart: function(){
+	};
+
+	function initTotalDistanceChart(){
 
 		var addKilometers = function(distance) {
 			return distance.toLocaleString() + ' km';
@@ -35,7 +36,7 @@ var RnfApp = {
 		};
 
 		var getDistanceCovered = function(){
-			return $.ajax({
+			return jQuery.ajax({
 	            type: "GET",
 	            url: "https://rememberingnottoforget.org.uk/wp-content/themes/rnf/RoundTheWorld.json",
 	            contentType: "application/json; charset=utf-8",
@@ -72,34 +73,34 @@ var RnfApp = {
 		};
 
 		var buildContributorsTable = function(contributors){
-			var div = $("<div />");
-			$("#lastActivity").after(div);
+			var div = jQuery("<div />");
+			jQuery("#lastActivity").after(div);
 
-			var contributorsDiv = $("<div />");
+			var contributorsDiv = jQuery("<div />");
 			div.append(contributorsDiv);
 			contributorsDiv.hide();
 
 			for(var athlete in contributors) {
-				var divRow = $("<div />").addClass("row");
-				var divAthlete = $("<div />").addClass("col-sm-4").html(athlete);
-				var divKm = $("<div />").addClass("col-sm-4").html(addKilometers(Math.round(contributors[athlete].total / 1000)));
-				var divMi = $("<div />").addClass("col-sm-4").html(addMiles(contributors[athlete].total / 1000));
+				var divRow = jQuery("<div />").addClass("row");
+				var divAthlete = jQuery("<div />").addClass("col-sm-4").html(athlete);
+				var divKm = jQuery("<div />").addClass("col-sm-4").html(addKilometers(Math.round(contributors[athlete].total / 1000)));
+				var divMi = jQuery("<div />").addClass("col-sm-4").html(addMiles(contributors[athlete].total / 1000));
 				contributorsDiv.append(divRow.append(divAthlete).append(divKm).append(divMi))
 			}
 
-			var viewContributorsLink = $("<a />").attr("href", "#").html("View Contributions <i class='glyphicon glyphicon-chevron-down'></i>");
+			var viewContributorsLink = jQuery("<a />").attr("href", "#").html("View Contributions <i class='glyphicon glyphicon-chevron-down'></i>");
 			viewContributorsLink.on("click", function(e){
-				$(this).find(".glyphicon").toggleClass("glyphicon-chevron-down glyphicon-chevron-up")
+				jQuery(this).find(".glyphicon").toggleClass("glyphicon-chevron-down glyphicon-chevron-up")
 				e.preventDefault();
 				contributorsDiv.slideToggle();
 			});
 		};
 
 		var buildDistanceStatsTable = function(totalDistance, distanceCovered, distanceRemaining, lastUpdateTime){
-			$("#distanceTotal").html(addKilometers(totalDistance) + "<br>" + addMiles(totalDistance));
-		    $("#distanceCovered").html(addKilometers(distanceCovered) + "<br>" + addMiles(distanceCovered));
-		    $("#distanceRemaining").html(addKilometers(distanceRemaining) + "<br>" + addMiles(distanceRemaining));
-		    $("#lastActivity").html("<small class='text-muted'>Last updated: " + lastUpdateTime.toLocaleDateString() + "</small>");
+			jQuery("#distanceTotal").html(addKilometers(totalDistance) + "<br>" + addMiles(totalDistance));
+		    jQuery("#distanceCovered").html(addKilometers(distanceCovered) + "<br>" + addMiles(distanceCovered));
+		    jQuery("#distanceRemaining").html(addKilometers(distanceRemaining) + "<br>" + addMiles(distanceRemaining));
+		    jQuery("#lastActivity").html("<small class='text-muted'>Last updated: " + lastUpdateTime.toLocaleDateString() + "</small>");
 		};
 
 		getDistanceCovered().then(function(result){
@@ -108,13 +109,18 @@ var RnfApp = {
 			var totalDistance = 80152;
 			var distanceRemaining = totalDistance - distanceCovered;
 
+			if(distanceRemaining < 0) {
+				distanceRemaining = 0;
+			}
+
 			buildChart(distanceCovered, distanceRemaining);
 			buildContributorsTable(result.athletes);
 			buildDistanceStatsTable(totalDistance, distanceCovered, distanceRemaining, lastUpdateTime)
 		});
 
-	},
-	initChart: function(){
+	};
+
+	function initChart(){
 		var pieData = [
 		    {
 			    value: 30,
@@ -168,10 +174,11 @@ var RnfApp = {
 
 	    var charities = document.getElementById("charities").getContext("2d");
 	    new Chart(charities).Pie(pieData, pieOptions);
-	},
-	initIsotopeFilter: function(){
+	};
+
+	function initIsotopeFilter(){
 		// challenge page mosaic
-		var $container = $('.portfolio');
+		var $container = jQuery('.portfolio');
 	    $container.isotope({
 	        filter: '*',
 	        animationOptions: {
@@ -181,8 +188,8 @@ var RnfApp = {
 	        }
 	    });
 
-	    $('nav.primary ul a').click(function () {
-	        var selector = $(this).attr('data-filter');
+	    jQuery('nav.primary ul a').click(function () {
+	        var selector = jQuery(this).attr('data-filter');
 	        $container.isotope({
 	            filter: selector,
 	            animationOptions: {
@@ -194,11 +201,11 @@ var RnfApp = {
 	        return false;
 	    });
 
-	    var $optionSets = $('nav.primary ul'),
+	    var $optionSets = jQuery('nav.primary ul'),
 	    $optionLinks = $optionSets.find('a');
 
 	    $optionLinks.click(function () {
-	        var $this = $(this);
+	        var $this = jQuery(this);
 	        if ($this.hasClass('selected')) {
 	            return false;
 	        }
@@ -206,10 +213,11 @@ var RnfApp = {
 	        $optionSet.find('.selected').removeClass('selected');
 	        $this.addClass('selected');
 	    });
-	},
-	initGalleryCarousel: function(){
-		var gallery = $(".gallery");
-		var carousel = $("<div />").attr({"id": "gallery-carousel", "data-ride": "carousel"}).addClass("carousel");
+	};
+
+	function initGalleryCarousel(){
+		var gallery = jQuery(".gallery");
+		var carousel = jQuery("<div />").attr({"id": "gallery-carousel", "data-ride": "carousel"}).addClass("carousel");
 		gallery.after(carousel);
 		carousel.append(gallery);
 
@@ -218,31 +226,51 @@ var RnfApp = {
 		var items = carousel.find(".item");
 		items.eq(0).addClass("active");
 
-		var indicators = $("<ol />").addClass("carousel-indicators");
+		var indicators = jQuery("<ol />").addClass("carousel-indicators");
 		for (var i = 0; i < items.length; i++) {
-			indicators.append($("<li />").attr({"data-target": "#gallery-carousel", "data-slide-to": i}).addClass(i === 0 ? "active" : ""));
+			indicators.append(jQuery("<li />").attr({"data-target": "#gallery-carousel", "data-slide-to": i}).addClass(i === 0 ? "active" : ""));
 		}
 		carousel.prepend(indicators);
 
-		var leftControl = $("<a />").addClass("left carousel-control").attr({"href": "#gallery-carousel", "role": "button", "data-slide": "prev"}).html("<span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>");
-		var rightControl = $("<a />").addClass("right carousel-control").attr({"href": "#gallery-carousel", "role": "button", "data-slide": "next"}).html("<span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>");
+		var leftControl = jQuery("<a />").addClass("left carousel-control").attr({"href": "#gallery-carousel", "role": "button", "data-slide": "prev"}).html("<span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>");
+		var rightControl = jQuery("<a />").addClass("right carousel-control").attr({"href": "#gallery-carousel", "role": "button", "data-slide": "next"}).html("<span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>");
 		carousel.append(leftControl).append(rightControl);
-	},
-	init: function(){
-		this.replaceLowResImages();
-		if ( $( "#charities" ).length ) {
+	};
+	
+	function initStickyNav() {
+		var navbar = document.getElementById("navbar");
+
+		var sticky = navbar.offsetTop;
+
+		function stickyNav() {
+			console.log("stickyNav");
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+
+		window.addEventListener("scroll", stickyNav);
+	};
+
+	rnfApp.init = function(){
+		replaceLowResImages();
+		if ( jQuery("#charities").length ) {
 			this.initChart();
 		}
-		this.initIsotopeFilter();
-		this.initGalleryCarousel();
-		if ( $( '#divTotalDistance').length) {
-			this.initTotalDistanceChart();
+		initIsotopeFilter();
+		initGalleryCarousel();
+		if ( jQuery('#divTotalDistance').length ) {
+			initTotalDistanceChart();
 		}
-	}
-};
+
+		initStickyNav();
+	};
+})(window.rnfApp = window.rnfApp || {}, window.jQuery = jQuery || {});
 
 (function(){
-	RnfApp.init();
+	window.rnfApp.init();
 })();
 
 

@@ -16,7 +16,7 @@
             </div>
             <div class="clear">
                 <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">Subscribe</button>
-                <div class="btn-group">
+                <div class="btn-group hidden">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         Previous Newsletters <span class="caret"></span>
                     </button>
@@ -83,7 +83,7 @@
     <div class="panel-heading">Become a Dementia Friend</div>
     <div class="panel-body">
         <a href="http://www.dementiafriends.org.uk/" target="_blank">
-            <img src="/wp-content/themes/rnf/images/dementiafriends.png" alt="dementia friends" />
+            <img src="/wp-content/themes/rnf/images/dementiafriends.png" alt="dementia friends" class="img-responsive" />
         </a>
         <p>Register to become a Dementia Friend.</p>
         <a href="/dementia-friends/" class="btn btn-info">Find out more</a>

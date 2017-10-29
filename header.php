@@ -10,8 +10,9 @@
 	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 	<link rel="author" type="text/plain" href="<?php bloginfo('url') ?>/wp-content/themes/rnf/humans.txt" />
 	<link rel="shortcut icon" href="<?php bloginfo('url') ?>/wp-content/themes/rnf/favicon.ico" type="image/x-icon">
-	
-	<?php wp_head(); ?>
+	<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
+    
+    <?php wp_head(); ?>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -32,10 +33,10 @@
         <div class="row m-t">
             <div class="col-lg-1 col-sm-2 col-xs-4 text-center">
                 <a href="<?php bloginfo('url') ?>/" class="logo">
-                    Remembering Not to Forget
+                    <?php bloginfo('name'); ?>
                 </a>
             </div>
-            <div class="col-lg-5 col-md-7 col-sm-10 col-xs-12 hidden-xs">   
+            <div class="col-lg-6 col-md-5 col-sm-10 col-xs-12 hidden-xs">   
                 
 	            <h1><a href="<?php bloginfo('url') ?>/"><?php bloginfo('name'); ?></a></h1>
 
@@ -45,8 +46,8 @@
                 
             </div>
 
-            <div class="col-md-6 text-right m-t m-b">
-                <ul class="social-icons">
+            <div class="col-md-5 text-right m-t m-b">
+                <ul class="social-icons hidden-xs">
                     <li>
                         <a href="<?php echo get_option('socialfacebook'); ?>">
                             <span class="social-icon iconfbook"></span>
@@ -78,25 +79,27 @@
             </div>
 
         </div>
+    </div>
 
-        <nav class="navbar navbar-rnf">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?php bloginfo('url') ?>/">Remembering Not To Forget</a>
-                </div>
-
-               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <?php wp_nav_menu( array('menu' => 'RNF Navigation Menu', 'container' => '', 'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>' )); ?>
-                </div>
+    <nav id="navbar" class="navbar navbar-rnf">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-xs" href="<?php bloginfo('url') ?>/"><?php bloginfo('name'); ?></a>
+                <a class="navbar-brand visible-xs-block" href="<?php bloginfo('url') ?>/">Home</a>
             </div>
-        </nav>
+
+           <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+                <?php wp_nav_menu( array('menu' => 'RNF Navigation Menu', 'container' => '', 'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>' )); ?>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
             
-        <div class="main-content-block">
-            <section>
             <!-- HEADER END -->
