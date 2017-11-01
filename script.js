@@ -243,7 +243,6 @@
 		var sticky = navbar.offsetTop;
 
 		function stickyNav() {
-			console.log("stickyNav");
 			if (window.pageYOffset >= sticky) {
 				navbar.classList.add("sticky")
 			} else {

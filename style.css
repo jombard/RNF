@@ -152,18 +152,23 @@ ul.rnfflower {
   background: #FFF;
 }
 
-.sticky {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 11;
+@media (min-width: 768px) {
+  .sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 11;
+  }
 }
-  
+.nav-pad {
+  padding-top: 70px;
+}
 .navbar-rnf {
   background-color: #7F3F98;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  margin-bottom: -50px;
   border: 0;
 }
 

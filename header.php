@@ -46,7 +46,7 @@
                 
             </div>
 
-            <div class="col-md-5 text-right m-t m-b">
+            <div class="col-md-5 col-sm-12 text-right m-t m-b">
                 <ul class="social-icons hidden-xs">
                     <li>
                         <a href="<?php echo get_option('socialfacebook'); ?>">
@@ -100,6 +100,6 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container nav-pad">
             
             <!-- HEADER END -->
