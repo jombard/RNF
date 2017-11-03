@@ -38,7 +38,7 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 
 					<footer class="entry-meta">
-						<?php the_tags( '<div class="post-labels"><div class="label label-default">', '</div><div class="label label-default">', '</div></div>' ); ?>
+						<?php the_tags( '<div class="post-labels"><div class="label label-info">', '</div><div class="label label-info">', '</div></div>' ); ?>
 					</footer><!-- .entry-meta -->
 				</article><!-- #post -->
 
