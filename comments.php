@@ -41,9 +41,8 @@ if ( post_password_required() )
 
 	<?php endif; // have_comments() ?>
 
-	<div class="panel panel-default">
-		<div class="panel-body">
-			<?php
+
+		<?php
 
 			$fields =  array(
 			'author' =>
@@ -72,9 +71,8 @@ if ( post_password_required() )
 			); 
 
 			comment_form($comments_args); 
-			?>
-		</div>
-	</div>
+		?>
+		
 
 </div><!-- #comments -->
 
