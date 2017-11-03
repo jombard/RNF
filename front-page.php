@@ -88,7 +88,7 @@ get_header(); ?>
 								</a>
 				        	</div>
 				        	<div class="col-sm-6">
-							    <h4><?php echo $recent["post_title"]; ?></h4>
+							<h4><a href="<?php echo get_permalink($recent["ID"]); ?>"><?php echo $recent["post_title"]; ?></a></h4>
 							    <p><?php echo $recent["post_excerpt"]; ?></p>
 							    <a href="<?php echo get_permalink($recent["ID"]); ?>">Read more</a>
 						  	</div>
@@ -114,7 +114,7 @@ get_header(); ?>
 					</a>
 	        	</div>
 	        	<div class="col-sm-6">
-				    <h4>Round the World Challenge</h4>
+					<h4><a href="/challenges/2017-challenges/round-world-challenge/">Round the World Challenge</a></h4>
 				    <p>Covering the distance of the equator through self-powered travel.</p>
 				    <a href="/challenges/2017-challenges/round-world-challenge/">Read more</a>
 			  	</div>
@@ -129,7 +129,7 @@ get_header(); ?>
 					</a>
 	        	</div>
 	        	<div class="col-sm-6">
-				    <h4>Land's End to John O'Groats</h4>
+					<h4><a href="/challenges/2017-challenges/end-end-challenge/">Land's End to John O'Groats</a></h4>
 				    <p>1000 miles cycle challenge.</p>
 				    <a href="/challenges/2017-challenges/end-end-challenge/">Read more</a>
 			  	</div>
@@ -144,7 +144,7 @@ get_header(); ?>
 					</a>
 	        	</div>
 	        	<div class="col-sm-6">
-				    <h4>Four Palaces guided walk</h4>
+					<h4><a href="/challenges/2017-challenges/four-palaces-guided-walk/">Four Palaces guided walk</a></h4>
 				    <p>A guided walk through historical London.</p>
 				    <a href="/challenges/2017-challenges/four-palaces-guided-walk/">Read more</a>
 			  	</div>
