@@ -14,8 +14,6 @@ html {
 }
 
 body {
-  /*background-color: #00A4E4;*/
-  /*color: #FFF;*/
   font-family: 'Carrois Gothic', Helvetica, 'Helvetica Neue', sans-serif;
   padding: 0;
   margin: 0;
@@ -105,7 +103,7 @@ ol {
 
 .btn-rnf {
   background-color: #7F3F98;
-  border-color: #5b266f;
+  border-color: #713f83;
   color: #fff;
 }
 
@@ -671,4 +669,8 @@ nav.primary ul li .selected {
   filter: blur(15px);
   /* this is needed so Safari keeps sharp edges */
   transform: scale(1);
+}
+
+.comment-respond label {
+  color: #777;
 }
