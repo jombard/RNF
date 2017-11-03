@@ -172,16 +172,18 @@ get_header(); ?>
 			<div id="mc_embed_signup">
 				<h3>Subscribe to our newsletter</h3>
 		        <form action="https://rememberingnottoforget.us3.list-manage2.com/subscribe/post?u=4bbf97a920c7865dcf7b097ba&amp;id=f077e514d1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		            <div class="form-group">Join our newsletter and get occasional updates on our challenges and fundraising progress.</div>
 		            <div class="form-group">
-		                <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="Enter your email address" required>
-		            </div>
-		            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-		            <div style="position: absolute; left: -5000px;">
-		                <input type="text" name="b_4bbf97a920c7865dcf7b097ba_f077e514d1" value="">
-		            </div>
-		            <div class="clear">
-		                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">Subscribe</button>
+						Join our newsletter and get occasional updates on our challenges and fundraising progress.
+					</div>
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<div style="position: absolute; left: -5000px;">
+						<input type="text" name="b_4bbf97a920c7865dcf7b097ba_f077e514d1" value="">
+					</div>
+					 <div class="input-group max-300">
+						<input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="Enter your email address" required>
+						<span class="input-group-btn">
+		                	<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">Subscribe</button>
+						</span>
 		            </div>
 		        </form>
 		    </div>
