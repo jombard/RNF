@@ -91,6 +91,10 @@ ol {
   margin-top:  10px;
 }
 
+.max-300 {
+  max-width: 300px;
+}
+
 .text-dark {
   color: #333;
 }
@@ -99,17 +103,13 @@ ol {
   color: #fff;
 }
 
-.btn {
-  font-size: 18px;
-}
-
 .btn-rnf {
   background-color: #7F3F98;
   border-color: #5b266f;
   color: #fff;
 }
 
-.btn-rnf:hover {
+.btn-rnf:hover, .btn-rnf:focus {
   background: #aa65c5;
   color: #fff;
 }

@@ -12,20 +12,28 @@ get_header(); ?>
 			} ?>
 
 			<header class="page-header">
+			<?php get_search_form(); ?>
+			<h2 class="page-title">
 				<?php if ( have_posts() ) : ?>
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+					<?php printf( __( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?>
 				<?php else : ?>
-					<h1 class="page-title"><?php _e( 'Nothing Found' ); ?></h1>
+					<?php _e( 'Nothing Found' ); ?>
 				<?php endif; ?>
+				</h2>
 			</header><!-- .page-header --> 
 
 			<?php if ( have_posts() ) : ?>
 
+				<ul class="rnfflower">
 				<?php while ( have_posts() ) : the_post(); ?>
 					
-					<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?> 
+					<li class="entry-title">
+						<?php the_title( '<h4><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' ); ?>
+						<p><?php the_excerpt() ?></p>
+					</li>
 
 				<?php endwhile; ?> 
+				</ul>
 
 			<?php else : ?>
 
@@ -33,7 +41,6 @@ get_header(); ?>
 			
 			<?php endif; ?>
 
-			<?php get_search_form(); ?>
 
 		</div><!-- .col-md-8 -->
 	
