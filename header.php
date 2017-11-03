@@ -76,8 +76,12 @@
 	            <a class="btn btn-lg btn-success" href="https://mydonate.bt.com/donation/start.html?charity=143287">
                     Donate Now
                 </a>	
-            </div>
 
+                <div class="hidden-xs pull-right">
+                    <!-- <input type="text" class="form-control" placeholder="Search" style="max-width:250px;" /> -->
+                    <?php get_search_form(); ?>
+                </div>
+            </div>
         </div>
     </div>
 
