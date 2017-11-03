@@ -18,9 +18,8 @@ get_header(); ?>
 
 	        <p>We’ll add to this list as we encounter new websites and resources – if you have a suggestion of something we should add please <a href="/contact-us">let us know</a>.</p>
 
-	        <div class="alert">
-	        	<h3>Advice and information</h3>
-	    	</div>
+			<hr>
+			<h3>Advice and information</h3>
 
 	        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default">
@@ -177,9 +176,8 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="alert">
-				<h3>Useful books</h3>
-			</div>
+			<hr>
+			<h3>Useful books</h3>
 
 			<div class="panel-group" id="accordion7" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default">
@@ -226,9 +224,8 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="alert">
-				<h3>Early onset dementia</h3>
-			</div>
+			<hr>
+			<h3>Early onset dementia</h3>
 
 			<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default">
@@ -271,13 +268,12 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="alert">
-				<h3>Services and activities</h3>
+			<hr>
+			<h3>Services and activities</h3>
 
-				<p>One of the key messages that <a href="/">Remembering Not to Forget</a> wants to promote is that it’s possible to live well with dementia for a long time.</p>
-				<p>Every person with a diagnosis of dementia will experience the progression of the condition differently, but research indicates that keeping busy can slow the progress of symptoms, and to promote an improved sense of well-being.</p>
-				<p>Services and activities available in your local area will vary, here are some options as a starting point.</p>
-			</div>
+			<p>One of the key messages that <a href="/">Remembering Not to Forget</a> wants to promote is that it’s possible to live well with dementia for a long time.</p>
+			<p>Every person with a diagnosis of dementia will experience the progression of the condition differently, but research indicates that keeping busy can slow the progress of symptoms, and to promote an improved sense of well-being.</p>
+			<p>Services and activities available in your local area will vary, here are some options as a starting point.</p>
 
 			<div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default">
@@ -327,10 +323,9 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="alert">
-				<h3>Music-based activities</h3>
-        	    <p>Research suggests that music can play an important role in helping people living with dementia to stay connected with those around them.</p>
-        	</div>
+			<hr>
+			<h3>Music-based activities</h3>
+			<p>Research suggests that music can play an important role in helping people living with dementia to stay connected with those around them.</p>
 
         	<div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default">
@@ -365,10 +360,9 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="alert">
-				<h3>Support for Carers</h3>
-				<p>People caring for someone living with dementia also need to look after their own well being.</p>
-			</div>
+			<hr>
+			<h3>Support for Carers</h3>
+			<p>People caring for someone living with dementia also need to look after their own well being.</p>
 
 			<div class="panel-group" id="accordion5" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default">
@@ -399,9 +393,8 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="alert">
-				<h3>Somerset Direct</h3>
-			</div>
+			<hr>
+			<h3>Somerset Direct</h3>
 
 			<div class="panel-group" id="accordion6" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default">
@@ -431,17 +424,16 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="alert">
-				<h3>Helpful Links</h3>
+			<hr>
+			<h3>Helpful Links</h3>
 	        	
-	        	<p>There are a number of websites which offer activities specifically designed for people living with dementia; we have listed some of these below. Please note that we are not endorsing these organisations over others, but have found products from these organisations helpful.</p>
+			<p>There are a number of websites which offer activities specifically designed for people living with dementia; we have listed some of these below. Please note that we are not endorsing these organisations over others, but have found products from these organisations helpful.</p>
 
-	        	<ul class="rnfflower">
-					<li><a href="http://www.active-minds.co.uk/" target="_blank">Active Minds</a></li>
-					<li><a href="http://shop.alzheimers.org.uk/category/daily-living-aids/" target="_blank">Alzheimer’s Society shop</a></li>
-					<li><a href="http://www.best-alzheimers-products.com/category/alternative-therapy-for-alzheimers/activities-for-alzheimers" target="_blank">Alzheimer’s Products</a> (US based website -European version is in development)</li>
-				</ul>
-			</div>
+			<ul class="rnfflower">
+				<li><a href="http://www.active-minds.co.uk/" target="_blank">Active Minds</a></li>
+				<li><a href="http://shop.alzheimers.org.uk/category/daily-living-aids/" target="_blank">Alzheimer’s Society shop</a></li>
+				<li><a href="http://www.best-alzheimers-products.com/category/alternative-therapy-for-alzheimers/activities-for-alzheimers" target="_blank">Alzheimer’s Products</a> (US based website -European version is in development)</li>
+			</ul>
      
 		</div><!-- .col-md-8 -->
 	
