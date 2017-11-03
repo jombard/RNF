@@ -29,7 +29,7 @@ if ( post_password_required() )
 			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
 		?>
 		<nav class="navigation comment-navigation" role="navigation">
-			<h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'twentythirteen' ); ?></h1>
+			<h1 class="section-heading"><?php _e( 'Comment navigation', 'twentythirteen' ); ?></h1>
 			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'twentythirteen' ) ); ?></div>
 			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'twentythirteen' ) ); ?></div>
 		</nav><!-- .comment-navigation -->
@@ -41,33 +41,40 @@ if ( post_password_required() )
 
 	<?php endif; // have_comments() ?>
 
-	<?php
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<?php
 
-	$fields =  array(
-	  'author' =>
-	    '<div class="form-group"><label class="sr-only" for="author">' . __( 'Name', 'domainreference' ) . '</label> ' .
-	    '<input id="author" name="author" class="form-control" type="text" placeholder="Name" required value="' . esc_attr( $commenter['comment_author'] ) .
-	    '" ' . $aria_req . ' /></div>',
+			$fields =  array(
+			'author' =>
+				'<div class="form-group"><label for="author">' . __( 'Name', 'domainreference' ) . '</label> ' .
+				'<input id="author" name="author" class="form-control" type="text" required value="' . esc_attr( $commenter['comment_author'] ) .
+				'" ' . $aria_req . ' /></div>',
 
-	  'email' =>
-	    '<div class="form-group"><label class="sr-only" for="email">' . __( 'Email', 'domainreference' ) . '</label> ' .
-	    '<input id="email" name="email" class="form-control" type="email" placeholder="Email" required value="' . esc_attr(  $commenter['comment_author_email'] ) .
-	    '" ' . $aria_req . ' /></div>'
-	);
+			'email' =>
+				'<div class="form-group"><label for="email">' . __( 'Email', 'domainreference' ) . '</label> ' .
+				'<input id="email" name="email" class="form-control" type="email" required value="' . esc_attr(  $commenter['comment_author_email'] ) .
+				'" ' . $aria_req . ' /></div>'
+			);
 
-	$comments_args = array(
-		// remove "Text or HTML to be displayed before the set of comment fields"
-        'comment_notes_before' => '',
-        // remove "Text or HTML to be displayed after the set of comment fields"
-        'comment_notes_after' => '',
-        // redefine your own textarea (the comment body)
-        'comment_field' => '<div class="form-group"><label class="sr-only" for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" class="form-control" rows="5" name="comment" placeholder="Comments" required aria-required="true"></textarea></div>',
-        'fields' => apply_filters( 'comment_form_default_fields', $fields ),
-        'class_submit' => 'btn btn-info',
-	); 
+			$comments_args = array(
+				// remove "Text or HTML to be displayed before the set of comment fields"
+				'comment_notes_before' => '',
+				// remove "Text or HTML to be displayed after the set of comment fields"
+				'comment_notes_after' => '',
+				// redefine your own textarea (the comment body)
+				'comment_field' => '<div class="form-group">
+				<label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br />
+				<textarea id="comment" class="form-control" rows="5" name="comment" required aria-required="true"></textarea>
+				</div>',
+				'fields' => apply_filters( 'comment_form_default_fields', $fields ),
+				'class_submit' => 'btn btn-info',
+			); 
 
-	 comment_form($comments_args); 
-	?>
+			comment_form($comments_args); 
+			?>
+		</div>
+	</div>
 
 </div><!-- #comments -->
 
