@@ -8,7 +8,7 @@
 		</a>
 		<div class="caption">
 			<h3><?php the_title(); ?></h3>
-			<a href="<?php the_permalink(); ?>" class="btn btn-primary">
+			<a href="<?php the_permalink(); ?>" class="btn btn-info">
 				Read more
 				<i class="glyphicon glyphicon-chevron-right"></i>
 			</a> 
