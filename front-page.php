@@ -90,7 +90,10 @@ get_header(); ?>
 				        	<div class="col-sm-6">
 							<h4><a href="<?php echo get_permalink($recent["ID"]); ?>"><?php echo $recent["post_title"]; ?></a></h4>
 							    <p><?php echo $recent["post_excerpt"]; ?></p>
-							    <a href="<?php echo get_permalink($recent["ID"]); ?>">Read more</a>
+								<a href="<?php echo get_permalink($recent["ID"]); ?>" class="btn btn-info">
+									Read more
+									<i class="glyphicon glyphicon-chevron-right"></i>
+								</a>
 						  	</div>
 			            </div>
 			    	<?php endforeach; ?>
@@ -116,7 +119,10 @@ get_header(); ?>
 	        	<div class="col-sm-6">
 					<h4><a href="/challenges/2017-challenges/round-world-challenge/">Round the World Challenge</a></h4>
 				    <p>Covering the distance of the equator through self-powered travel.</p>
-				    <a href="/challenges/2017-challenges/round-world-challenge/">Read more</a>
+					<a href="/challenges/2017-challenges/round-world-challenge/" class="btn btn-info">
+						Read more
+						<i class="glyphicon glyphicon-chevron-right"></i>
+					</a>
 			  	</div>
         	</div>
         	<div class="row m-b">
@@ -131,7 +137,10 @@ get_header(); ?>
 	        	<div class="col-sm-6">
 					<h4><a href="/challenges/2017-challenges/end-end-challenge/">Land's End to John O'Groats</a></h4>
 				    <p>1000 miles cycle challenge.</p>
-				    <a href="/challenges/2017-challenges/end-end-challenge/">Read more</a>
+					<a href="/challenges/2017-challenges/end-end-challenge/" class="btn btn-info">
+						Read more
+						<i class="glyphicon glyphicon-chevron-right"></i>
+					</a>
 			  	</div>
         	</div>
         	<div class="row m-b">
@@ -146,7 +155,10 @@ get_header(); ?>
 	        	<div class="col-sm-6">
 					<h4><a href="/challenges/2017-challenges/four-palaces-guided-walk/">Four Palaces guided walk</a></h4>
 				    <p>A guided walk through historical London.</p>
-				    <a href="/challenges/2017-challenges/four-palaces-guided-walk/">Read more</a>
+					<a href="/challenges/2017-challenges/four-palaces-guided-walk/" class="btn btn-info">
+						Read more
+						<i class="glyphicon glyphicon-chevron-right"></i>
+					</a>
 			  	</div>
         	</div>
 		</div>
