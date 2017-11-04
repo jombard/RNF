@@ -9,6 +9,9 @@ add_theme_support( 'post-thumbnails' );
 // add 4x3 thumbnail
 add_image_size( 'rnf-featured-thumb', 400, 300, true );
 
+// add home page feature thumbnail
+add_image_size( 'rnf-home-featured-thumb', 512, 256, true );
+
 // Add HTML5 default gallery styling
 add_theme_support( 'html5', array( 'gallery', 'caption' ) );
 
