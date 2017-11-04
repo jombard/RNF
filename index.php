@@ -15,7 +15,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<header class="entry-header">
+					<header class="page-header">
 						<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 						<div class="row entry-thumbnail">
 							<a href="<?php echo get_permalink(); ?>">
@@ -30,7 +30,7 @@ get_header(); ?>
 							</a>
 						</h1>
 						<p class="post-meta"><?php the_time('F jS, Y') ?> by <a href="#"><?php the_author(); ?></a> in <?php the_category(', ') ?> <?php comments_number('No Comments','1 Comment','% Comments'); ?></p>
-					</header><!-- .entry-header -->
+					</header><!-- .page-header -->
 
 					<div class="entry-content">
 						<?php the_excerpt(); ?>

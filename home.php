@@ -11,7 +11,9 @@ get_header(); ?>
                 yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumb">','</p>');
             } ?>
 
-    		<h2>A blog about dementia</h2>
+            <div class="page-header">
+    		    <h2>A blog about dementia</h2>
+            </div>
 			<p>Alongside fundraising to support people impacted by dementia, one of the aims of <a href="/">Remembering Not to Forget</a> is to get people talking about dementia more openly, and for people to be aware that it’s possible to live well with dementia for a long time.</p>
 			<p>This blog will try to capture some thoughts on the Turnbull family’s journey with dementia, we’ll also use this space to share other relevant <a href="/">Remembering Not to Forget</a> stories or updates.</p>
 
@@ -19,7 +21,7 @@ get_header(); ?>
     		<?php while (have_posts()) : the_post(); ?>
 
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <header class="entry-header">
+                    <header class="page-header">
                         <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
                         <div class="row entry-thumbnail">
                             <a href="<?php echo get_permalink(); ?>">
@@ -31,13 +33,9 @@ get_header(); ?>
                         </div>
                         <?php endif; ?>
 
-                        <h1>
-                            <a href="<?php echo get_permalink(); ?>">
-                                <?php the_title(); ?>
-                            </a>
-                        </h1>
+                        <h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
                         <p class="post-meta"><?php the_time('F jS, Y') ?> by <a href="#"><?php the_author(); ?></a> in <?php the_category(', ') ?> <?php comments_number('No Comments','1 Comment','% Comments'); ?></p>
-                    </header><!-- .entry-header -->
+                    </header><!-- .page-header -->
 
                     <div class="entry-content">
                         <?php the_excerpt(); ?>
