@@ -52,12 +52,26 @@ get_header(); ?>
 						</div>
 
 
-						<ul class="pager">
-							<?php 
+						<!-- <ul class="pager"> -->
+							<!-- <?php 
 								previous_post_link('<li class="previous">%link</li>');
 								next_post_link('<li class="next">%link</li>');
-							?>
-						</ul>
+							?> -->
+						<!-- </ul> -->
+
+						<div class="row text-center">
+							<?php $prevPost = get_previous_post(true); ?>
+							<?php if($prevPost) : ?>
+								<?php $prevthumbnail = get_the_post_thumbnail($prevPost->ID, "rnf-featured-thumb", array( 'class' => "img-responsive") ); ?>
+								<?php previous_post_link('<div class="col-xs-6">%link</div>',"<div class='thumbnail'>$prevthumbnail<div class='caption'><h4>%title</h4></div></div>", true); ?>
+							<?php endif; ?>
+
+							<?php $nextPost = get_next_post(true); ?>
+							<?php if($nextPost) : ?>
+								<?php $nextthumbnail = get_the_post_thumbnail($nextPost->ID, "rnf-featured-thumb", array( 'class' => "img-responsive") ); ?>
+								<?php next_post_link('<div class="col-xs-6">%link</div>',"<div class='thumbnail'>$nextthumbnail<div class='caption'><h4>%title</h4></div></div>", true); ?>
+							<?php endif; ?>
+						</div><!-- .row -->
 
 						<?php comments_template(); ?>
 					</div>
