@@ -4,34 +4,37 @@ get_header(); ?>
 	<!-- FRONT-PAGE START -->
 
 </div>
-	<div class="carousel">
-		<div class="carousel-inner">
-			<div class="item active">
-				<div class="placeholder" data-large="/wp-content/uploads/2017/10/paris.jpg">
-					<img src="/wp-content/uploads/2017/10/paris.jpg" alt="Team RNF" class="img-small">
-					<div style="padding-bottom: 50%;"></div>
-				</div>
-			
-				<div class="carousel-caption text-center" style="background-color:rgba(0,164,228,0.5)">
-					<h2>Supporting people impacted by dementia</h2>
-					<p class="hidden-xs">Challenging ourselves to help raise funds and awareness</p>
-				</div>
+
+<?php while ( have_posts() ) : the_post(); ?>
+
+<div class="carousel">
+	<div class="carousel-inner">
+		<div class="item active">
+			<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
+			<div class="placeholder" data-large="<?php the_post_thumbnail_url('post-thumbnail'); ?>">
+				<?php the_post_thumbnail('rnf-home-featured-thumb', array( 'class' => "img-responsive img-small")); ?>
+				<div style="padding-bottom: 50%;"></div>
+			</div>
+			<!-- <div class="placeholder" data-large="/wp-content/uploads/2017/10/paris.jpg">
+				<img src="/wp-content/uploads/2017/10/paris.jpg?resize=100" alt="Team RNF" class="img-small">
+				<div style="padding-bottom: 50%;"></div>
+			</div> -->
+			<?php endif; ?>
+		
+			<div class="carousel-caption text-center" style="background-color:rgba(0,164,228,0.5)">
+				<h2>Supporting people impacted by dementia</h2>
+				<p class="hidden-xs">Challenging ourselves to help raise funds and awareness</p>
 			</div>
 		</div>
 	</div>
+</div>
 
 <div class="container">
 	<div class="row" style="padding:20px 0 50px;">
 		<div class="col-sm-12 text-center">
-			<h2><strong>What is Remembering Not to Forget?</strong></h2>
-			<p><a href="/">Remembering Not to Forget</a> is a small charity established at the end of 2013 to support people impacted by dementia.</p>
-	        <p>Co-founders Laura and Ali were inspired to help other families affected by dementia after their own experiences with close family members with living dementia, and wanted to help other families affected by the condition.</p>
-	        <a class="btn btn-success" href="https://mydonate.bt.com/donation/start.html?charity=143287">
-            	Donate Now
-            </a>
-            <a href="/about/" class="btn btn-link">
-            	About <span class="hidden-xs">Remembering Not to Forget</span>
-            </a>
+
+			<?php the_content(); ?>
+
 		</div>
 	</div>
 
@@ -49,26 +52,25 @@ get_header(); ?>
 </div>
 
 <div style="background-color: #00A4E4; margin: 40px 0;">
-<div class="container">
-	<div class="row text-center" style="color: #fff; padding: 40px 0;">
-		<div class="col-sm-4">
-			<h3 class="strong text-white">Challenges<br />Undertaken</h3>
-			<p class="h1">22</p>
-		</div>
-		<div class="col-sm-4">
-			<h3 class="strong text-white">Amount<br />Raised</h3>
-			<p class="h1">£35,000</p>
-		</div>
-		<div class="col-sm-4">
-			<h3 class="strong text-white">Organisations<br />Supported</h3>
-			<p class="h1">14</p>
+	<div class="container">
+		<div class="row text-center" style="color: #fff; padding: 40px 0;">
+			<div class="col-sm-4">
+				<h3 class="strong text-white">Challenges<br />Undertaken</h3>
+				<p class="h1">22</p>
+			</div>
+			<div class="col-sm-4">
+				<h3 class="strong text-white">Amount<br />Raised</h3>
+				<p class="h1">£35,000</p>
+			</div>
+			<div class="col-sm-4">
+				<h3 class="strong text-white">Organisations<br />Supported</h3>
+				<p class="h1">14</p>
+			</div>
 		</div>
 	</div>
 </div>
-</div>
 
 <div class="container">
-
 	<div class="row">
 		<div class="col-md-6">
 
@@ -81,10 +83,10 @@ get_header(); ?>
 			          <div class="row m-b">
 			            	<div class="col-sm-6">
 				        		<a href="<?php echo get_permalink($recent["ID"]) ?>">
-									<!-- <div class="placeholder" data-large="<?php the_post_thumbnail_url($recent['ID'], 'full'); ?>"> -->
-										<?php echo get_the_post_thumbnail($recent["ID"], 'rnf-featured-thumb', array( 'class' => "img-responsive m-auto")); ?>  
-										<!-- <div style="padding-bottom: 66.6%; width:200px;"></div> -->
-									<!-- </div> -->
+									<div class="placeholder" data-large="<?php echo get_the_post_thumbnail_url($recent['ID']); ?>">
+										<?php echo get_the_post_thumbnail($recent["ID"], 'rnf-featured-thumb', array( 'class' => "img-responsive m-auto img-small")); ?>  
+										<div style="padding-bottom: 66.6%; width:200px;"></div>
+									</div>
 								</a>
 				        	</div>
 				        	<div class="col-sm-6">
@@ -212,6 +214,8 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+
+<?php endwhile; ?>
 
 <!-- FRONT-PAGE END -->
 <?php get_footer(); ?>
