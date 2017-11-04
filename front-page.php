@@ -56,15 +56,15 @@ get_header(); ?>
 		<div class="row text-center" style="color: #fff; padding: 40px 0;">
 			<div class="col-sm-4">
 				<h3 class="strong text-white">Challenges<br />Undertaken</h3>
-				<p class="h1">22</p>
+				<p class="h1"><?php echo get_post_meta($post->ID, 'challenges-undertaken', true); ?></p>
 			</div>
 			<div class="col-sm-4">
 				<h3 class="strong text-white">Amount<br />Raised</h3>
-				<p class="h1">£35,000</p>
+				<p class="h1"><?php echo get_post_meta($post->ID, 'amount-raised', true); ?></p>
 			</div>
 			<div class="col-sm-4">
 				<h3 class="strong text-white">Organisations<br />Supported</h3>
-				<p class="h1">14</p>
+				<p class="h1"><?php echo get_post_meta($post->ID, 'organisations-supported', true); ?></p>
 			</div>
 		</div>
 	</div>
