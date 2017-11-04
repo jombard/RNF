@@ -150,7 +150,7 @@ ul.rnfflower {
   padding-left: 10px;
 }
 
-.rnfflower li {
+ul.rnfflower > li {
 	background-image:url('/wp-content/themes/rnf/images/listitem.png'); 
 	background-repeat:no-repeat;
 	padding-left: 30px;
@@ -675,7 +675,8 @@ nav.primary ul li .selected {
   opacity: 1;
 }
 
-.img-small {
+img.img-small {
+  opacity: 1;
   -webkit-filter: blur(15px);
   filter: blur(15px);
   /* this is needed so Safari keeps sharp edges */

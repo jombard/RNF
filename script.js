@@ -2,26 +2,40 @@
 
 	function replaceLowResImages(){
 		var placeholders = jQuery('.placeholder');
+		var th = 0;
 
-		jQuery.each(placeholders, function(i, val){
-			var placeholder = jQuery(val);
-			var small = placeholder.find('.img-small')
+		var unveil = function() {
 
-			// 1: load small image and show it
-			var img = new Image();
-			img.src = small.attr("src");
-			img.onload = function () {
-				small.addClass('loaded');
-			};
+			var inview = placeholders.filter(function(){
+				var placeholder = jQuery(this);
+				if (placeholder.hasClass("loaded")) return;
+			
+				var wt = jQuery(window).scrollTop(),
+				wb = wt + jQuery(window).height(),
+				et = placeholder.offset().top,
+				eb = et + placeholder.height();
 
-			// 2: load large image
-			var imgLarge = new Image();
-			imgLarge.src = placeholder.data('large'); 
-			imgLarge.onload = function () {
-				imgLarge.classList.add('loaded');
-			};
-			placeholder.append(imgLarge);
-		});
+				return eb >= wt - th && et <= wb + th;
+			});
+
+			jQuery.each(inview, function(i, val){
+				var pholder = jQuery(val);
+				var small = pholder.find('.img-small')
+
+				// load large image
+				var imgLarge = new Image();
+				imgLarge.src = pholder.data('large'); 
+				imgLarge.onload = function () {
+					imgLarge.classList.add('loaded');
+				};
+				pholder.append(imgLarge);
+				pholder.addClass('loaded');
+			});
+		};
+
+		jQuery(window).on("scroll resize lookup", unveil);
+
+		unveil();
 	};
 
 	function initTotalDistanceChart(){
