@@ -17,18 +17,10 @@
 	<title><?php the_title(); ?> Fundraising for Dementia | <?php bloginfo('name'); ?></title>
 	<link href="/wp-content/themes/rnf/favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-	<!-- Bootstrap css -->
 	<link rel="stylesheet" href="/wp-content/themes/rnf/css/bootstrap.min.css">
-	<!-- PrettyPhoto plugin stylesheet -->
-	<link href="/wp-content/themes/rnf/css/prettyPhoto.css" rel="stylesheet" />
-	<!-- jQuery -->
 	<script type="text/javascript" src="/wp-content/themes/rnf/scripts/jquery-1.10.2.min.js"></script>
-	<!-- BootstrapJS -->
 	<script type="text/javascript" src="/wp-content/themes/rnf/scripts/bootstrap.min.js"></script>
-	<!--ChartJS-->
     <script type="text/javascript" src="/wp-content/themes/rnf/scripts/chart.min.js"></script>
-    <!--PrettyPhoto-->
-    <script type="text/javascript" src="/wp-content/themes/rnf/scripts/jquery.prettyPhoto.js"></script>
     <!--[if lt IE 9]>
 	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -85,9 +77,11 @@
 
     	<div class="jumbotron" style="margin-top:20px;">
 			<div class="col-sm-2">
+				<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 				<a href="#" class="thumbnail">
 					<?php the_post_thumbnail(); ?>
 				</a>
+				<?php endif; ?>
 			</div>
 			<div class="col-sm-7 text-center">
 				<h1><?php the_title(); ?><br />Fundraising Page</h1>
@@ -115,61 +109,61 @@
 		</div>
 
     	<div class="main-content-block">
-            <section>
-            <!-- HEADER END -->
 
-		<div class="row">
-	    	<div class="col-md-8">
-	    		<section>
-	    			<?php /* The loop */ ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-	    			<article>
+			<div class="row">
+				<div class="col-md-8">
+					<section>
+						<?php /* The loop */ ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+						<article>
 
-						<div class="page-header">
-							<h1 class="text-center"><?php echo get_post_meta($post->ID, 'fundraiser-page-title', true); ?></h1>
-							<div class="social-options">
-								<?php echo do_shortcode ('[shareaholic app="share_buttons" id="15240250"]'); ?>
+							<div class="page-header">
+								<h1 class="text-center"><?php echo get_post_meta($post->ID, 'fundraiser-page-title', true); ?></h1>
+								<div class="social-options">
+									<?php echo do_shortcode ('[shareaholic app="share_buttons" id="15240250"]'); ?>
+								</div>
 							</div>
-						</div>
 
-						<div>
-							<?php the_content(); ?>
-						</div>
+							<div>
+								<?php the_content(); ?>
+							</div>
 
-						<div class="text-center">
-							<a class="btn btn-lg btn-success" data-toggle="modal" data-target="#donationModal" role="button">Donate now</a>
-						</div>
+							<div class="text-center">
+								<a class="btn btn-lg btn-success" data-toggle="modal" data-target="#donationModal" role="button">Donate now</a>
+							</div>
 
-					</article>
+						</article>
 
-					<!-- CHART DATA -->
-					<script type="text/javascript" src="/wp-content/themes/rnf/scripts/<?php echo get_post_meta($post->ID, 'fundraiser-script', true); ?>"></script>
-					<?php endwhile; ?>
+						<!-- CHART DATA -->
+						<?php if(get_post_meta($post->ID, 'fundraiser-script', true)) : ?>
+						<script type="text/javascript" src="/wp-content/themes/rnf/scripts/<?php echo get_post_meta($post->ID, 'fundraiser-script', true); ?>"></script>
+						<?php endif; ?>
+						<?php endwhile; ?>
 
 
-					
-				</section>
+						
+					</section>
 
-				<div class="clearfix"></div>
+					<div class="clearfix"></div>
 
-				<?php comments_template(); ?>
+					<?php comments_template(); ?>
 
-			</div><!-- .col-md-8 -->
-		
-			<div class="col-md-4">
+				</div><!-- .col-md-8 -->
+			
+				<div class="col-md-4">
 
-				<p class="lead text-center">Donations</p>
-				<p class="text-center"><small class="text-muted">Recent donations may take a short time to appear.</small></p>
-				<div class="commentcontainer">
-				<!-- DONATIONS APPEAR HERE FROM JAVASCRIPT ARRAY -->
-				</div>
-				<div class="text-center">
-					<div id="unhidedonations">Show All</div>	
-				</div>
+					<p class="lead text-center">Donations</p>
+					<p class="text-center"><small class="text-muted">Recent donations may take a short time to appear.</small></p>
+					<div class="commentcontainer">
+					<!-- DONATIONS APPEAR HERE FROM JAVASCRIPT ARRAY -->
+					</div>
+					<div class="text-center">
+						<div id="unhidedonations">Show All</div>	
+					</div>
 
-			</div><!-- .col-md-4 -->
-		</div><!-- .row -->
-
+				</div><!-- .col-md-4 -->
+			</div><!-- .row -->
+		</div>
 
 	<!-- PAGE END -->
 <?php get_footer(); ?>

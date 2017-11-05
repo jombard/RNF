@@ -18,7 +18,7 @@ get_header(); ?>
 			<p>This blog will try to capture some thoughts on the Turnbull family’s journey with dementia, we’ll also use this space to share other relevant <a href="/">Remembering Not to Forget</a> stories or updates.</p>
 
         <?php if (have_posts()) : ?>
-    		<?php while (have_posts()) : the_post(); ?>
+            <?php while (have_posts()) : the_post(); ?>
 
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <header class="page-header">
