@@ -27,7 +27,7 @@ get_header(); ?>
 	        <section class="challengesmain">
 	        	<article class="entry">
                     <a href="/challenges/2017-challenges/round-world-challenge/">
-                    <img src="/wp-content/uploads/2016/12/roundtheworld-e1482518013750-150x150.jpg" alt="Round the World Challenge">
+                    <img src="/wp-content/uploads/2016/12/roundtheworld-e1482518013750-150x150.jpg" alt="Round the World Challenge" class="img-responsive">
                     <div class="challengewrapper">
                         <h2 class="fromtop animate">Round the World</h2>
                         <p class="frombottom animate">2017</p>
@@ -38,7 +38,7 @@ get_header(); ?>
 
 	        	<article class="entry">
                     <a href="/challenges/2017-challenges/end-end-challenge/">
-                    <img src="/wp-content/uploads/2017/01/Landsendsignpost-e1484777710592-150x150.jpg" alt="End to End Challenge">
+                    <img src="/wp-content/uploads/2017/01/Landsendsignpost-e1484777710592-150x150.jpg" alt="End to End Challenge" class="img-responsive">
                     <div class="challengewrapper">
                         <h2 class="fromtop animate">Lands End to John O'Groats</h2>
                         <p class="frombottom animate">July 2017</p>
@@ -71,7 +71,7 @@ get_header(); ?>
 	         
 	                <article class="entry rnftrek">
 	                    <a href="/challenges/2016-challenges/the-underround/">
-	                    <img src="/wp-content/uploads/2016/10/41a-150x150.jpg" alt="RNF completing the UnderroundTM">
+	                    <img src="/wp-content/uploads/2016/10/41a-150x150.jpg" alt="RNF completing the UnderroundTM" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">The UnderroundTM</h2>
 	                        <p class="frombottom animate">October 2016</p>
@@ -82,7 +82,7 @@ get_header(); ?>
 
 	                <article class="entry rnfswim rnfbike rnfrun">
 	                    <a href="/challenges/2016-challenges/">
-	                    <img src="/wp-content/uploads/2015/06/blenheim-150x150.jpg" alt="RNF at London Triathlon">
+	                    <img src="/wp-content/uploads/2015/06/blenheim-150x150.jpg" alt="RNF at London Triathlon" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">London Triathlon</h2>
 	                        <p class="frombottom animate">July 2016</p>
@@ -93,7 +93,7 @@ get_header(); ?>
 
 	                <article class="entry rnfquiz">
 	                    <a href="/challenges/2016-challenges/">
-	                    <img src="/wp-content/uploads/2016/01/ChardQuiz1-150x150.jpg" alt="RNF at Chard Quiz">
+	                    <img src="/wp-content/uploads/2016/01/ChardQuiz1-150x150.jpg" alt="RNF at Chard Quiz" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Pub Quiz</h2>
 	                        <p class="frombottom animate">Febraury 2016</p>
@@ -104,7 +104,7 @@ get_header(); ?>
 
 	                <article class="entry rnfswim rnfbike rnfrun">
 	                    <a href="/challenges/2015-challenges/blenheim-triathlon-2015">
-	                    <img src="/wp-content/uploads/2015/06/blenheim-150x150.jpg" alt="RNF at Blenheim Triathlon">
+	                    <img src="/wp-content/uploads/2015/06/blenheim-150x150.jpg" alt="RNF at Blenheim Triathlon" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Blenheim Triathlon</h2>
 	                        <p class="frombottom animate">June 2015</p>
@@ -115,7 +115,7 @@ get_header(); ?>
 
 	                <article class="entry rnfskydive">
 	                    <a href="/charity-skydive-2015">
-	                    <img src="/wp-content/uploads/2015/03/2015-04-20-12.20.22-150x150.jpg" alt="RNF at Skydive Headcorn">
+	                    <img src="/wp-content/uploads/2015/03/2015-04-20-12.20.22-150x150.jpg" alt="RNF at Skydive Headcorn" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Skydive Headcorn</h2>
 	                        <p class="frombottom animate">April 2015</p>
@@ -126,7 +126,7 @@ get_header(); ?>
 
 					<article class="entry rnfrun">
 	                    <a href="/challenges/2015-challenges/mile-a-day/">
-	                    <img src="/wp-content/uploads/2015/06/2015-05-25-07.39.21-150x150.jpg" alt="RNF running a mile a day">
+	                    <img src="/wp-content/uploads/2015/06/2015-05-25-07.39.21-150x150.jpg" alt="RNF running a mile a day" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Run a Mile a Day</h2>
 	                        <p class="frombottom animate">2015</p>
@@ -137,7 +137,7 @@ get_header(); ?>
 	                
 	                <article class="entry rnfswim rnfbike rnfrun">
 	                    <a href="/challenges/2014-challenges/bodiam-triathlon-2014">
-	                    <img src="/wp-content/uploads/2015/01/IMG1006-150x150.jpg" alt="RNF at Bodiam Triathlon">
+	                    <img src="/wp-content/uploads/2015/01/IMG1006-150x150.jpg" alt="RNF at Bodiam Triathlon" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Bodiam Triathlon</h2>
 	                        <p class="frombottom animate">August 2014</p>
@@ -148,7 +148,7 @@ get_header(); ?>
 	 
 	                <article class="entry rnftrek">
 	                    <a href="/challenges/2014-challenges/kilimanjaro-2014">
-	                    <img src="/wp-content/uploads/2015/01/Kili-1-150x150.jpg" alt="RNF at peak of Kilimanjaro">
+	                    <img src="/wp-content/uploads/2015/01/Kili-1-150x150.jpg" alt="RNF at peak of Kilimanjaro" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Kilimanjaro</h2>
 	                        <p class="frombottom animate">August 2014</p>
@@ -159,7 +159,7 @@ get_header(); ?>
 	 
 	                <article class="entry print rnfbike">
 	                    <a href="/challenges/2014-challenges/coast-to-coast-devon-2014">
-	                    <img src="/wp-content/uploads/2015/01/photo5-150x150.jpg" alt="RNF cycling the coast to coast in Devon">
+	                    <img src="/wp-content/uploads/2015/01/photo5-150x150.jpg" alt="RNF cycling the coast to coast in Devon" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Coast To Coast Devon</h2>
 	                        <p class="frombottom animate">August 2014</p>
@@ -170,7 +170,7 @@ get_header(); ?>
 	 
 	                <article class="entry rnftrek">
 	                    <a href="/challenges/2014-challenges/hadrians-wall-walk-2014">
-	                    <img src="/wp-content/uploads/2015/01/IMG_1066-150x150.jpg" alt="RNF walking along Hadrian's Wall">
+	                    <img src="/wp-content/uploads/2015/01/IMG_1066-150x150.jpg" alt="RNF walking along Hadrian's Wall" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Hadrians Wall Walk</h2>
 	                        <p class="frombottom animate">August 2014</p>
@@ -181,7 +181,7 @@ get_header(); ?>
 	 
 	                <article class="entry rnfskydive">
 	                    <a href="/challenges/2014-challenges/indoor-sky-dive-2014">
-	                    <img src="/wp-content/uploads/2015/01/IndoorSkyDive-5-150x150.jpg" alt="RNF at the indoor skydive center in Basingstoke">
+	                    <img src="/wp-content/uploads/2015/01/IndoorSkyDive-5-150x150.jpg" alt="RNF at the indoor skydive center in Basingstoke" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Indoor Sky Dive</h2>
 	                        <p class="frombottom animate">August 2014</p>
@@ -192,7 +192,7 @@ get_header(); ?>
 	 
 	                <article class="entry rnfother">
 	                    <a href="/challenges/2014-challenges/summer-fun-day">
-	                    <img src="/wp-content/uploads/2015/01/SummerFunDay-2-150x150.jpg" alt="RNF hosting a summer funday">
+	                    <img src="/wp-content/uploads/2015/01/SummerFunDay-2-150x150.jpg" alt="RNF hosting a summer funday" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Summer Fun Day</h2>
 	                        <p class="frombottom animate">July 2014</p>
@@ -203,7 +203,7 @@ get_header(); ?>
 	 
 	                <article class="entry rnfswim">
 	                    <a href="/challenges/2014-challenges/henley-classic-2014">
-	                    <img src="/wp-content/uploads/2015/01/Henley-4-150x150.jpg" alt="RNF swimming the Henley classic">
+	                    <img src="/wp-content/uploads/2015/01/Henley-4-150x150.jpg" alt="RNF swimming the Henley classic" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Henley Classic</h2>
 	                        <p class="frombottom animate">June 2014</p>
@@ -214,7 +214,7 @@ get_header(); ?>
 	 
 	                <article class="entry rnfrun">
 	                    <a href="/challenges/2014-challenges/colour-run-2014">
-	                    <img src="/wp-content/uploads/2015/02/ColourRun-4-150x150.jpg" alt="RNF running the Colour Run">
+	                    <img src="/wp-content/uploads/2015/02/ColourRun-4-150x150.jpg" alt="RNF running the Colour Run" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">The Colour Run</h2>
 	                        <p class="frombottom animate">June 2014</p>
@@ -225,7 +225,7 @@ get_header(); ?>
 	            
 	                <article class="entry rnftrek">
 	                    <a href="/challenges/2014-challenges/ten-tors-2014">
-	                    <img src="/wp-content/uploads/2015/01/IMG01-150x150.jpg" alt="RNF trekking the Ten Tors">
+	                    <img src="/wp-content/uploads/2015/01/IMG01-150x150.jpg" alt="RNF trekking the Ten Tors" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Ten Tors</h2>
 	                        <p class="frombottom animate">May 2014</p>
@@ -236,7 +236,7 @@ get_header(); ?>
 	 
 	                <article class="entry rnfbike">
 	                    <a href="/challenges/2014-challenges/london-to-paris-2014">
-	                    <img src="/wp-content/uploads/2015/01/IMG1024-150x150.jpg" alt="RNF cycling London to Paris">
+	                    <img src="/wp-content/uploads/2015/01/IMG1024-150x150.jpg" alt="RNF cycling London to Paris" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">London To Paris</h2>
 	                        <p class="frombottom animate">April 2014</p>
@@ -247,7 +247,7 @@ get_header(); ?>
 	 
 	                <article class="entry rnfquiz">
 	                    <a href="/challenges/2014-challenges/pub-quiz-2014">
-	                    <img src="/wp-content/uploads/2015/01/IMG10017-150x150.jpg" alt="RNF hosting a Pub Quiz">
+	                    <img src="/wp-content/uploads/2015/01/IMG10017-150x150.jpg" alt="RNF hosting a Pub Quiz" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Pub Quiz</h2>
 	                        <p class="frombottom animate">March 2014</p>
@@ -258,7 +258,7 @@ get_header(); ?>
 	 
 	                <article class="entry rnfswim">
 	                    <a href="/challenges/2014-challenges/cold-swims-2014">
-	                    <img src="/wp-content/uploads/2015/01/IMG_4676-150x150.jpg" alt="RNF swimming in the cold">
+	                    <img src="/wp-content/uploads/2015/01/IMG_4676-150x150.jpg" alt="RNF swimming in the cold" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Cold Swims</h2>
 	                        <p class="frombottom animate">February 2014</p>
@@ -269,7 +269,7 @@ get_header(); ?>
 
 	                <article class="entry rnfother">
 	                    <a href="/challenges/2014-challenges/swishing-2014">
-	                    <img src="/wp-content/uploads/2015/01/Swishing-4-150x150.jpg" alt="RNF hosting a swishing event">
+	                    <img src="/wp-content/uploads/2015/01/Swishing-4-150x150.jpg" alt="RNF hosting a swishing event" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Swishing</h2>
 	                        <p class="frombottom animate">January 2014</p>
@@ -280,7 +280,7 @@ get_header(); ?>
 
 	                <article class="entry rnfother">
 	                    <a href="/challenges/2013-challenges/tube-challenge">
-	                    <img src="/wp-content/uploads/2015/01/2013-12-15-17.41.35-150x150.jpg" alt="RNF on the tube">
+	                    <img src="/wp-content/uploads/2015/01/2013-12-15-17.41.35-150x150.jpg" alt="RNF on the tube" class="img-responsive">
 	                    <div class="challengewrapper">
 	                        <h2 class="fromtop animate">Tube Challenge</h2>
 	                        <p class="frombottom animate">December 2013</p>

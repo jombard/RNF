@@ -21,7 +21,7 @@ get_header(); ?>
 			</div> -->
 			<?php endif; ?>
 		
-			<div class="carousel-caption text-center" style="background-color:rgba(0,164,228,0.5)">
+			<div class="carousel-caption text-center" style="background-color:rgba(127, 63, 152, 0.5)">
 				<h2>Supporting people impacted by dementia</h2>
 				<p class="hidden-xs">Challenging ourselves to help raise funds and awareness</p>
 			</div>
@@ -51,7 +51,7 @@ get_header(); ?>
 	</div>
 </div>
 
-<div style="background-color: #00A4E4; margin: 40px 0;">
+<div class="bg-rnf m-t-b">
 	<div class="container">
 		<div class="row text-center" style="color: #fff; padding: 40px 0;">
 			<div class="col-sm-4">
@@ -168,12 +168,12 @@ get_header(); ?>
 	</div>
 </div>
 
-<div style="background-color: #00A4E4; margin: 40px 0;">
+<div class="bg-rnf m-t-b">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 text-center" style="color: #fff; padding: 40px 0;">
 				<h3 class="text-white">Make a difference by fundraising for Remembering Not to Forget</h3>
-				<a href="/fundraising/fundraising-for-us/" class="btn btn-rnf">More Information <i class="glyphicon glyphicon-chevron-right"></i></a>
+				<a href="/fundraising/fundraising-for-us/" class="btn btn-info">More Information <i class="glyphicon glyphicon-chevron-right"></i></a>
 				<a href="/fundraising/fundraising-for-us/our-amazing-fundraisers/" class="btn btn-link text-white">Our fundraisers <i class="glyphicon glyphicon-chevron-right"></i></a>
 			</div>
 		</div>
