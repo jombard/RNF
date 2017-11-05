@@ -102,6 +102,33 @@
 
            <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
                 <?php wp_nav_menu( array('menu' => 'RNF Navigation Menu', 'container' => '', 'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>' )); ?>
+
+                <ul class="social-icons visible-xs-block" style="padding:0;">
+                    <li>
+                        <a href="<?php echo get_option('socialfacebook'); ?>">
+                            <span class="social-icon iconfbook"></span>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_option('socialtwitter'); ?>">
+                            <span class="social-icon icontwitter"></span>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_option('socialinstagram'); ?>">
+                            <span class="social-icon iconinsta"></span>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_option('socialyoutube'); ?>">
+                            <span class="social-icon iconyoutube"></span>
+                            <span class="sr-only">Youtube</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
