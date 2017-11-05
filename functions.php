@@ -70,37 +70,47 @@ function rnftheme_comment($comment, $args, $depth) {
 		$add_below = 'div-comment';
 	}
 ?>
-	<<?php echo $tag ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ) ?> id="comment-<?php comment_ID() ?>">
-	<?php if ( 'div' != $args['style'] ) : ?>
-	<div id="div-comment-<?php comment_ID() ?>" class="media">
-		<?php endif; ?>
-		<div class="media-left">
-			<?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-		</div>
-
-		<?php if ( $comment->comment_approved == '0' ) : ?>
-			<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em>
-			<br />
-		<?php endif; ?>
-
-		<div class="media-body">
-			<?php printf( __( '<h4 class="media-heading">%s</h4>' ), get_comment_author_link() ); ?>
-			<a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
-				<?php
-					/* translators: 1: date, 2: time */
-					printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time() ); ?>
-			</a>
-			<?php edit_comment_link( __( '(Edit)' ), '  ', '' ); ?>
-		</div>
-
-		<?php comment_text(); ?>
-
-		<div class="reply">
-			<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-		</div>
+	<<?php echo $tag ?> <?php comment_class( $depth == 1 ? 'list-group-item' : '' ) ?> id="comment-<?php comment_ID() ?>">
 		<?php if ( 'div' != $args['style'] ) : ?>
-	</div>
-	<?php endif; ?>
-<?php
-}
-?>
+		<div id="div-comment-<?php comment_ID() ?>" class="media">
+		<?php endif; ?>
+
+			<div class="media-left">
+				<?php if ( $depth == 1 ) { echo get_avatar( $comment, 60 ); } else { echo get_avatar( $comment, 32 ); } ?>
+			</div>
+
+			<?php if ( $comment->comment_approved == '0' ) : ?>
+				<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em>
+				<br />
+			<?php endif; ?>
+
+			<div class="media-body">
+				<?php if ( $depth == 1 ) : ?>
+				<h4 class="media-heading">
+					<?php echo get_comment_author(); ?>
+					<small>
+						<?php printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time() ); ?>
+						<?php edit_comment_link( __( '[Edit]' ), '  ', '' ); ?>
+					</small>
+				</h4>
+				<?php else : ?>
+				<h5 class="media-heading">
+					<?php echo get_comment_author(); ?>
+					<small>
+						<?php printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time() ); ?>
+						<?php edit_comment_link( __( '[Edit]' ), '  ', '' ); ?>
+					</small>
+				</h5>
+				<?php endif; ?>
+
+				<?php comment_text(); ?>
+
+				<div class="reply">
+					<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+				</div>
+			</div>
+
+		<?php if ( 'div' != $args['style'] ) : ?>
+		</div>
+		<?php endif; ?>
+<?php } ?>

@@ -18,7 +18,7 @@ if ( post_password_required() )
 			?>
 		</h2>
 
-		<ol class="list-unstyled">
+		<ol class="list-group">
 			<?php
 				wp_list_comments( 'type=comment&callback=rnftheme_comment' );
 			?>
@@ -29,7 +29,7 @@ if ( post_password_required() )
 			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
 		?>
 		<nav class="navigation comment-navigation" role="navigation">
-			<h1 class="section-heading"><?php _e( 'Comment navigation', 'twentythirteen' ); ?></h1>
+			<h3 class="section-heading"><?php _e( 'Comment navigation', 'twentythirteen' ); ?></h3>
 			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'twentythirteen' ) ); ?></div>
 			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'twentythirteen' ) ); ?></div>
 		</nav><!-- .comment-navigation -->
