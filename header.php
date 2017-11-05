@@ -28,26 +28,27 @@
 
 <body>
 
-	<div class="container page">
+	<div class="container hidden-xs">
             
         <div class="row m-t">
-            <div class="col-lg-1 col-sm-2 col-xs-4 text-center">
-                <a href="<?php bloginfo('url') ?>/" class="logo">
-                    <?php bloginfo('name'); ?>
-                </a>
+            <div class="col-md-7 col-sm-2 col-xs-5">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="<?php bloginfo('url') ?>/" class="logo">
+                            <?php bloginfo('name'); ?>
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h1><a href="<?php bloginfo('url') ?>/"><?php bloginfo('name'); ?></a></h1>
+                        <div class="hidden-sm">
+                            <?php bloginfo('description'); ?>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-5 col-sm-10 col-xs-12 hidden-xs">   
-                
-	            <h1><a href="<?php bloginfo('url') ?>/"><?php bloginfo('name'); ?></a></h1>
 
-	            <div id="sitedescription" class="text-dark">
-	                <?php bloginfo('description'); ?>
-	            </div>
-                
-            </div>
-
-            <div class="col-md-5 col-sm-12 text-right m-t m-b">
-                <ul class="social-icons hidden-xs">
+            <div class="col-md-5 col-sm-10 col-xs-7 text-right m-t m-b">
+                <ul class="social-icons">
                     <li>
                         <a href="<?php echo get_option('socialfacebook'); ?>">
                             <span class="social-icon iconfbook"></span>
@@ -76,8 +77,7 @@
 	           
                 <?php echo do_shortcode ('[donate large="true"]'); ?>
 
-                <div class="hidden-xs pull-right">
-                    <!-- <input type="text" class="form-control" placeholder="Search" style="max-width:250px;" /> -->
+                <div class="pull-right p-l-sm">
                     <?php get_search_form(); ?>
                 </div>
             </div>
@@ -93,6 +93,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <div class="navbar-donate-btn visible-xs-block">
+                    <?php echo do_shortcode ('[donate]'); ?>
+                </div>
                 <a class="navbar-brand hidden-xs" href="<?php bloginfo('url') ?>/"><?php bloginfo('name'); ?></a>
                 <a class="navbar-brand visible-xs-block" href="<?php bloginfo('url') ?>/">Home</a>
             </div>
