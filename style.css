@@ -710,6 +710,24 @@ img.img-small {
   transform: scale(1);
 }
 
-.comment-respond label {
+#respond.comment-respond label {
   color: #777;
 }
+
+#respond.comment-respond {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+#respond.comment-respond .comment-reply-title {
+  padding: 0 15px;
+}  
+
+#respond.comment-respond .comment-form {
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}  
