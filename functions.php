@@ -113,4 +113,15 @@ function rnftheme_comment($comment, $args, $depth) {
 		<?php if ( 'div' != $args['style'] ) : ?>
 		</div>
 		<?php endif; ?>
-<?php } ?>
+<?php } 
+
+// donate shortcode
+function donate_link_shortcode($isLargeButton = false) {
+	$class = $isLargeButton ? "btn btn-lg btn-success" : "btn btn-success";
+	return '<a class="' . $class . '" href="https://mydonate.bt.com/donation/start.html?charity=143287">Donate Now</a>';
+}
+add_shortcode('donate', 'donate_link_shortcode')
+
+
+
+?>

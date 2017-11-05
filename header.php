@@ -73,9 +73,8 @@
                         </a>
                     </li>
                 </ul>
-	            <a class="btn btn-lg btn-success" href="https://mydonate.bt.com/donation/start.html?charity=143287">
-                    Donate Now
-                </a>	
+	           
+                <?php echo do_shortcode ('[donate large="true"]'); ?>
 
                 <div class="hidden-xs pull-right">
                     <!-- <input type="text" class="form-control" placeholder="Search" style="max-width:250px;" /> -->
