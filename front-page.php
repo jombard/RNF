@@ -13,7 +13,7 @@ get_header(); ?>
 			<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 			<div class="placeholder" data-large="<?php the_post_thumbnail_url('post-thumbnail'); ?>">
 				<?php the_post_thumbnail('rnf-home-featured-thumb', array( 'class' => "img-responsive img-small")); ?>
-				<div style="padding-bottom: 50%;"></div>
+				<div style="padding-bottom: 33%;"></div>
 			</div>
 			<!-- <div class="placeholder" data-large="/wp-content/uploads/2017/10/paris.jpg">
 				<img src="/wp-content/uploads/2017/10/paris.jpg?resize=100" alt="Team RNF" class="img-small">
