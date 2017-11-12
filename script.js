@@ -61,12 +61,26 @@
 		};
 
 		var buildChart = function(distanceCovered, distanceRemaining){
+			var distanceCovered1 = 40076;
+			var distanceCoveredRem = distanceCovered - distanceCovered1 - distanceCovered1;
 			var distanceData = [
 				{
-					value: distanceCovered,
+					value: distanceCovered1,
 					color: "#7F3F98",
 					highlight: "#9E5FB7",
-					label: "Total distance covered in kilometers"
+					label: "Total distance covered in kilometers lap 1"
+				},
+				{
+					value: distanceCovered1,
+					color: "#7F3F98",
+					highlight: "#9E5FB7",
+					label: "Total distance covered in kilometers lap 2"
+				},
+				{
+					value: distanceCoveredRem,
+					color: "#7F3F98",
+					highlight: "#9E5FB7",
+					label: "Total distance covered in kilometers lap 3"
 				},
 				{
 					value: distanceRemaining,
@@ -120,7 +134,7 @@
 		getDistanceCovered().then(function(result){
 			var lastUpdateTime = new Date(result.lastUpdateTime);
 			var distanceCovered = result.totalDistance;
-			var totalDistance = 80152;
+			var totalDistance = 40076*3;
 			var distanceRemaining = totalDistance - distanceCovered;
 
 			if(distanceRemaining < 0) {
