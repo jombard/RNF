@@ -15,10 +15,6 @@ get_header(); ?>
 				<?php the_post_thumbnail('rnf-home-featured-thumb', array( 'class' => "img-responsive img-small")); ?>
 				<div style="padding-bottom: 33%;"></div>
 			</div>
-			<!-- <div class="placeholder" data-large="/wp-content/uploads/2017/10/paris.jpg">
-				<img src="/wp-content/uploads/2017/10/paris.jpg?resize=100" alt="Team RNF" class="img-small">
-				<div style="padding-bottom: 50%;"></div>
-			</div> -->
 			<?php endif; ?>
 		
 			<div class="carousel-caption text-center" style="background-color:rgba(127, 63, 152, 0.5)">
@@ -111,7 +107,7 @@ get_header(); ?>
 
 	        <div class="row m-b">
 	        	<div class="col-sm-6">
-	        		<a href="/challenges/2017-challenges/end-end-challenge/">
+	        		<a href="/challenges/2017-challenges/round-world-challenge/">
 						<div class="placeholder" data-large="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg">
 							<img src="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg" alt="Round the World" class="img-small">
 							<div style="padding-bottom: 66.6%; width:300px;"></div>
