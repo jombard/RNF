@@ -17,6 +17,100 @@ get_header(); ?>
 			<p>Alongside fundraising to support people impacted by dementia, one of the aims of <a href="/">Remembering Not to Forget</a> is to get people talking about dementia more openly, and for people to be aware that it’s possible to live well with dementia for a long time.</p>
 			<p>This blog will try to capture some thoughts on the Turnbull family’s journey with dementia, we’ll also use this space to share other relevant <a href="/">Remembering Not to Forget</a> stories or updates.</p>
 
+            <div class="row m-b">
+                <div class="col-sm-6">
+                <?php
+                    $query = new WP_Query( array('category_name' => 'blog', 'posts_per_page' => '1'));
+                ?>
+
+                <?php if( $query->have_posts() ) : ?>
+                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                Latest post in blog
+                            </div>
+                            <div>
+                                <a href="<?php echo get_permalink() ?>">
+                                    <div class="placeholder" data-large="<?php the_post_thumbnail_url('post-thumbnail'); ?>">
+                                        <?php echo the_post_thumbnail('rnf-featured-thumb', array( 'class' => "img-responsive m-auto img-small")); ?>  
+                                        <div style="padding-bottom: 66.6%; width:200px;"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-caption">                            
+                                <div><?php the_title(); ?></div>
+                                <a href="<?php echo get_permalink(); ?>" class="btn btn-info">
+                                    Read more
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
+
+                <?php endif; ?>
+                </div>
+                <div class="col-sm-6">
+                    <?php
+                    $query = new WP_Query( array('category_name' => 'Challenges', 'posts_per_page' => '1'));
+                ?>
+
+                <?php if( $query->have_posts() ) : ?>
+                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+                       <div class="panel panel-info">
+                            <div class="panel-heading">
+                                Latest post in challenges
+                            </div>
+                            <div>
+                                <a href="<?php echo get_permalink() ?>">
+                                    <div class="placeholder" data-large="<?php the_post_thumbnail_url('post-thumbnail'); ?>">
+                                        <?php echo the_post_thumbnail('rnf-featured-thumb', array( 'class' => "img-responsive m-auto img-small")); ?>  
+                                        <div style="padding-bottom: 66.6%; width:200px;"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-caption">
+                                <div><?php the_title(); ?></div>
+                                <a href="<?php echo get_permalink(); ?>" class="btn btn-info">
+                                    Read more
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                            
+
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
+
+                <?php endif; ?>
+                </div>
+
+
+                    <?php /* foreach ( $recent_posts as $recent ) : setup_postdata( $recent ); ?>
+                            <div class="col-sm-6">
+                                <a href="<?php echo get_permalink($recent["ID"]) ?>">
+                                    <div class="placeholder" data-large="<?php echo get_the_post_thumbnail_url($recent['ID']); ?>">
+                                        <?php echo get_the_post_thumbnail($recent["ID"], 'rnf-featured-thumb', array( 'class' => "img-responsive m-auto img-small")); ?>  
+                                        <div style="padding-bottom: 66.6%; width:200px;"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                            <h4><a href="<?php echo get_permalink($recent["ID"]); ?>"><?php echo $recent["post_title"]; ?></a></h4>
+                                <p><?php echo $recent["post_excerpt"]; ?></p>
+                                <a href="<?php echo get_permalink($recent["ID"]); ?>" class="btn btn-info">
+                                    Read more
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </a>
+                            </div>
+                    <?php endforeach; ?>
+                <?php 
+                wp_reset_query(); */
+            ?>
+            </div>
+
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
 
