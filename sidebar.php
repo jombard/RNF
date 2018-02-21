@@ -46,7 +46,7 @@
                     } ?>  
                     <div class="carousel-caption">
                         <div><?php echo $recent["post_title"] ?></div>
-                        <div class="btn btn-rnf">View Post</div>
+                        <div class="btn btn-info">View Post</div>
                     </div>
                 </a>
             </div>
