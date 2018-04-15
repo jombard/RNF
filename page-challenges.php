@@ -26,22 +26,11 @@ get_header(); ?>
 
 	        <section class="challengesmain">
 	        	<article class="entry">
-                    <a href="/challenges/2017-challenges/round-world-challenge/">
-                    <img src="/wp-content/uploads/2016/12/roundtheworld-e1482518013750-150x150.jpg" alt="Round the World Challenge" class="img-responsive">
+                    <a href="/challenges/2018-challenges/raffle/">
+                    <img src="/wp-content/uploads/2018/04/3691478767_8a8f172d88_b-150x150.jpg" alt="Raffle Tickets" class="img-responsive">
                     <div class="challengewrapper">
-                        <h2 class="fromtop animate">Round the World</h2>
-                        <p class="frombottom animate">2017</p>
-                    </div>
-                    <div class="top-line"></div>
-                    </a>
-                </article>
-
-	        	<article class="entry">
-                    <a href="/challenges/2017-challenges/end-end-challenge/">
-                    <img src="/wp-content/uploads/2017/01/Landsendsignpost-e1484777710592-150x150.jpg" alt="End to End Challenge" class="img-responsive">
-                    <div class="challengewrapper">
-                        <h2 class="fromtop animate">Lands End to John O'Groats</h2>
-                        <p class="frombottom animate">July 2017</p>
+                        <h2 class="fromtop animate">Raffle</h2>
+                        <p class="frombottom animate">2018</p>
                     </div>
                     <div class="top-line"></div>
                     </a>
@@ -69,6 +58,28 @@ get_header(); ?>
 	     
 	            <div class="portfolio">
 	         
+	                <article class="entry rnfbike">
+						<a href="/challenges/2017-challenges/end-end-challenge/">
+						<img src="/wp-content/uploads/2017/01/Landsendsignpost-e1484777710592-150x150.jpg" alt="End to End Challenge" class="img-responsive">
+	                    <div class="challengewrapper">
+							<h2 class="fromtop animate">Lands End to John O'Groats</h2>
+                        	<p class="frombottom animate">July 2017</p>
+	                    </div>
+	                    <div class="top-line"></div>
+	                    </a>
+					</article>
+					
+					<article class="entry rnfswim rnfbike rnfrun rnftrek">
+					<a href="/challenges/2017-challenges/round-world-challenge/">
+                    <img src="/wp-content/uploads/2016/12/roundtheworld-e1482518013750-150x150.jpg" alt="Round the World Challenge" class="img-responsive">
+	                    <div class="challengewrapper">
+							<h2 class="fromtop animate">Round the World</h2>
+                        	<p class="frombottom animate">2017</p>
+	                    </div>
+	                    <div class="top-line"></div>
+	                    </a>
+	                </article>
+
 	                <article class="entry rnftrek">
 	                    <a href="/challenges/2016-challenges/the-underround/">
 	                    <img src="/wp-content/uploads/2016/10/41a-150x150.jpg" alt="RNF completing the UnderroundTM" class="img-responsive">
