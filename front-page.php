@@ -107,6 +107,24 @@ get_header(); ?>
 
 	        <div class="row m-b">
 	        	<div class="col-sm-6">
+	        		<a href="/challenges/2018-challenges/raffle/">
+						<div class="placeholder" data-large="/wp-content/uploads/2018/04/3691478767_8a8f172d88_b.jpg">
+							<img src="/wp-content/uploads/2018/04/3691478767_8a8f172d88_b.jpg" alt="Raffle" class="img-small">
+							<div style="padding-bottom: 66.6%; width:300px;"></div>
+						</div>
+					</a>
+	        	</div>
+	        	<div class="col-sm-6">
+					<h4><a href="/challenges/2018-challenges/raffle/">Raffle</a></h4>
+				    <p>Many fantastic prizes on offer.</p>
+					<a href="/challenges/2018-challenges/raffle/" class="btn btn-info">
+						Read more
+						<i class="glyphicon glyphicon-chevron-right"></i>
+					</a>
+			  	</div>
+        	</div>
+        	<div class="row m-b">
+	        	<div class="col-sm-6">
 	        		<a href="/challenges/2017-challenges/round-world-challenge/">
 						<div class="placeholder" data-large="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg">
 							<img src="/wp-content/uploads/2016/12/roundtheworld-e1482518013750.jpg" alt="Round the World" class="img-small">
@@ -141,24 +159,6 @@ get_header(); ?>
 					</a>
 			  	</div>
         	</div>
-        	<div class="row m-b">
-	        	<div class="col-sm-6">
-	        		<a href="/challenges/2017-challenges/four-palaces-guided-walk/">
-						<div class="placeholder" data-large="/wp-content/uploads/2017/04/Guided-Walk-e1496608837219.jpg">
-							<img src="/wp-content/uploads/2017/04/Guided-Walk-e1496608837219.jpg" alt="Guided Walk" class="img-small">
-							<div style="padding-bottom: 66.6%; width:300px;"></div>
-						</div>
-					</a>
-	        	</div>
-	        	<div class="col-sm-6">
-					<h4><a href="/challenges/2017-challenges/four-palaces-guided-walk/">Four Palaces guided walk</a></h4>
-				    <p>A guided walk through historical London.</p>
-					<a href="/challenges/2017-challenges/four-palaces-guided-walk/" class="btn btn-info">
-						Read more
-						<i class="glyphicon glyphicon-chevron-right"></i>
-					</a>
-			  	</div>
-        	</div>
 		</div>
 	    
 	</div>
@@ -181,19 +181,25 @@ get_header(); ?>
 		<div class="col-sm-6">
 			<div id="mc_embed_signup">
 				<h3>Subscribe to our newsletter</h3>
-		        <form action="https://rememberingnottoforget.us3.list-manage2.com/subscribe/post?u=4bbf97a920c7865dcf7b097ba&amp;id=f077e514d1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		            <div class="form-group">
-						Join our newsletter and get occasional updates on our challenges and fundraising progress.
-					</div>
-					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					<div style="position: absolute; left: -5000px;">
-						<input type="text" name="b_4bbf97a920c7865dcf7b097ba_f077e514d1" value="">
-					</div>
-					 <div class="input-group max-300">
-						<input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="Enter your email address" required>
-						<span class="input-group-btn">
-		                	<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">Subscribe</button>
-						</span>
+		        <form action="https://rememberingnottoforget.us3.list-manage.com/subscribe/post?u=4bbf97a920c7865dcf7b097ba&amp;id=f077e514d1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		        	<div id="mc_embed_signup_scroll">
+			            <div class="form-group">
+							Join our newsletter and get occasional updates on our challenges and fundraising progress.
+						</div>
+						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;">
+							<input type="text" name="b_4bbf97a920c7865dcf7b097ba_f077e514d1" value="">
+						</div>
+						 <div class="input-group max-300">
+							<input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="Enter your email address" required>
+							<span class="input-group-btn">
+			                	<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">Subscribe</button>
+							</span>
+			            </div>
+			            <div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>
 		            </div>
 		        </form>
 		    </div>
@@ -203,10 +209,6 @@ get_header(); ?>
 			<h3>Contact Remembering Not to Forget</h3>
 			<p>Get in touch with us via our various social media channels below or drop us a note through the website.</p>
 			<a href="/contact-us/" class="btn btn-info">Contact Us</a>
-        	<!-- <a class="twitter-timeline" data-width="520" data-height="800" href="https://twitter.com/RNF_UK" data-widget-id="705778350770556928">
-        		Tweets by @RNF_UK
-        	</a>
-        	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> -->
 		</div>
 	</div>
 </div>
