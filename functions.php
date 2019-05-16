@@ -60,7 +60,7 @@ add_action("wp_enqueue_scripts", "rnftheme_enqueue_scripts");
 // donate shortcode
 function donate_link_shortcode($isLargeButton = false) {
 	$class = $isLargeButton ? "btn btn-lg btn-success" : "btn btn-success";
-	return '<a class="' . $class . '" href="https://mydonate.bt.com/donation/start.html?charity=143287">Donate Now</a>';
+	return '<a class="' . $class . '" href="https://www.wonderful.org/charity/rememberingnottoforget">Donate Now</a>';
 }
 add_shortcode('donate', 'donate_link_shortcode');
 
