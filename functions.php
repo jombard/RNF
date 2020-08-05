@@ -26,7 +26,7 @@ function rnf_get_featured_content( $num = 3 ) {
 
 // Add current class to selected menu item
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
-function special_nav_class($classes, $item){
+function special_nav_class($classes){
      if( in_array('current-menu-item', $classes) ){
              $classes[] = 'current ';
      }
@@ -37,7 +37,7 @@ function special_nav_class($classes, $item){
 function is_tree($pid) {	// $pid = The ID of the page we're looking for pages underneath
 	global $post;			// load details about this page
 	return (is_page()&&($post->post_parent==$pid||is_page($pid)));
-};
+}
 
 // add primary nav menu
 function register_rnf_nav_menu() {
@@ -60,7 +60,7 @@ add_action("wp_enqueue_scripts", "rnftheme_enqueue_scripts");
 // donate shortcode
 function donate_link_shortcode($isLargeButton = false) {
 	$class = $isLargeButton ? "btn btn-lg btn-success" : "btn btn-success";
-	return '<a class="' . $class . '" href="https://www.wonderful.org/charity/rememberingnottoforget">Donate Now</a>';
+	return '<a class="' . $class . '" href="https://www.goldengiving.com/secure/donation/remembering-not-to-forget">Donate Now</a>';
 }
 add_shortcode('donate', 'donate_link_shortcode');
 
