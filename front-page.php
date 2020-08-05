@@ -63,7 +63,7 @@ get_header(); ?>
 </div>
 
 <div class="container">
-			<h2>Latest Blog Posts</h2>
+			<h2>Latest Posts</h2>
 
 				<div class="row">
 	        <?php
