@@ -306,12 +306,12 @@ get_header(); ?>
 	        </section>
 
 	        <div class="alert alert-info">
-		        <p>For regular updates on other challenges and events <a href="/fundraising/fundraising-for-us/">sign up to our mailing list</a>, <a href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679" target="_blank">like us on Facebook</a> or <a href="https://twitter.com/RNF_UK" target="_blank">follow us on Twitter</a>.</p>
+		        <p>For regular updates on other challenges and events <a href="/fundraising/fundraising-for-us/">sign up to our mailing list</a>, <a rel="noopener noreferrer" href="https://www.facebook.com/pages/Remembering-Not-To-Forget/235169236658679" target="_blank">like us on Facebook</a> or <a rel="noopener noreferrer" href="https://twitter.com/RNF_UK" target="_blank">follow us on Twitter</a>.</p>
 	        </div>
 
 		</div><!-- .col-md-8 -->
 	
-		<div class="col-md-4">
+		<div class="col-md-4 m-t-b">
 			<?php get_sidebar(); ?>
 		</div><!-- .col-md-4 -->
 	</div><!-- .row -->
