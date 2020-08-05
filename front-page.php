@@ -90,7 +90,7 @@ get_header(); ?>
 							    <p><?php echo $recent["post_excerpt"]; ?></p>
 								<a href="<?php echo get_permalink($recent["ID"]); ?>" class="btn btn-info">
 									Read more
-									<i class="glyphicon glyphicon-chevron-right"></i>
+									<em class="glyphicon glyphicon-chevron-right"></em>
 								</a>
 						  	</div>
 			            </div>
@@ -119,7 +119,7 @@ get_header(); ?>
 				    <p>Many fantastic prizes on offer.</p>
 					<a href="/challenges/2018-challenges/raffle/" class="btn btn-info">
 						Read more
-						<i class="glyphicon glyphicon-chevron-right"></i>
+						<em class="glyphicon glyphicon-chevron-right"></em>
 					</a>
 			  	</div>
         	</div>
@@ -137,7 +137,7 @@ get_header(); ?>
 				    <p>Covering the distance of the equator through self-powered travel.</p>
 					<a href="/challenges/2017-challenges/round-world-challenge/" class="btn btn-info">
 						Read more
-						<i class="glyphicon glyphicon-chevron-right"></i>
+						<em class="glyphicon glyphicon-chevron-right"></em>
 					</a>
 			  	</div>
         	</div>
@@ -155,7 +155,7 @@ get_header(); ?>
 				    <p>1000 miles cycle challenge.</p>
 					<a href="/challenges/2017-challenges/end-end-challenge/" class="btn btn-info">
 						Read more
-						<i class="glyphicon glyphicon-chevron-right"></i>
+						<em class="glyphicon glyphicon-chevron-right"></em>
 					</a>
 			  	</div>
         	</div>
@@ -169,8 +169,12 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-sm-12 text-center" style="color: #fff; padding: 40px 0;">
 				<h3 class="text-white">Make a difference by fundraising for Remembering Not to Forget</h3>
-				<a href="/fundraising/fundraising-for-us/" class="btn btn-info">More Information <i class="glyphicon glyphicon-chevron-right"></i></a>
-				<a href="/fundraising/fundraising-for-us/our-amazing-fundraisers/" class="btn btn-link text-white">Our fundraisers <i class="glyphicon glyphicon-chevron-right"></i></a>
+				<a href="/fundraising/fundraising-for-us/" class="btn btn-info">
+					More Information <em class="glyphicon glyphicon-chevron-right"></em>
+				</a>
+				<a href="/fundraising/fundraising-for-us/our-amazing-fundraisers/" class="btn btn-link text-white">
+					Our fundraisers <em class="glyphicon glyphicon-chevron-right"></em>
+				</a>
 			</div>
 		</div>
 	</div>

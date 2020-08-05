@@ -41,7 +41,7 @@ get_header(); ?>
                                 <div><?php the_title(); ?></div>
                                 <a href="<?php echo get_permalink(); ?>" class="btn btn-info">
                                     Read more
-                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                    <em class="glyphicon glyphicon-chevron-right"></em>
                                 </a>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ get_header(); ?>
                                 <div><?php the_title(); ?></div>
                                 <a href="<?php echo get_permalink(); ?>" class="btn btn-info">
                                     Read more
-                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                    <em class="glyphicon glyphicon-chevron-right"></em>
                                 </a>
                             </div>
                         </div>
@@ -102,7 +102,7 @@ get_header(); ?>
                                 <p><?php echo $recent["post_excerpt"]; ?></p>
                                 <a href="<?php echo get_permalink($recent["ID"]); ?>" class="btn btn-info">
                                     Read more
-                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                    <em class="glyphicon glyphicon-chevron-right"></em>
                                 </a>
                             </div>
                     <?php endforeach; ?>

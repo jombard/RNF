@@ -10,7 +10,7 @@
 			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<a href="<?php the_permalink(); ?>" class="btn btn-info">
 				Read more
-				<i class="glyphicon glyphicon-chevron-right"></i>
+				<em class="glyphicon glyphicon-chevron-right"></em>
 			</a> 
 		</div>
 	</div>

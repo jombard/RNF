@@ -8,7 +8,7 @@
 		<input type="search" id="<?php echo $unique_id; ?>" class="form-control" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'twentyseventeen' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
 		<span class="input-group-btn">
 			<button type="submit" class="search-submit btn btn-rnf">
-				<i class="glyphicon glyphicon-search"></i>
+				<em class="glyphicon glyphicon-search"></em>
 			</button>
 		</span>
 	</div>
