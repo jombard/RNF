@@ -86,29 +86,7 @@ get_header(); ?>
 
                 <?php endif; ?>
                 </div>
-
-
-                    <?php /* foreach ( $recent_posts as $recent ) : setup_postdata( $recent ); ?>
-                            <div class="col-sm-6">
-                                <a href="<?php echo get_permalink($recent["ID"]) ?>">
-                                    <div class="placeholder" data-large="<?php echo get_the_post_thumbnail_url($recent['ID']); ?>">
-                                        <?php echo get_the_post_thumbnail($recent["ID"], 'rnf-featured-thumb', array( 'class' => "img-responsive m-auto img-small")); ?>  
-                                        <div style="padding-bottom: 66.6%; width:200px;"></div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6">
-                            <h4><a href="<?php echo get_permalink($recent["ID"]); ?>"><?php echo $recent["post_title"]; ?></a></h4>
-                                <p><?php echo $recent["post_excerpt"]; ?></p>
-                                <a href="<?php echo get_permalink($recent["ID"]); ?>" class="btn btn-info">
-                                    Read more
-                                    <em class="glyphicon glyphicon-chevron-right"></em>
-                                </a>
-                            </div>
-                    <?php endforeach; ?>
-                <?php 
-                wp_reset_query(); */
-            ?>
+               
             </div>
 
         <?php if (have_posts()) : ?>
