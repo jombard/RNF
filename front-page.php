@@ -20,6 +20,9 @@ get_header(); ?>
 			<div class="carousel-caption text-center" style="background-color:rgba(127, 63, 152, 0.5)">
 				<h2>Supporting people impacted by dementia</h2>
 				<p class="hidden-xs">Challenging ourselves to help raise funds and awareness</p>
+				<div class="m-t">
+					<?php echo do_shortcode ('[donate]'); ?>
+				</div>
 			</div>
 		</div>
 	</div>
