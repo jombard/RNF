@@ -137,7 +137,7 @@ get_header(); ?>
 
     	</div><!-- .col-md-8 -->
 	
-		<div class="col-md-4">
+		<div class="col-md-4 m-t-b">
             <div class="panel panel-info">
                 <div class="panel-heading">Tag Cloud</div>
                 <div class="panel-body">
