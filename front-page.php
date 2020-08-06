@@ -17,8 +17,8 @@ get_header(); ?>
 			</div>
 			<?php endif; ?>
 		
-			<div class="carousel-caption text-left" style="background-color:rgba(127, 63, 152, 0.5)">
-			<div class="container m-t-b">
+			<div class="carousel-caption" style="background-color:rgba(127, 63, 152, 0.5)">
+			<div class="container m-t-b text-left">
 				<h2 class="hidden-xs">Supporting people impacted by dementia</h2>
 				<p>Challenging ourselves to help raise funds and awareness</p>
 				<div class="m-t">
