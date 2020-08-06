@@ -605,6 +605,7 @@ nav.primary ul li .selected {
   }
 }
 
+.entry-title,
 .post-labels {
   margin-bottom: 20px;
 }
