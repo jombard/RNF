@@ -51,7 +51,7 @@
                         echo get_the_post_thumbnail($recent["ID"], 'large', array( 'class' => "img-responsive"));
                     } ?>  
                     <div class="carousel-caption">
-                        <div><?php echo $recent["post_title"] ?></div>
+                        <h3 class="text-white" style="font-weight:bold"><?php echo $recent["post_title"] ?></h3>
                         <div class="btn btn-info">View Post</div>
                     </div>
                 </a>
