@@ -54,11 +54,11 @@ get_header(); ?>
 	<div class="container">
 		<div class="row text-center text-white m-t-b">
 			<div class="col-sm-6">
-				<h3 class="strong text-white">Organisations<br />Supported</h3>
+				<h3 class="strong text-white">Organisations Supported</h3>
 				<p class="h1"><?php echo get_post_meta($post->ID, 'organisations-supported', true); ?></p>
 			</div>
 			<div class="col-sm-6">
-				<h3 class="strong text-white">Amount<br />Raised</h3>
+				<h3 class="strong text-white">Amount Raised</h3>
 				<p class="h1"><?php echo get_post_meta($post->ID, 'amount-raised', true); ?></p>
 			</div>
 		</div>
@@ -117,7 +117,7 @@ get_header(); ?>
 </div>
 
 <div class="container">
-	<div class="row">
+	<div class="row m-t-b">
 		<div class="col-sm-6">
 			<div id="mc_embed_signup">
 				<h3>Subscribe to our newsletter</h3>
