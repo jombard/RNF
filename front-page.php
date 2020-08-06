@@ -13,15 +13,17 @@ get_header(); ?>
 			<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 			<div class="placeholder" data-large="<?php the_post_thumbnail_url('post-thumbnail'); ?>">
 				<?php the_post_thumbnail('rnf-home-featured-thumb', array( 'class' => "img-responsive img-small")); ?>
-				<div style="padding-bottom: 33%;"></div>
+				<div style="padding-bottom: 50%;"></div>
 			</div>
 			<?php endif; ?>
 		
-			<div class="carousel-caption text-center" style="background-color:rgba(127, 63, 152, 0.5)">
-				<h2>Supporting people impacted by dementia</h2>
-				<p class="hidden-xs">Challenging ourselves to help raise funds and awareness</p>
+			<div class="carousel-caption text-left" style="background-color:rgba(127, 63, 152, 0.5)">
+			<div class="container m-t-b">
+				<h2 class="hidden-xs">Supporting people impacted by dementia</h2>
+				<p>Challenging ourselves to help raise funds and awareness</p>
 				<div class="m-t">
 					<?php echo do_shortcode ('[donate]'); ?>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -30,7 +32,7 @@ get_header(); ?>
 
 <div class="container">
 	<div class="row m-t-b">
-		<div class="col-sm-12 text-center">
+		<div class="col-sm-12">
 
 			<?php the_content(); ?>
 
@@ -106,8 +108,10 @@ get_header(); ?>
 <div class="bg-rnf">
 	<div class="container">
 		<div class="row m-t-b">
-			<div class="col-sm-12 text-center text-white">
+			<div class="col-sm-9 text-white">
 				<h3 class="text-white m-t">Make a difference by fundraising for Remembering Not to Forget</h3>
+			</div>
+			<div class="col-sm-3">
 				<a href="/fundraising/fundraising-for-us/our-amazing-fundraisers/" class="btn btn-info btn-lg">
 					Our fundraisers <em class="glyphicon glyphicon-chevron-right"></em>
 				</a>
