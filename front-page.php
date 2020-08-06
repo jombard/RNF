@@ -29,7 +29,7 @@ get_header(); ?>
 </div>
 
 <div class="container">
-	<div class="row" style="padding:20px 0 50px;">
+	<div class="row m-t-b">
 		<div class="col-sm-12 text-center">
 
 			<?php the_content(); ?>
@@ -50,9 +50,9 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="bg-rnf m-t-b">
+<div class="bg-rnf">
 	<div class="container">
-		<div class="row text-center" style="color: #fff; padding: 40px 0;">
+		<div class="row text-center text-white m-t-b">
 			<div class="col-sm-6">
 				<h3 class="strong text-white">Organisations<br />Supported</h3>
 				<p class="h1"><?php echo get_post_meta($post->ID, 'organisations-supported', true); ?></p>
@@ -65,7 +65,7 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="container">
+<div class="container m-t-b">
 			<h2>Latest Posts</h2>
 
 				<div class="row">
@@ -103,10 +103,10 @@ get_header(); ?>
 
 		</div>
 
-<div class="bg-rnf m-t-b">
+<div class="bg-rnf">
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 text-center" style="color: #fff; padding: 40px 0;">
+		<div class="row m-t-b">
+			<div class="col-sm-12 text-center text-white">
 				<h3 class="text-white m-t">Make a difference by fundraising for Remembering Not to Forget</h3>
 				<a href="/fundraising/fundraising-for-us/our-amazing-fundraisers/" class="btn btn-info btn-lg">
 					Our fundraisers <em class="glyphicon glyphicon-chevron-right"></em>
