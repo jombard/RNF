@@ -89,9 +89,8 @@ get_header(); ?>
 				        	<div class="col-sm-6">
 										<h4><a href="<?php echo get_permalink($recent["ID"]); ?>"><?php echo $recent["post_title"]; ?></a></h4>
 							    	<p><?php echo $recent["post_excerpt"]; ?></p>
-										<a href="<?php echo get_permalink($recent["ID"]); ?>" class="btn btn-info">
+										<a href="<?php echo get_permalink($recent["ID"]); ?>">
 											Read more
-											<em class="glyphicon glyphicon-chevron-right"></em>
 										</a>
 						  		</div>
 								</div>
@@ -122,6 +121,11 @@ get_header(); ?>
 
 <div class="container">
 	<div class="row m-t-b">
+		<div class="col-sm-6 ">
+			<h3>Contact Remembering Not to Forget</h3>
+			<p>Get in touch with us via our various social media channels below or drop us a note through the website.</p>
+			<a href="/contact-us/">Contact Us</a>
+		</div>
 		<div class="col-sm-6">
 			<div id="mc_embed_signup">
 				<h3>Subscribe to our newsletter</h3>
@@ -137,7 +141,7 @@ get_header(); ?>
 						 <div class="input-group max-300">
 							<input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="Enter your email address" required>
 							<span class="input-group-btn">
-			                	<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">Subscribe</button>
+								<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">Subscribe</button>
 							</span>
 			            </div>
 			            <div id="mce-responses" class="clear">
@@ -148,11 +152,6 @@ get_header(); ?>
 		        </form>
 		    </div>
 
-		</div>
-		<div class="col-sm-6 ">
-			<h3>Contact Remembering Not to Forget</h3>
-			<p>Get in touch with us via our various social media channels below or drop us a note through the website.</p>
-			<a href="/contact-us/" class="btn btn-info">Contact Us</a>
 		</div>
 	</div>
 </div>
