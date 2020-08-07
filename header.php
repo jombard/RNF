@@ -87,15 +87,12 @@
     <nav id="navbar" class="navbar navbar-rnf">
         <div class="container">
             <div class="navbar-header text-center">
-                <button type="button" class="navbar-toggle collapsed" style="float:none;" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <div class="navbar-donate-btn visible-xs-block">
-                    <?php echo do_shortcode ('[donate]'); ?>
-                </div>
                 <a class="navbar-brand hidden-xs" href="<?php bloginfo('url') ?>/"><?php bloginfo('name'); ?></a>
                 <a class="navbar-brand visible-xs-block" href="<?php bloginfo('url') ?>/">Home</a>
             </div>
