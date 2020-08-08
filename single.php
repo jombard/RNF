@@ -35,6 +35,8 @@ get_header(); ?>
 						<div class="entry-content">
 							<?php the_content(); ?>
 
+							<div class="alert alert-info m-t">We need your help to raise awareness. Please consider sharing this post.</div>
+
 							<div class="panel panel-default">
 								<div class="panel-body">
 									This entry was posted in <?php the_category(', ') ?>
@@ -44,12 +46,6 @@ get_header(); ?>
 							<?php the_tags( '<div class="post-labels"><div class="label label-info">', '</div><div class="label label-info">', '</div></div>' ); ?>
 
 						</div><!-- .entry-content -->
-
-						<div class="alert alert-info">We need your help to raise awareness. Please consider sharing this post.</div>
-
-						<div>
-							<?php echo do_shortcode ('[shareaholic app="share_buttons" id="15240249"]'); ?>
-						</div>
 
 						<div class="row text-center">
 							<?php $prevPost = get_previous_post(); ?>

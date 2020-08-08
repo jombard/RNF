@@ -119,9 +119,6 @@
 
 							<div class="page-header">
 								<h1 class="text-center"><?php echo get_post_meta($post->ID, 'fundraiser-page-title', true); ?></h1>
-								<div class="social-options">
-									<?php echo do_shortcode ('[shareaholic app="share_buttons" id="15240250"]'); ?>
-								</div>
 							</div>
 
 							<div>
