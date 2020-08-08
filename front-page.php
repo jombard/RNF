@@ -39,7 +39,7 @@ get_header(); ?>
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row m-t-b">
 		<!-- rnf_get_featured_content(1) -->
 		<?php if ( rnf_get_featured_content(1) ) : ?>
 			<!-- if -->
