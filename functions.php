@@ -60,7 +60,7 @@ add_action("wp_enqueue_scripts", "rnftheme_enqueue_scripts");
 // donate shortcode
 function donate_link_shortcode($isLargeButton = false) {
 	$class = $isLargeButton ? "btn btn-lg btn-success" : "btn btn-success";
-	return '<a class="' . $class . '" href="https://www.goldengiving.com/secure/donation/remembering-not-to-forget">Donate Now</a>';
+	return '<a class="' . $class . '" href="https://www.peoplesfundraising.com/donation/remembering-not-to-forget">Donate Now</a>';
 }
 add_shortcode('donate', 'donate_link_shortcode');
 
