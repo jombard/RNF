@@ -116,11 +116,15 @@ ol {
   color: #fff;
 }
 
-.panel-info {
-  border-color: #7f3f98;
+.panel {
+  background-color: #d9edf7;
 }
 
-.panel-info > .panel-heading,
+.panel-info > .panel-heading {
+  border-color: transparent;
+  font-weight: bold;
+}
+
 .btn-rnf {
   background-color: #7f3f98;
   border-color: #713787;
